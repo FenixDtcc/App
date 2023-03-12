@@ -1,0 +1,1 @@
+C:\1 - ETEC 2022\2023\QuantoDemoraApp\QuantoDemoraApp\QuantoDemoraApp.csproj;x64
