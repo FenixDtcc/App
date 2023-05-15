@@ -3,12 +3,79 @@
     x:Class="QuantoDemoraApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:QuantoDemoraApp"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:viewsUsuarios="clr-namespace:QuantoDemoraApp.Views.Usuarios"
+    xmlns:viewsHospitais="clr-namespace:QuantoDemoraApp.Views.Hospitais"
+    xmlns:conv="clr-namespace:QuantoDemoraApp.Converters"
+    xmlns:local="clr-namespace:QuantoDemoraApp">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.Resources>
+        <ResourceDictionary>
+            <conv:ByteArrayToImageSourceConverter
+                x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </Shell.Resources>
 
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="{OnPlatform Android=130, iOS=200}">
+                    </RowDefinition>
+                    
+                    <RowDefinition Height="*">
+                    </RowDefinition>
+                    
+                    <RowDefinition Height="40">
+                    </RowDefinition>
+                    
+                </Grid.RowDefinitions>
+                
+                <FlexLayout Grid.Row="0"
+                            Direction="Row" 
+                            AlignItems="Center">
+                    <VerticalStackLayout Margin="10"
+                                         Padding="10,0,0,0" 
+                                         Spacing="0">
+                        <Label Text="Olá, seja bem-vindo(a)!" 
+                               FontAttributes="Bold" 
+                               FontSize="Medium" />
+                    </VerticalStackLayout>
+                </FlexLayout>
+            </Grid>
+        </DataTemplate>     
+        
+    </Shell.FlyoutHeaderTemplate>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent 
+            Title="Home" 
+            Icon="home.svg" 
+            ContentTemplate="{DataTemplate local:MainPage}" 
+            Route="MainPage" />
+        <ShellContent 
+            Title="Paciente" 
+            Icon="paciente.svg" 
+            ContentTemplate="{DataTemplate viewsUsuarios:ListagemView}" />
+        <ShellContent 
+            Title="Hospitais" 
+            Icon="hospital.png" 
+            ContentTemplate="{DataTemplate viewsHospitais:ListagemView}" />
+
+        
+    </FlyoutItem>
+
+    <ShellContent 
+        Title="Sair" 
+        Icon="Exit.svg" 
+        ContentTemplate="{DataTemplate viewsUsuarios:LoginView}" 
+        Shell.FlyoutBehavior="Disabled"/>
+
+    <Shell.FlyoutFooter>
+        <Label 
+            x:Name="lblLogin" 
+            TextColor="Black" 
+            FontAttributes="Bold" 
+            HorizontalOptions="Center"/>
+    </Shell.FlyoutFooter>
 </Shell>

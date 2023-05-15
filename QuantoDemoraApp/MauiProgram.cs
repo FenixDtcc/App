@@ -1,4 +1,6 @@
-﻿namespace QuantoDemoraApp;
+﻿using Microsoft.Extensions.Logging;
+
+namespace QuantoDemoraApp;
 
 public static class MauiProgram
 {

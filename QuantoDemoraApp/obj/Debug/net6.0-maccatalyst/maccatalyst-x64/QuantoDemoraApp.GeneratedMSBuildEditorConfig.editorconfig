@@ -8,34 +8,64 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuantoDemoraApp
-build_property.ProjectDir = C:\ETEC 2022\2023\3semestre\TCC\FenixTcc\Aplicacao\Aplicativo\QuantoDemoraApp\QuantoDemoraApp\
+build_property.ProjectDir = C:\ETEC 2022\2023\3semestre\TCC\app\QuantoDemoraApp\QuantoDemoraApp\
 
-[C:/ETEC 2022/2023/3semestre/TCC/FenixTcc/Aplicacao/Aplicativo/QuantoDemoraApp/QuantoDemoraApp/App.xaml]
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/ETEC 2022/2023/3semestre/TCC/FenixTcc/Aplicacao/Aplicativo/QuantoDemoraApp/QuantoDemoraApp/AppShell.xaml]
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/ETEC 2022/2023/3semestre/TCC/FenixTcc/Aplicacao/Aplicativo/QuantoDemoraApp/QuantoDemoraApp/MainPage.xaml]
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/ETEC 2022/2023/3semestre/TCC/FenixTcc/Aplicacao/Aplicativo/QuantoDemoraApp/QuantoDemoraApp/Resources/Styles/Colors.xaml]
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/ETEC 2022/2023/3semestre/TCC/FenixTcc/Aplicacao/Aplicativo/QuantoDemoraApp/QuantoDemoraApp/Resources/Styles/Styles.xaml]
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/Views/Hospitais/InformacoesHospitalView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Hospitais.InformacoesHospitalView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Hospitais\InformacoesHospitalView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Hospitais\InformacoesHospitalView.xaml
+
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/Views/Hospitais/ListagemView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Hospitais.ListagemView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Hospitais\ListagemView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Hospitais\ListagemView.xaml
+
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/Views/Usuarios/CadastroView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.CadastroView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\CadastroView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\CadastroView.xaml
+
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/Views/Usuarios/ListagemView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.ListagemView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\ListagemView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\ListagemView.xaml
+
+[C:/ETEC 2022/2023/3semestre/TCC/app/QuantoDemoraApp/QuantoDemoraApp/Views/Usuarios/LoginView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.LoginView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\LoginView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\LoginView.xaml

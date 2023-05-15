@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuantoDemoraApp.Views.Usuarios.LoginView"
+             Title="LoginView"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{x:StaticResource Primary}">
+
+
+    <!--inicio tela de login-->
+    <Grid RowDefinitions="1*,8*,1*">
+        <!--inicio circulo topo-->
+        <Frame BackgroundColor="{x:StaticResource Secondary}" 
+               Grid.Row="0" 
+               Padding="0" 
+               Margin="0,-80,-80,0"
+               HorizontalOptions="EndAndExpand"
+               HeightRequest="250" 
+               WidthRequest="250" 
+               CornerRadius="125"
+               BorderColor="Transparent">
+        </Frame>
+
+        <Frame BackgroundColor="{x:StaticResource Primary}" 
+               Grid.Row="0" 
+               Padding="0" 
+               Margin="0,-120,-120,0"
+               HorizontalOptions="EndAndExpand"
+               HeightRequest="250" 
+               WidthRequest="250" 
+               CornerRadius="125"
+               BorderColor="Transparent">
+        </Frame>
+        <!--fim circulo topo-->
+
+
+        <!--inicio configuração imagem-->
+        <Frame BorderColor="Transparent"
+               BackgroundColor="{x:StaticResource Primary}" 
+               CornerRadius="50"
+               HeightRequest="100"
+               WidthRequest="100"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="0,300,0,0">
+
+            <Image Source="logo.svg"
+                   HeightRequest="100"
+                   WidthRequest="100" />
+        </Frame>
+        <!--fim configuração imagem-->
+
+        <!--incio do fundo informações de login -->
+        <Frame
+            BackgroundColor= "Transparent"
+            Grid.Row="1"
+            VerticalOptions="CenterAndExpand"
+            Margin="30,0,30,0"
+            BorderColor="Transparent"
+            CornerRadius="0">
+
+            <VerticalStackLayout
+                Spacing="15"
+                >
+                <!--spacing, espaço entre as opções-->
+
+                <!--inicio do usuario e senha-->
+                <Frame
+                    BorderColor="Transparent"
+                    BackgroundColor="Transparent"
+                    CornerRadius="50"
+                    Padding="2">
+                    <Grid>
+                        <Image Source="usuario.svg"
+                               HeightRequest="20"
+                               WidthRequest="20"
+                               HorizontalOptions="StartAndExpand"/>
+                        <Entry
+                            Placeholder="Digite seu nome de usuário"
+                            PlaceholderColor="#ffffff"
+                            Grid.Column="1"
+                            Text="{Binding Login}"
+                            HorizontalTextAlignment="Center"
+                            FontSize="14"
+                            CharacterSpacing="2"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            TextColor="White"
+                            FontAttributes="Bold">
+                        </Entry>
+                    </Grid>
+                </Frame>
+                <BoxView Color="{x:StaticResource Secondary}"
+                         HeightRequest="1"
+                         HorizontalOptions="Fill" 
+                         Margin="0,-25,0,0"/>
+
+                <Frame
+                    BorderColor="Transparent"
+                    BackgroundColor="Transparent"
+                    CornerRadius="50"
+                    Padding="2">
+                    <Grid>
+                        <Image Source="senha.svg"
+                               HeightRequest="20"
+                               WidthRequest="20"
+                               HorizontalOptions="StartAndExpand"/>
+                        <Entry 
+                            Placeholder="Digite a senha"
+                            PlaceholderColor="#ffffff"
+                            Grid.Column="1"
+                            Text="{Binding Senha}"
+                            TextColor="White"
+                            HorizontalTextAlignment="Center"
+                            IsPassword="True"
+                            FontSize="14"
+                            CharacterSpacing="2"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            FontAttributes="Bold">
+                        </Entry>
+                    </Grid>
+                </Frame>
+                <BoxView Color="{x:StaticResource Secondary}"
+                         HeightRequest="1"
+                         HorizontalOptions="Fill" 
+                         Margin="0,-25,0,0"/>
+                
+                <!--final do usuario e senha-->
+
+
+                <Button Text="Entrar"
+                        TextColor="#ffffff"
+                        Command="{Binding AutenticarCommand}" 
+                        Margin="0,10,0,0"
+                        BorderColor="{x:StaticResource Secondary}"
+                        BackgroundColor="Transparent"
+                        BorderWidth="1"
+                        CornerRadius="50"/>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    Spacing="20" 
+                    Margin="30">
+                    <Label 
+                        Text="Não possui login?"
+                        TextColor="White"
+                        FontAttributes="Bold">
+                    </Label>
+                    <Label Text="Cadastre-se"
+                           TextColor="White"
+                           FontAttributes="Bold">
+                    </Label>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+
+                        <TapGestureRecognizer 
+                        Command="{Binding DirecionarCadastroCommand}">
+                        </TapGestureRecognizer>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+
+
+
+
+
+        <Frame BackgroundColor="#89D6E2" 
+               Grid.Row="2" 
+               VerticalOptions="EndAndExpand"
+               Padding="0" 
+               Margin="0,0,0,-180"
+               HorizontalOptions="StartAndExpand"
+               HeightRequest="250" 
+               WidthRequest="250" 
+               CornerRadius="125"
+               BorderColor="Transparent">
+
+        </Frame>
+
+        <Frame BackgroundColor="{x:StaticResource Primary}" 
+               Grid.Row="2" 
+               VerticalOptions="EndAndExpand"
+               Padding="0" 
+               Margin="0,0,0,-200"
+               HorizontalOptions="StartAndExpand"
+               HeightRequest="250" 
+               WidthRequest="250" 
+               CornerRadius="125"
+               BorderColor="Transparent">
+        </Frame>
+    </Grid>
+</ContentPage>
