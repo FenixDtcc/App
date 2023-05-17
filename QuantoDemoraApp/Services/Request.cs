@@ -57,13 +57,17 @@ namespace QuantoDemoraApp.Services
         public async Task<TResult> GetAsync<TResult>(string uri, string token)
         {
             HttpClient httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Authorization
-            = new AuthenticationHeaderValue("Bearer", token);
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             HttpResponseMessage response = await httpClient.GetAsync(uri);
             string serialized = await response.Content.ReadAsStringAsync();
             TResult result = await Task.Run(() =>
             JsonConvert.DeserializeObject<TResult>(serialized));
             return result;
+        }
+
+        public async Task<bool> OpenUrlAsync<TResult>(string uri)
+        {
+            return await Browser.Default.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
         }
 
         public async Task<int> DeleteAsync(string uri, string token)

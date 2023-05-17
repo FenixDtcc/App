@@ -20,11 +20,14 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private HospitalService hService;
         private LogradouroService lService;
 
+        public ICommand AbrirMapaCommand { get; set; }
+
         public InformacoesHospitalViewModel()
         {
             string token = Preferences.Get("UsuarioToken", string.Empty);
             hService = new HospitalService(token);
             lService = new LogradouroService(token);
+            AbrirMapaCommand = new Command(async () => await AbrirMapaHospital());
         }
 
         private int id;
@@ -37,6 +40,8 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private string cidade;
         private string uf;
         private string cep;
+        private double latitude;
+        private double longitude;
 
         public int Id
         {
@@ -138,27 +143,23 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
-        public async void CarregarHospital()
+        public double Latitude
         {
-            try
+            get => latitude;
+            set
             {
-                Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
-                Logradouro l = await lService.GetLogradouroAsync(h.IdLogradouro);
-
-                this.DsLogradouro = l.DsLogradouro;
-                this.RazaoSocial = h.RazaoSocial;
-                this.Endereco = h.Endereco;
-                this.Numero = h.Numero;
-                this.Cep = h.Cep;
-                this.Bairro = h.Bairro;
-                this.Cidade = h.Cidade;
-                this.Uf = h.Uf;
-
+                latitude = value;
+                OnPropertyChanged();
             }
-            catch (Exception ex)
+        }
+
+        public double Longitude
+        {
+            get => longitude;
+            set
             {
-                await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+                longitude = value;
+                OnPropertyChanged();
             }
         }
 
@@ -175,5 +176,40 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
+        public async void CarregarHospital()
+        {
+            try
+            {
+                Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
+                Logradouro l = await lService.GetLogradouroAsync(h.IdLogradouro);
+
+                this.DsLogradouro = l.DsLogradouro;
+                this.RazaoSocial = h.RazaoSocial;
+                this.Endereco = h.Endereco;
+                this.Numero = h.Numero;
+                this.Cep = h.Cep;
+                this.Bairro = h.Bairro;
+                this.Cidade = h.Cidade;
+                this.Uf = h.Uf;
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task<bool> AbrirMapaHospital()
+        {
+            try
+            {
+                Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
+                return await hService.GetLocalizacaoAsync(h.Latitude, h.Longitude);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

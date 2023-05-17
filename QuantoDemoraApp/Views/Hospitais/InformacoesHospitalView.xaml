@@ -22,6 +22,14 @@
                         </MultiBinding>
                 </Label.Text>
             </Label>
+            <Button Text="Ver Mapa"
+                TextColor="White"
+                Command="{Binding AbrirMapaCommand}" 
+                Margin="0,10,0,0"
+                BorderColor="{x:StaticResource Secondary}"
+                BackgroundColor="{x:StaticResource Primary}"
+                BorderWidth="1"
+                CornerRadius="50" />
 
         </VerticalStackLayout>
     </ScrollView>

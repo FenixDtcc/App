@@ -12,6 +12,8 @@ namespace QuantoDemoraApp.Services.Hospitais
     {
         private readonly Request _request;
         private const string apiUrlBase = "http://quantodemora.somee.com/api/hospitais";
+        // private string mapaUrlBase = string.Format("https://www.google.com/maps/search/?api=1&query={0}%2C{1}");//&query_place_id=ChIJKxjxuaNqkFQR3CK6O1HNNqY";
+
 
         private string _token;
         public HospitalService(string token)
@@ -33,6 +35,14 @@ namespace QuantoDemoraApp.Services.Hospitais
             string urlComplementar = string.Format("/{0}", hospitalId);
             var hospital = await _request.GetAsync<Models.Hospital>(apiUrlBase + urlComplementar, _token);
             return hospital;
+        }
+
+        public async Task<bool> GetLocalizacaoAsync(double latitude, double longitude)
+        {
+            string mapaUrlBase = 
+                $"http://www.google.com/maps/search/?api=1&query={latitude.ToString().Replace(",", ".")}%2C{longitude.ToString().Replace(",", ".")}";//&query_place_id=ChIJKxjxuaNqkFQR3CK6O1HNNqY";
+            var mapaHospital = await _request.OpenUrlAsync<Hospital>(mapaUrlBase);
+            return mapaHospital;
         }
     }
 }
