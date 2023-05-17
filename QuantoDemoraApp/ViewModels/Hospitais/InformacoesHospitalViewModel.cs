@@ -1,5 +1,7 @@
 ﻿using QuantoDemoraApp.Models;
+using QuantoDemoraApp.Models.Enuns;
 using QuantoDemoraApp.Services.Hospitais;
+using QuantoDemoraApp.Services.Logradouros;
 using QuantoDemoraApp.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -16,14 +18,17 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
     public class InformacoesHospitalViewModel : BaseViewModel
     {
         private HospitalService hService;
+        private LogradouroService lService;
 
         public InformacoesHospitalViewModel()
         {
             string token = Preferences.Get("UsuarioToken", string.Empty);
             hService = new HospitalService(token);
+            lService = new LogradouroService(token);
         }
 
-        private string cnpj;
+        private int id;
+        private string dsLogradouro;
         private string razaoSocial;
         private string endereco;
         private string numero;
@@ -31,14 +36,24 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private string bairro;
         private string cidade;
         private string uf;
-        private string cep; 
+        private string cep;
 
-        public string Cnpj
+        public int Id
         {
-            get => cnpj;
+            get => id;
             set
             {
-                cnpj = value;
+                id = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string DsLogradouro
+        {
+            get => dsLogradouro;
+            set
+            {
+                dsLogradouro = value;
                 OnPropertyChanged();
             }
         }
@@ -113,7 +128,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
-        public string CEP
+        public string Cep
         {
             get => cep;
             set
@@ -128,11 +143,17 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             try
             {
                 Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
+                Logradouro l = await lService.GetLogradouroAsync(h.IdLogradouro);
 
+                this.DsLogradouro = l.DsLogradouro;
                 this.RazaoSocial = h.RazaoSocial;
-                this.Cnpj = h.Cnpj;
                 this.Endereco = h.Endereco;
                 this.Numero = h.Numero;
+                this.Cep = h.Cep;
+                this.Bairro = h.Bairro;
+                this.Cidade = h.Cidade;
+                this.Uf = h.Uf;
+
             }
             catch (Exception ex)
             {

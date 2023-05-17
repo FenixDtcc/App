@@ -18,13 +18,10 @@
                                    FontSize="18" 
                                    FontAttributes="Bold"/>
                             <Label
-                                Text="{Binding Cnpj}" 
+                                Text="X.XX Km" 
                                 FontSize="18" 
                                 FontAttributes="Bold"/>
-                            <Label
-                                Text="{Binding Endereco}" 
-                                FontSize="18" 
-                                FontAttributes="Bold"/>
+
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

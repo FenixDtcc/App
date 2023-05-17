@@ -20,33 +20,19 @@ namespace QuantoDemoraApp.Services.Hospitais
             _token = token;
         }
 
-
-        public async Task<int> PostHospitaisAsync(Hospital h)
-        {
-            return await _request.PostReturnIntTokenAsync(apiUrlBase, h, _token);
-        }
-
         public async Task<ObservableCollection<Hospital>> GetHospitaisAsync()
         {
             string urlComplementar = string.Format("{0}", "/Listar");
             ObservableCollection<Models.Hospital> listaHospitais = await
-            _request.GetAsync<ObservableCollection<Models.Hospital>>(apiUrlBase + urlComplementar,
-            _token);
+            _request.GetAsync<ObservableCollection<Models.Hospital>>(apiUrlBase + urlComplementar, _token);
             return listaHospitais;
         }
 
-        public async Task<Hospital> GetHospitalAsync(int IdHospital)
+        public async Task<Hospital> GetHospitalAsync(int hospitalId)
         {
-            string urlComplementar = string.Format("/{0}", IdHospital);
-            var hospital = await _request.GetAsync<Models.Hospital>(apiUrlBase +
-            urlComplementar, _token);
+            string urlComplementar = string.Format("/{0}", hospitalId);
+            var hospital = await _request.GetAsync<Models.Hospital>(apiUrlBase + urlComplementar, _token);
             return hospital;
-        }
-
-        public async Task<int> PutHospitalAsync(Hospital h)
-        {
-            var result = await _request.PutAsync(apiUrlBase, h, _token);
-            return result;
         }
     }
 }

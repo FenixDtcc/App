@@ -1,1 +1,1 @@
-C:\ETEC 2022\2023\3semestre\TCC\FenixTcc\Aplicacao\Aplicativo\QuantoDemoraApp\QuantoDemoraApp\QuantoDemoraApp.csproj;x64
+C:\DEV\TCC\APP\App\QuantoDemoraApp\QuantoDemoraApp.csproj;x64
