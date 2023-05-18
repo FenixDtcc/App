@@ -42,6 +42,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private string cep;
         private double latitude;
         private double longitude;
+        private string idGoogleMaps;
 
         public int Id
         {
@@ -163,6 +164,16 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
+        public string IdGoogleMaps
+        {
+            get => idGoogleMaps;
+            set
+            {
+                idGoogleMaps = value;
+                OnPropertyChanged();
+            }
+        }
+
         private string hospitalSelecionadoId;
         public string HospitalSelecionadoId
         {
@@ -204,7 +215,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             try
             {
                 Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
-                return await hService.GetLocalizacaoAsync(h.Latitude, h.Longitude);
+                return await hService.GetLocalizacaoAsync(h.Latitude, h.Longitude, h.IdGoogleMaps);
             }
             catch (Exception ex)
             {
