@@ -47,5 +47,32 @@ namespace QuantoDemoraApp.Services.Usuarios
             _request.GetAsync<Models.Usuario>(apiUrlBase + urlComplementar, _token);
             return usuario;
         }
+
+        public async Task<int> PutAlterarNomeAsync(Usuario u)
+        {
+            string urlComplementar = "/AlterarNome";
+            var result = await _request.PutAsync(apiUrlBase + urlComplementar, u, _token);
+            return result;
+        }
+
+        public async Task<int> PutAlterarEmailAsync(Usuario u)
+        {
+            string urlComplementar = "/AlterarEmail";
+            var result = await _request.PutAsync(apiUrlBase + urlComplementar, u, _token);
+            return result;
+        }
+
+        public async Task<int> PutAlterarSenhaAsync(Usuario u)
+        {
+            string urlComplementar = "/AlterarSenha";
+            var result = await _request.PutAsync(apiUrlBase + urlComplementar, u, _token);
+            return result;
+        }
+
+        /*public async Task<int> DeletarUsuarioAsync(Usuario u)
+        {
+            var result = await _request.DeleteAsync(apiUrlBase, u, _token);
+            return result;
+        }*/
     }
 }

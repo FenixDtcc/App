@@ -56,7 +56,7 @@
         <ShellContent 
             Title="Paciente" 
             Icon="paciente.svg" 
-            ContentTemplate="{DataTemplate viewsUsuarios:ListagemView}" />
+            ContentTemplate="{DataTemplate viewsUsuarios:DadosUsuarioView}" />
         <ShellContent 
             Title="Hospitais" 
             Icon="hospital.png" 

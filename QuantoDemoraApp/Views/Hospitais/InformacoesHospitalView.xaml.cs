@@ -1,4 +1,3 @@
-using QuantoDemoraApp.Models;
 using QuantoDemoraApp.ViewModels.Hospitais;
 
 namespace QuantoDemoraApp.Views.Hospitais;

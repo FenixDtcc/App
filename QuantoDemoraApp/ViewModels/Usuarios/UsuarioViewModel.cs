@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -67,6 +68,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
         }
 
         private string email = string.Empty;
+        [EmailAddress]
         public string Email
         {
             get { return email; }
@@ -104,7 +106,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                     string mensagem = $"Paciente {uCadastrado.NomeUsuario} registrado com sucesso.";
                     await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
 
-                    await Application.Current.MainPage.Navigation.PopAsync();// Remove a página da pilha de vizualização 
+                    await Application.Current.MainPage.Navigation.PopAsync();
                 }
             }
             catch (Exception ex)

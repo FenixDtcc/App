@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuantoDemoraApp.Views.Usuarios.DadosUsuarioView"
+             Title="DadosUsuarioView">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="3" Padding="15">
+            <Label Text="Id" FontSize="Medium" />
+            <Entry Text="{Binding Id}" IsEnabled="False" FontSize="Medium" />
+            <Label Text="CPF" FontSize="Medium" />
+            <Entry Text="{Binding Cpf}" IsEnabled="False" FontSize="Medium" />
+            <Label Text="Nome" FontSize="Medium" />
+            <Entry Text="{Binding Nome}" FontSize="Medium" />
+            <Label Text="Email" FontSize="Medium" />
+            <Entry Text="{Binding Email}" FontSize="Medium" Keyboard="Email" />
+            <Label Text="Senha" FontSize="Medium" />
+            <Entry Text="{Binding Senha}" FontSize="Medium" Placeholder="******" Keyboard="Text" IsPassword="True" />
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Salvar Alterações" Command="{Binding SalvarCommand}"></Button>
+                <Button Text="Excluir Cadastro" Command="{Binding DeletarCommand}" BackgroundColor="Red" TextColor="White"></Button>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

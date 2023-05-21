@@ -58,11 +58,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usua
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\CadastroView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\CadastroView.xaml
 
-[C:/DEV/TCC/APP/App/QuantoDemoraApp/Views/Usuarios/ListagemView.xaml]
+[C:/DEV/TCC/APP/App/QuantoDemoraApp/Views/Usuarios/DadosUsuarioView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.ListagemView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\ListagemView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\ListagemView.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.DadosUsuarioView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\DadosUsuarioView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\DadosUsuarioView.xaml
 
 [C:/DEV/TCC/APP/App/QuantoDemoraApp/Views/Usuarios/LoginView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
