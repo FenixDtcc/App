@@ -26412,11 +26412,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iagom\\Downloads\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
+      "projectUniqueName": "C:\\DEV\\TCC\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
       "projectName": "QuantoDemoraApp",
-      "projectPath": "C:\\Users\\iagom\\Downloads\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
+      "projectPath": "C:\\DEV\\TCC\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
       "packagesPath": "C:\\Users\\iagom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iagom\\Downloads\\App\\QuantoDemoraApp\\obj\\",
+      "outputPath": "C:\\DEV\\TCC\\App\\QuantoDemoraApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

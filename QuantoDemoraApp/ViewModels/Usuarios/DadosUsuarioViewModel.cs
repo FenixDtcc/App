@@ -199,13 +199,13 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                 {
                     await uService.DeletarUsuarioAsync(u.IdUsuario);
 
-                    await Shell.Current.GoToAsync("..");
-                    //await Application.Current.MainPage.Navigation.RemovePage(this);
-                    await Application.Current.MainPage.Navigation.PushAsync(new LoginView());
-
                     await Application.Current.MainPage.DisplayAlert("Mensagem",
                             $"Usuário {u.NomeUsuario} removido com sucesso!", "Ok");
+
+                    Application.Current.Quit();
                 }
+
+                await Shell.Current.GoToAsync("..");
             }
             catch (Exception ex)
             {
