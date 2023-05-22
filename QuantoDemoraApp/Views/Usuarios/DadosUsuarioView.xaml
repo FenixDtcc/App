@@ -6,19 +6,18 @@
 
     <ScrollView>
         <VerticalStackLayout Spacing="3" Padding="15">
-            <Label Text="Id" FontSize="Medium" />
+            <Label Text="Id de Usuário" FontSize="Medium" />
             <Entry Text="{Binding Id}" IsEnabled="False" FontSize="Medium" />
+            <!--<Label Text="Matrícula Associado (Plano de Saúde)" FontSize="Medium" />
+            <Entry Text="{Binding IdAssociado}" IsEnabled="False" FontSize="Medium" />-->
             <Label Text="CPF" FontSize="Medium" />
             <Entry Text="{Binding Cpf}" IsEnabled="False" FontSize="Medium" />
             <Label Text="Nome" FontSize="Medium" />
-            <Entry Text="{Binding Nome}" FontSize="Medium" />
+            <Entry Text="{Binding Nome}" IsEnabled="False" FontSize="Medium" />
             <Label Text="Email" FontSize="Medium" />
-            <Entry Text="{Binding Email}" FontSize="Medium" Keyboard="Email" />
-            <Label Text="Senha" FontSize="Medium" />
-            <Entry Text="{Binding Senha}" FontSize="Medium" Placeholder="******" Keyboard="Text" IsPassword="True" />
+            <Entry Text="{Binding Email}" IsEnabled="False" FontSize="Medium" Keyboard="Email" />
             <HorizontalStackLayout Spacing="10">
-                <Button Text="Salvar Alterações" Command="{Binding SalvarCommand}"></Button>
-                <Button Text="Excluir Cadastro" Command="{Binding DeletarCommand}" BackgroundColor="Red" TextColor="White"></Button>
+                <Button Text="Alterar Dados" Command="{Binding AbrirAlteracaoDadosUsuarioCommand}"></Button>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

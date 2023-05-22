@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5prHqiK5wH/Tsy1iGEDAX6J6Pi8g4im3/QDi2pzDu8brUdQd6of+zKUH/3X9IvE8X+OVx4PEB4wfJ09xcGsJmA==",
+  "dgSpecHash": "R6ls3LVL0kBQUt25E/giDI3HhJubh8GBnhC4Obc6NM/eeRptcQMIqR1xlrxmMBMEV1+UTIPiS063qp5B41LoJg==",
   "success": true,
-  "projectFilePath": "C:\\DEV\\TCC\\APP\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
+  "projectFilePath": "C:\\Users\\iagom\\Downloads\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iagom\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\iagom\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

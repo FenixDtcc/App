@@ -13,6 +13,7 @@ public partial class AppShell : Shell
         InitializeComponent();
         
         Routing.RegisterRoute("informacoesHospitalView", typeof(InformacoesHospitalView));
+        Routing.RegisterRoute("alterarDadosUsuarioView", typeof(AlterarDadosUsuarioView));
 
         viewModel = new AppShellViewModel();
         BindingContext = viewModel;

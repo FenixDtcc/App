@@ -70,6 +70,9 @@
 	  <Compile Update="Views\Hospitais\InformacoesHospitalView.xaml.cs">
 	    <DependentUpon>InformacoesHospitalView.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\Usuarios\AlterarDadosUsuarioView.xaml.cs">
+	    <DependentUpon>AlterarDadosUsuarioView.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\Usuarios\DadosUsuarioView.xaml.cs">
 	    <DependentUpon>DadosUsuarioView.xaml</DependentUpon>
 	  </Compile>
@@ -80,6 +83,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Hospitais\InformacoesHospitalView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Usuarios\AlterarDadosUsuarioView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Usuarios\CadastroView.xaml">

@@ -1,1 +1,1 @@
-C:\DEV\TCC\APP\App\QuantoDemoraApp\QuantoDemoraApp.csproj;x64
+C:\Users\iagom\Downloads\App\QuantoDemoraApp\QuantoDemoraApp.csproj;x64

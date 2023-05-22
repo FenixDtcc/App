@@ -69,10 +69,11 @@ namespace QuantoDemoraApp.Services.Usuarios
             return result;
         }
 
-        /*public async Task<int> DeletarUsuarioAsync(Usuario u)
+        public async Task<int> DeletarUsuarioAsync(int usuarioId)
         {
-            var result = await _request.DeleteAsync(apiUrlBase, u, _token);
+            string urlComplementar = string.Format("/Deletar/{0}", usuarioId);
+            var result = await _request.DeleteAsync(apiUrlBase + urlComplementar, _token);
             return result;
-        }*/
+        }
     }
 }

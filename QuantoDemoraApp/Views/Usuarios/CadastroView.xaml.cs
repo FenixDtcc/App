@@ -13,5 +13,6 @@ public partial class CadastroView : ContentPage
 
 		viewModel= new UsuarioViewModel();
 		BindingContext = viewModel;
-	}
+        Title = "Novo Usuário";
+    }
 }

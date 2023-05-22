@@ -1,5 +1,6 @@
 ﻿using QuantoDemoraApp.Models;
 using QuantoDemoraApp.Services.Usuarios;
+using QuantoDemoraApp.Views.Usuarios;
 using System.ComponentModel.DataAnnotations;
 using System.Windows.Input;
 
@@ -8,8 +9,10 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
     internal class DadosUsuarioViewModel : BaseViewModel
     {
         UsuarioService uService;
+        public ICommand AbrirAlteracaoDadosUsuarioCommand { get; set; }
         public ICommand SalvarCommand { get; set; }
-        // public ICommand DeletarCommand { get; set; }
+        public ICommand CancelarCommand { get; set; }
+        public ICommand DeletarCommand { get; set; }
 
         public DadosUsuarioViewModel()
         {
@@ -21,9 +24,10 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
 
         public void InicializarCommands()
         {
+            AbrirAlteracaoDadosUsuarioCommand = new Command(AbrirAlteracaoDadosUsuario);
             SalvarCommand = new Command(AlterarDadosUsuario);
-            // DeletarCommand = new Command(DeletarUsuario);
-
+            CancelarCommand = new Command(CancelarAlteracao);
+            DeletarCommand = new Command(DeletarUsuario);
         }
 
         #region AtributosPropriedades
@@ -113,33 +117,54 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             }
         }
 
+        public async void AbrirAlteracaoDadosUsuario()
+        {
+            try
+            {
+                await Shell.Current.GoToAsync("alterarDadosUsuarioView");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
         public async void AlterarDadosUsuario()
         {
             try
             {
-                Usuario usuario = new Usuario()
-                {
-                    IdUsuario = this.id,
-                    Cpf = this.cpf,
-                    NomeUsuario = this.nome,
-                    Email = this.email,
-                    PasswordString = this.senha
-                };
+                Usuario usuario = new Usuario();
+                var usuarioId = Preferences.Get("UsuarioId", usuario.IdUsuario);
 
-                if (usuario.IdUsuario != 0)
+                Usuario u = await
+                    uService.GetUsuarioAsync(usuarioId);
+
+                u.NomeUsuario = this.Nome;
+                //u.Email = this.Email;
+                //u.PasswordString = this.Senha;
+
+                //Usuario model = new Usuario()
+                //{
+                //NomeUsuario = this.nome,
+                //Email = this.email,
+                //PasswordString = this.senha
+                //};
+
+                if (u.IdUsuario != 0)
                 {
-                    if(!usuario.NomeUsuario.Equals(this.nome))
+                    if (!u.NomeUsuario.Equals(this.nome))
                     {
-                        await uService.PutAlterarNomeAsync(usuario);
+                        await uService.PutAlterarNomeAsync(u);
                     }
-                    if(!usuario.Email.Equals(this.email))
-                    {
-                        await uService.PutAlterarEmailAsync(usuario);
-                    }
-                    if(!usuario.PasswordString.Equals(this.senha))
-                    {
-                        await uService.PutAlterarSenhaAsync(usuario);
-                    }
+                    //if(!u.Email.Equals(this.email))
+                    //{
+                    //    await uService.PutAlterarEmailAsync(u);
+                    //}
+                    //if(!u.PasswordString.Equals(this.senha))
+                    //{
+                    //    await uService.PutAlterarSenhaAsync(u);
+                    //}
                 }
 
                 await Application.Current.MainPage
@@ -154,18 +179,33 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             }
         }
 
-        /*public async Task DeletarUsuario(Usuario u)
+        private async void CancelarAlteracao()
+        {
+            await Shell.Current.GoToAsync("..");
+        }
+
+        public async void DeletarUsuario()
         {
             try
             {
-                if (await Application.Current.MainPage
-                    .DisplayAlert("Confirmação", $"Você confirma a exclusão do cadastro do usuário {u.Nome}?", "Sim", "Não"))
-                {
-                    await uService.DeletarUsuarioAsync(u);
-                }
+                Usuario usuario = new Usuario();
+                var usuarioId = Preferences.Get("UsuarioId", usuario.IdUsuario);
 
                 Usuario u = await
-                    uService.DeletarUsuarioAsync(usuarioId);
+                    uService.GetUsuarioAsync(usuarioId);
+
+                if (await Application.Current.MainPage
+                    .DisplayAlert("Confirmação", $"Confirma a remoção do usuário {u.NomeUsuario}?", "Sim", "Não"))
+                {
+                    await uService.DeletarUsuarioAsync(u.IdUsuario);
+
+                    await Shell.Current.GoToAsync("..");
+                    //await Application.Current.MainPage.Navigation.RemovePage(this);
+                    await Application.Current.MainPage.Navigation.PushAsync(new LoginView());
+
+                    await Application.Current.MainPage.DisplayAlert("Mensagem",
+                            $"Usuário {u.NomeUsuario} removido com sucesso!", "Ok");
+                }
             }
             catch (Exception ex)
             {
@@ -173,7 +213,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                     .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
                 throw;
             }
-        }*/
+        }
 
         #endregion
     }

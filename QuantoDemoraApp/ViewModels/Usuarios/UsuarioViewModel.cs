@@ -100,6 +100,11 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                     throw new Exception("Favor informar os dados acima para efeturar o cadastro.");
                 }
 
+                if (u.Cpf.Length == 11)
+                {
+                    u.Cpf = u.Cpf.Insert(3, ".").Insert(7, ".").Insert(11, "-");
+                }
+
                 Usuario uCadastrado = await uService.PostCadastrarAsync(u);
                 if (uCadastrado.IdUsuario != 0)
                 {

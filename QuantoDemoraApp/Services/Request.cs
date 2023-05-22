@@ -82,10 +82,10 @@ namespace QuantoDemoraApp.Services
         public async Task<int> DeleteAsync(string uri, string token)
         {
             HttpClient httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Authorization = new
-            AuthenticationHeaderValue("Bearer", token);
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             HttpResponseMessage response = await httpClient.DeleteAsync(uri);
             string serialized = await response.Content.ReadAsStringAsync();
+
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 return int.Parse(serialized);
             else
