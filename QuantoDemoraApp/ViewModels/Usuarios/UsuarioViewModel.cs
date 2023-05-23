@@ -104,6 +104,10 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                 {
                     u.Cpf = u.Cpf.Insert(3, ".").Insert(7, ".").Insert(11, "-");
                 }
+                if (u.Cpf.Length < 14)
+                {
+                    throw new Exception("CPF inválido.");
+                }
 
                 Usuario uCadastrado = await uService.PostCadastrarAsync(u);
                 if (uCadastrado.IdUsuario != 0)

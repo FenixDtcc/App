@@ -141,8 +141,8 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                     uService.GetUsuarioAsync(usuarioId);
 
                 u.NomeUsuario = this.Nome;
-                //u.Email = this.Email;
-                //u.PasswordString = this.Senha;
+                u.Email = this.Email;
+                u.PasswordString = this.Senha;
 
                 //Usuario model = new Usuario()
                 //{
@@ -157,14 +157,14 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                     {
                         await uService.PutAlterarNomeAsync(u);
                     }
-                    //if(!u.Email.Equals(this.email))
-                    //{
-                    //    await uService.PutAlterarEmailAsync(u);
-                    //}
-                    //if(!u.PasswordString.Equals(this.senha))
-                    //{
-                    //    await uService.PutAlterarSenhaAsync(u);
-                    //}
+                    if(!u.Email.Equals(this.email))
+                    {
+                        await uService.PutAlterarEmailAsync(u);
+                    }
+                    if(!u.PasswordString.Equals(this.senha))
+                    {
+                        await uService.PutAlterarSenhaAsync(u);
+                    }
                 }
 
                 await Application.Current.MainPage
