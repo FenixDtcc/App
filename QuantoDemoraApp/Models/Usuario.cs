@@ -13,6 +13,7 @@ namespace QuantoDemoraApp.Models
         public int IdUsuario { get; set; }
         public string NomeUsuario { get; set; }
         public string Cpf { get; set; }
+        [EmailAddress]
         public string Email { get; set; }
         public Associado Associado { get; set; }
         public int? IdAssociado { get; set; }

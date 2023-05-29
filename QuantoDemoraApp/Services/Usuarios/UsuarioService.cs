@@ -40,19 +40,40 @@ namespace QuantoDemoraApp.Services.Usuarios
             return u;
         }
 
-        public async Task<int> PutFotoUsuarioAsync(Usuario u)
-        {
-            string urlComplementar = "/AtualizarFoto";
-            var result = await _request.PutAsync(apiUrlBase + urlComplementar, u, _token);
-            return result;
-        }
-
         public async Task<Usuario> GetUsuarioAsync(int usuarioId)
         {
             string urlComplementar = string.Format("/{0}", usuarioId);
             var usuario = await
             _request.GetAsync<Models.Usuario>(apiUrlBase + urlComplementar, _token);
             return usuario;
+        }
+
+        public async Task<int> PutAlterarNomeAsync(Usuario u)
+        {
+            string urlComplementar = "/AlterarNome";
+            var result = await _request.PutAsync(apiUrlBase + urlComplementar, u, _token);
+            return result;
+        }
+
+        public async Task<int> PutAlterarEmailAsync(Usuario u)
+        {
+            string urlComplementar = "/AlterarEmail";
+            var result = await _request.PutAsync(apiUrlBase + urlComplementar, u, _token);
+            return result;
+        }
+
+        public async Task<int> PutAlterarSenhaAsync(Usuario u)
+        {
+            string urlComplementar = "/AlterarSenha";
+            var result = await _request.PutAsync(apiUrlBase + urlComplementar, u, _token);
+            return result;
+        }
+
+        public async Task<int> DeletarUsuarioAsync(int usuarioId)
+        {
+            string urlComplementar = string.Format("/Deletar/{0}", usuarioId);
+            var result = await _request.DeleteAsync(apiUrlBase + urlComplementar, _token);
+            return result;
         }
     }
 }

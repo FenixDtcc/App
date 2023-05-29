@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ETEC 2022\\2023\\3semestre\\TCC\\app\\QuantoDemoraApp\\QuantoDemoraApp\\QuantoDemoraApp.csproj": {}
+    "C:\\ETEC 2022\\2023\\3semestre\\TCC\\27.05\\Nova pasta\\Nova pasta\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj": {}
   },
   "projects": {
-    "C:\\ETEC 2022\\2023\\3semestre\\TCC\\app\\QuantoDemoraApp\\QuantoDemoraApp\\QuantoDemoraApp.csproj": {
+    "C:\\ETEC 2022\\2023\\3semestre\\TCC\\27.05\\Nova pasta\\Nova pasta\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\app\\QuantoDemoraApp\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
+        "projectUniqueName": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\27.05\\Nova pasta\\Nova pasta\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
         "projectName": "QuantoDemoraApp",
-        "projectPath": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\app\\QuantoDemoraApp\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
+        "projectPath": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\27.05\\Nova pasta\\Nova pasta\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
         "packagesPath": "C:\\Users\\gcs_s\\.nuget\\packages\\",
-        "outputPath": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\app\\QuantoDemoraApp\\QuantoDemoraApp\\obj\\",
+        "outputPath": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\27.05\\Nova pasta\\Nova pasta\\App-master\\QuantoDemoraApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

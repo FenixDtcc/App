@@ -20,33 +20,27 @@ namespace QuantoDemoraApp.Services.Hospitais
             _token = token;
         }
 
-
-        public async Task<int> PostHospitaisAsync(Hospital h)
-        {
-            return await _request.PostReturnIntTokenAsync(apiUrlBase, h, _token);
-        }
-
         public async Task<ObservableCollection<Hospital>> GetHospitaisAsync()
         {
             string urlComplementar = string.Format("{0}", "/Listar");
             ObservableCollection<Models.Hospital> listaHospitais = await
-            _request.GetAsync<ObservableCollection<Models.Hospital>>(apiUrlBase + urlComplementar,
-            _token);
+            _request.GetAsync<ObservableCollection<Models.Hospital>>(apiUrlBase + urlComplementar, _token);
             return listaHospitais;
         }
 
-        public async Task<Hospital> GetHospitalAsync(int IdHospital)
+        public async Task<Hospital> GetHospitalAsync(int hospitalId)
         {
-            string urlComplementar = string.Format("/{0}", IdHospital);
-            var hospital = await _request.GetAsync<Models.Hospital>(apiUrlBase +
-            urlComplementar, _token);
+            string urlComplementar = string.Format("/{0}", hospitalId);
+            var hospital = await _request.GetAsync<Models.Hospital>(apiUrlBase + urlComplementar, _token);
             return hospital;
         }
 
-        public async Task<int> PutHospitalAsync(Hospital h)
+        public async Task<bool> GetLocalizacaoAsync(double latitude, double longitude, string placeIdGoogleMaps)
         {
-            var result = await _request.PutAsync(apiUrlBase, h, _token);
-            return result;
+            string mapaUrlBase = 
+                $"http://www.google.com/maps/search/?api=1&query={latitude.ToString().Replace(",", ".")}%2C{longitude.ToString().Replace(",", ".")}&query_place_id={placeIdGoogleMaps}";
+            var mapaHospital = await _request.OpenUrlAsync<Hospital>(mapaUrlBase);
+            return mapaHospital;
         }
     }
 }

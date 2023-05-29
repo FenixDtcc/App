@@ -12,7 +12,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>Quanto Demora ?</ApplicationTitle>
+		<ApplicationTitle>
+			Quanto Demora ?
+		</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.quantodemoraapp</ApplicationId>
@@ -32,7 +34,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.png" ForegroundFile="Resources\AppIcon\appicon.png" Color="#000000" BaseSize="128,128" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appicon.svg" Color="#000000" BaseSize="128,128" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\logo.svg" Color="#000000" BaseSize="208,208" />
@@ -70,6 +72,12 @@
 	  <Compile Update="Views\Hospitais\InformacoesHospitalView.xaml.cs">
 	    <DependentUpon>InformacoesHospitalView.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\Usuarios\AlterarDadosUsuarioView.xaml.cs">
+	    <DependentUpon>AlterarDadosUsuarioView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Usuarios\DadosUsuarioView.xaml.cs">
+	    <DependentUpon>DadosUsuarioView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -79,10 +87,13 @@
 	  <MauiXaml Update="Views\Hospitais\InformacoesHospitalView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Usuarios\AlterarDadosUsuarioView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Usuarios\CadastroView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Usuarios\ListagemView.xaml">
+	  <MauiXaml Update="Views\Usuarios\DadosUsuarioView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Usuarios\LoginView.xaml">

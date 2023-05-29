@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -67,6 +68,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
         }
 
         private string email = string.Empty;
+        [EmailAddress]
         public string Email
         {
             get { return email; }
@@ -98,13 +100,22 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                     throw new Exception("Favor informar os dados acima para efeturar o cadastro.");
                 }
 
+                if (u.Cpf.Length == 11)
+                {
+                    u.Cpf = u.Cpf.Insert(3, ".").Insert(7, ".").Insert(11, "-");
+                }
+                if (u.Cpf.Length < 14)
+                {
+                    throw new Exception("CPF inválido.");
+                }
+
                 Usuario uCadastrado = await uService.PostCadastrarAsync(u);
                 if (uCadastrado.IdUsuario != 0)
                 {
                     string mensagem = $"Paciente {uCadastrado.NomeUsuario} registrado com sucesso.";
                     await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
 
-                    await Application.Current.MainPage.Navigation.PopAsync();// Remove a página da pilha de vizualização 
+                    await Application.Current.MainPage.Navigation.PopAsync();
                 }
             }
             catch (Exception ex)

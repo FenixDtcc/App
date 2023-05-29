@@ -3,40 +3,196 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuantoDemoraApp.Views.CadastroView"
              Title="CadastroView">
-    
-    <VerticalStackLayout>
-        <Entry Placeholder="Digite seu nome de usuário" 
-               Text ="{Binding Login}"
-               Margin="0,10,0,0" 
-               VerticalOptions="FillAndExpand"
-               HorizontalOptions="FillAndExpand">
-        </Entry>
-        
-        <Entry Placeholder="Digite a senha" 
-               Text="{Binding Senha}" 
-               IsPassword="True"
-               Margin="0,10,0,0" 
-               VerticalOptions="FillAndExpand"
-               HorizontalOptions="FillAndExpand" >
-        </Entry>
 
-        <Entry Keyboard="Email" 
-               Placeholder="Digite a E-mail" 
-               Text="{Binding Email}"
-               Margin="0,10,0,0" 
-               VerticalOptions="FillAndExpand"
-               HorizontalOptions="FillAndExpand" >
-        </Entry>
+    <Grid >
+        <Frame CornerRadius="0" 
+               BorderColor="Transparent"
+               MaximumHeightRequest="100"
+               MaximumWidthRequest="100">
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#fff"
+                                      Offset="0.1" />
+                    <GradientStop Color="{x:StaticResource Secondary}"
+                                      Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
 
-        <Entry Placeholder="Digite a CPF" 
-               Text="{Binding Cpf}" 
-               Margin="0,10,0,0" 
-               VerticalOptions="FillAndExpand"
-               HorizontalOptions="FillAndExpand" >
-        </Entry>
+        <!--inicio configuração imagem-->
+        <Grid>
+            <VerticalStackLayout Margin="100"
+                            HorizontalOptions="Center">
+                <Frame Padding="0" 
+                        BorderColor="Transparent"
+                        CornerRadius="100">
 
-        <Button Text="Registrar" 
-                Command="{Binding CadastrarCommand}" 
-                Margin="0,10,0,0"/>
-    </VerticalStackLayout>
+                    <Image Source="logo.svg"
+                           MaximumHeightRequest="100"
+                           MaximumWidthRequest="100" />
+                </Frame>
+            </VerticalStackLayout>
+        </Grid>
+        <!--fim configuração imagem-->
+
+        <!--incio do fundo informações de login -->
+        <Grid>
+            <Frame BackgroundColor= "Transparent" 
+                   BorderColor="Transparent"
+                   VerticalOptions="CenterAndExpand"
+                   Margin="10">
+
+                <VerticalStackLayout Spacing="15">
+                    <!--spacing, espaço entre as opções-->
+
+                    <!--inicio do cadastro usuario-->
+                    <Frame BorderColor="Transparent"
+                            BackgroundColor="{x:StaticResource Secondary}"
+                            CornerRadius="100"
+                            Padding="10">
+                        <Grid>
+                            <Frame BackgroundColor="Transparent"
+                                   BorderColor="Transparent"
+                              HorizontalOptions="StartAndExpand"
+                              Padding="10,0,10,0">
+                                <Image Source="usuario.svg"
+                                        HeightRequest="20"
+                                        WidthRequest="20"
+                                        HorizontalOptions="StartAndExpand"/>
+                            </Frame>
+                            <Frame Padding="10,0,10,0"
+                                   BackgroundColor="Transparent"
+                                   BorderColor="Transparent"
+                                   HorizontalOptions="CenterAndExpand">
+                                <Entry Placeholder="Digite seu nome de usuário"
+                                        PlaceholderColor="{x:StaticResource Primary}"
+                                        Text="{Binding Login}"
+                                        HorizontalTextAlignment="Center"
+                                        FontSize="14"
+                                        CharacterSpacing="2"
+                                        TextColor="#000"
+                                        FontAttributes="Bold">
+                                </Entry>
+                            </Frame>
+                        </Grid>
+                    </Frame>
+                    <!--final do cadastro usuario-->
+
+
+
+                    <!--inicio do cadastro cpf-->
+                    <Frame BorderColor="Transparent"
+                            BackgroundColor="{x:StaticResource Secondary}"
+                            CornerRadius="100"
+                            Padding="10">
+                        <Grid>
+                            <Frame BackgroundColor="Transparent"
+                                   BorderColor="Transparent"
+                              HorizontalOptions="StartAndExpand"
+                              Padding="10,0,10,0">
+                                <Image Source="doc.svg"
+                                        HeightRequest="20"
+                                        WidthRequest="20"
+                                        HorizontalOptions="StartAndExpand"/>
+                            </Frame>
+                            <Frame Padding="10,0,10,0"
+                                   BackgroundColor="Transparent"
+                                   BorderColor="Transparent"
+                                   HorizontalOptions="CenterAndExpand">
+                                <Entry  Placeholder="Digite a CPF" 
+                                            PlaceholderColor="{x:StaticResource Primary}"
+                                            Text="{Binding Cpf}"
+                                            TextColor="#000"
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="14"
+                                            CharacterSpacing="2"
+                                            FontAttributes="Bold">
+                                </Entry>
+                            </Frame>
+                        </Grid>
+                    </Frame>
+                    <!--final do cadastro cpf-->
+
+                    <!--inicio do cadastro email-->
+                    <Frame BorderColor="Transparent"
+                            BackgroundColor="{x:StaticResource Secondary}"
+                            CornerRadius="100"
+                            Padding="10">
+                        <Grid>
+                            <Frame BackgroundColor="Transparent"
+                                   BorderColor="Transparent"
+                              HorizontalOptions="StartAndExpand"
+                              Padding="10,0,10,0">
+                                <Image Source="email.svg"
+                                        HeightRequest="20"
+                                        WidthRequest="20"
+                                        HorizontalOptions="StartAndExpand"/>
+                            </Frame>
+                            <Frame Padding="10,0,10,0"
+                                   BackgroundColor="Transparent"
+                                   BorderColor="Transparent"
+                                   HorizontalOptions="CenterAndExpand">
+                                <Entry  Keyboard="Email" 
+                                    Placeholder="Digite seu E-mail" 
+                                            PlaceholderColor="{x:StaticResource Primary}"
+                                            Text="{Binding Email}"
+                                            TextColor="#000"
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="14"
+                                            CharacterSpacing="2"
+                                            FontAttributes="Bold">
+                                </Entry>
+                            </Frame>
+                        </Grid>
+                    </Frame>
+                    <!--final do cadastro email-->
+
+                    <!--inicio do cadastro senha-->
+                    <Frame BorderColor="Transparent"
+                            BackgroundColor="{x:StaticResource Secondary}"
+                            CornerRadius="100"
+                            Padding="10">
+                        <Grid>
+                            <Frame BackgroundColor="Transparent"
+                                   BorderColor="Transparent"
+                              HorizontalOptions="StartAndExpand"
+                              Padding="10,0,10,0">
+                                <Image Source="senha.svg"
+                                        HeightRequest="20"
+                                        WidthRequest="20"
+                                        HorizontalOptions="StartAndExpand"/>
+                            </Frame>
+                            <Frame Padding="10,0,10,0"
+                                   BackgroundColor="Transparent"
+                                   BorderColor="Transparent"
+                                   HorizontalOptions="CenterAndExpand">
+                                <Entry Placeholder="Digite a sua senha"
+                                            PlaceholderColor="{x:StaticResource Primary}"
+                                            Text="{Binding Senha}"
+                                            TextColor="#000"
+                                            IsPassword="True"
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="14"
+                                            CharacterSpacing="2"
+                                            FontAttributes="Bold">
+                                </Entry>
+                            </Frame>
+                        </Grid>
+                    </Frame>
+                    <!--final do cadastro senha-->
+
+                    <VerticalStackLayout>
+                        <Button Text="Registrar" 
+                                        Margin="0,10,0,0"
+                                        Command="{Binding AutenticarCommand}" 
+                                        TextColor="{x:StaticResource Secondary}"
+                                        BackgroundColor="{x:StaticResource Primary}"
+                                        BorderColor="Transparent"
+                                        CornerRadius="100"
+                                        FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+    </Grid>
 </ContentPage>

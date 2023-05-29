@@ -4,32 +4,60 @@
              x:Class="QuantoDemoraApp.Views.Hospitais.ListagemView"
              Title="ListagemView">
 
-     <VerticalStackLayout Padding="10, 0, 0, 0" 
-                          VerticalOptions="FillAndExpand">
-        <ListView x:Name="listView"
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <VerticalStackLayout Margin="10">
+            <ListView x:Name="listView"
                   HasUnevenRows="True" 
                   ItemsSource="{Binding Hospitais}" 
                   SelectedItem="{Binding HospitalSelecionado}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding NomeFantasia}"
-                                   FontSize="18" 
-                                   FontAttributes="Bold"/>
-                            <Label
-                                Text="{Binding Cnpj}" 
-                                FontSize="18" 
-                                FontAttributes="Bold"/>
-                            <Label
-                                Text="{Binding Endereco}" 
-                                FontSize="18" 
-                                FontAttributes="Bold"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </VerticalStackLayout>
-    
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <VerticalStackLayout Spacing="10"
+                                                 Padding="0,5,0,10"
+                                                 HeightRequest="110">
+                                <Frame BackgroundColor="{StaticResource Secondary}"
+                                       BorderColor="{StaticResource Primary}"
+                                       HeightRequest="100"
+                                       CornerRadius="200"
+                                       Padding="1">
+                                    <Grid>
+                                        <Frame HorizontalOptions="StartAndExpand"
+                                                   BackgroundColor="Transparent"
+                                                   BorderColor="Transparent"
+                                                   Padding="10,18,0,10">
+                                            <Image Source="mapa.svg"
+                                                       HeightRequest="80"
+                                                       WidthRequest="80" />
+                                        </Frame>
+
+                                        <VerticalStackLayout Padding="15"
+                                                             HorizontalOptions="CenterAndExpand"
+                                                             VerticalOptions="CenterAndExpand">
+                                            <Label Text="{Binding NomeFantasia}"
+                                                FontSize="18" 
+                                                FontAttributes="Bold"/>
+                                            <Label Text="Distância: 00.00 KM"
+                                                    FontSize="18" 
+                                                    FontAttributes="Bold"/>
+                                        </VerticalStackLayout>
+
+                                        <Frame HorizontalOptions="EndAndExpand"
+                                                   BackgroundColor="Transparent"
+                                                   BorderColor="Transparent"
+                                                   Padding="0,18,15,10">
+                                            <Image Source="seta.svg"
+                                                HeightRequest="30"
+                                                WidthRequest="30" />
+                                        </Frame>
+
+                                    </Grid>
+                                </Frame>
+                            </VerticalStackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

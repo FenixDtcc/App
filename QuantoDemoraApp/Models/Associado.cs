@@ -17,6 +17,7 @@ namespace QuantoDemoraApp.Models
         public char Sexo { get; set; }
         public string DddCelular { get; set; }
         public string NroCelular { get; set; }
+        [EmailAddress]
         public string Email { get; set; }
     }
 }
