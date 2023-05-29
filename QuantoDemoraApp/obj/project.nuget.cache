@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "5Q4Qyd3gU0bM3Pq4oQFeoJWUZhDDZP+7Xvs9KXcU71OEB7LtcTvL1HGfyrtArOOcyp/TSrxzgZUnegNx9up7sQ==",
+  "dgSpecHash": "ilZ1QWxsxObhSEe2NXA7gZ3ld8UyCRZro2E9pfzM2/0scRvrRT8VylZtM80dz6fKbRpmoHtmbVBbt5Nb8nStjA==",
   "success": true,
-  "projectFilePath": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\27.05\\Nova pasta\\Nova pasta\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
-=======
-  "dgSpecHash": "R6ls3LVL0kBQUt25E/giDI3HhJubh8GBnhC4Obc6NM/eeRptcQMIqR1xlrxmMBMEV1+UTIPiS063qp5B41LoJg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\iagom\\Downloads\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
->>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
+  "projectFilePath": "C:\\Users\\iagom\\Downloads\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iagom\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\iagom\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

@@ -1,9 +1,6 @@
 ﻿obj\Debug\net6.0-android\resizetizer\r\drawable\mapa.png
-<<<<<<< HEAD
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\buttongoogle.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\doc.png
-=======
->>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\email.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\exit.png

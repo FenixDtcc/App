@@ -26412,19 +26412,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\27.05\\Nova pasta\\Nova pasta\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
+      "projectUniqueName": "C:\\Users\\iagom\\Downloads\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
       "projectName": "QuantoDemoraApp",
-      "projectPath": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\27.05\\Nova pasta\\Nova pasta\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
-      "packagesPath": "C:\\Users\\gcs_s\\.nuget\\packages\\",
-      "outputPath": "C:\\ETEC 2022\\2023\\3semestre\\TCC\\27.05\\Nova pasta\\Nova pasta\\App-master\\QuantoDemoraApp\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\iagom\\Downloads\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
-      "projectName": "QuantoDemoraApp",
-      "projectPath": "C:\\Users\\iagom\\Downloads\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
+      "projectPath": "C:\\Users\\iagom\\Downloads\\App-master\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
       "packagesPath": "C:\\Users\\iagom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iagom\\Downloads\\App\\QuantoDemoraApp\\obj\\",
->>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
+      "outputPath": "C:\\Users\\iagom\\Downloads\\App-master\\QuantoDemoraApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

@@ -11,6 +11,9 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
         UsuarioService uService;
         public ICommand AbrirAlteracaoDadosUsuarioCommand { get; set; }
         public ICommand SalvarCommand { get; set; }
+        public ICommand AlterarNomeCommand { get; set; }
+        public ICommand AlterarEmailCommand { get; set; }
+        public ICommand AlterarSenhaCommand { get; set; }
         public ICommand CancelarCommand { get; set; }
         public ICommand DeletarCommand { get; set; }
 
@@ -26,6 +29,9 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
         {
             AbrirAlteracaoDadosUsuarioCommand = new Command(AbrirAlteracaoDadosUsuario);
             SalvarCommand = new Command(AlterarDadosUsuario);
+            AlterarNomeCommand = new Command(AlterarNomeUsuario);
+            AlterarEmailCommand = new Command(AlterarEmailUsuario);
+            AlterarSenhaCommand = new Command(AlterarSenhaUsuario);
             CancelarCommand = new Command(CancelarAlteracao);
             DeletarCommand = new Command(DeletarUsuario);
         }
@@ -140,28 +146,150 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                 Usuario u = await
                     uService.GetUsuarioAsync(usuarioId);
 
-                u.NomeUsuario = this.Nome;
-                u.Email = this.Email;
-                u.PasswordString = this.Senha;
+                u.NomeUsuario = this.nome;
+                u.Email = this.email;
+                u.PasswordString = this.senha;
 
-                //Usuario model = new Usuario()
-                //{
-                //NomeUsuario = this.nome,
-                //Email = this.email,
-                //PasswordString = this.senha
-                //};
-
-                if (u.IdUsuario != 0)
+                if (u.IdUsuario == usuarioId)
                 {
-                    if (!u.NomeUsuario.Equals(this.nome))
+                    //if (u.NomeUsuario.Equals(this.nome))
+                    //{
+                    //    await uService.PutAlterarNomeAsync(u);
+                    //}
+                    //if (u.Email.Equals(this.email))
+                    //{
+                    //    await uService.PutAlterarEmailAsync(u);
+                    //}
+                    //if (u.PasswordString.Equals(this.senha))
+                    //{
+                    //    await uService.PutAlterarSenhaAsync(u);
+                    //}
+                    if (u.NomeUsuario.Equals(this.nome) && u.Email.Equals(this.email) && u.PasswordString.Equals(this.senha))
+                    {
+                        await uService.PutAlterarNomeAsync(u);
+                        await uService.PutAlterarEmailAsync(u);
+                        await uService.PutAlterarSenhaAsync(u);
+                    }
+                    if (u.NomeUsuario.Equals(this.nome) && u.Email.Equals(this.email) && !u.PasswordString.Equals(this.senha))
+                    {
+                        await uService.PutAlterarNomeAsync(u);
+                        await uService.PutAlterarEmailAsync(u);
+                    }
+                    if (u.NomeUsuario.Equals(this.nome) && !u.Email.Equals(this.email) && u.PasswordString.Equals(this.senha))
+                    {
+                        await uService.PutAlterarNomeAsync(u);
+                        await uService.PutAlterarSenhaAsync(u);
+                    }
+                    if (!u.NomeUsuario.Equals(this.nome) && u.Email.Equals(this.email) && u.PasswordString.Equals(this.senha))
+                    {
+                        await uService.PutAlterarEmailAsync(u);
+                        await uService.PutAlterarSenhaAsync(u);
+                    }
+                    if (u.NomeUsuario.Equals(this.nome) && !u.Email.Equals(this.email) && !u.PasswordString.Equals(this.senha))
                     {
                         await uService.PutAlterarNomeAsync(u);
                     }
-                    if(!u.Email.Equals(this.email))
+                    if (!u.NomeUsuario.Equals(this.nome) && u.Email.Equals(this.email) && !u.PasswordString.Equals(this.senha))
                     {
                         await uService.PutAlterarEmailAsync(u);
                     }
-                    if(!u.PasswordString.Equals(this.senha))
+                    if (!u.NomeUsuario.Equals(this.nome) && !u.Email.Equals(this.email) && u.PasswordString.Equals(this.senha))
+                    {
+                        await uService.PutAlterarSenhaAsync(u);
+                    }
+                }
+
+                await Application.Current.MainPage
+                    .DisplayAlert("Mensagem", "Dados salvos com sucesso!", "Ok");
+
+                await Shell.Current.GoToAsync("..");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async void AlterarNomeUsuario()
+        {
+            try
+            {
+                Usuario usuario = new Usuario();
+                var usuarioId = Preferences.Get("UsuarioId", usuario.IdUsuario);
+
+                Usuario u = await
+                    uService.GetUsuarioAsync(usuarioId);
+
+                u.NomeUsuario = this.nome;
+
+                if (u.IdUsuario == usuarioId)
+                {
+                    if (u.NomeUsuario.Equals(this.nome))
+                    {
+                        await uService.PutAlterarNomeAsync(u);
+                    }
+                }
+
+                await Application.Current.MainPage
+                    .DisplayAlert("Mensagem", "Dados salvos com sucesso!", "Ok");
+
+                await Shell.Current.GoToAsync("..");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async void AlterarEmailUsuario()
+        {
+            try
+            {
+                Usuario usuario = new Usuario();
+                var usuarioId = Preferences.Get("UsuarioId", usuario.IdUsuario);
+
+                Usuario u = await
+                    uService.GetUsuarioAsync(usuarioId);
+
+                u.Email = this.email;
+
+                if (u.IdUsuario == usuarioId)
+                {
+                    if (u.Email.Equals(this.email))
+                    {
+                        await uService.PutAlterarEmailAsync(u);
+                    }
+                }
+
+                await Application.Current.MainPage
+                    .DisplayAlert("Mensagem", "Dados salvos com sucesso!", "Ok");
+
+                await Shell.Current.GoToAsync("..");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async void AlterarSenhaUsuario()
+        {
+            try
+            {
+                Usuario usuario = new Usuario();
+                var usuarioId = Preferences.Get("UsuarioId", usuario.IdUsuario);
+
+                Usuario u = await
+                    uService.GetUsuarioAsync(usuarioId);
+
+                u.PasswordString = this.senha;
+
+                if (u.IdUsuario == usuarioId)
+                {
+                    if (u.PasswordString.Equals(this.senha))
                     {
                         await uService.PutAlterarSenhaAsync(u);
                     }

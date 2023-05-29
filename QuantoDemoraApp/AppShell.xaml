@@ -5,15 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewsUsuarios="clr-namespace:QuantoDemoraApp.Views.Usuarios"
     xmlns:viewsHospitais="clr-namespace:QuantoDemoraApp.Views.Hospitais"
-    xmlns:conv="clr-namespace:QuantoDemoraApp.Converters"
     xmlns:local="clr-namespace:QuantoDemoraApp">
-
-    <Shell.Resources>
-        <ResourceDictionary>
-            <conv:ByteArrayToImageSourceConverter
-                x:Key="ByteArrayToImage" />
-        </ResourceDictionary>
-    </Shell.Resources>
 
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>

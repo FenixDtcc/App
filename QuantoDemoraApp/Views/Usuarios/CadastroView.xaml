@@ -60,7 +60,7 @@
                                         WidthRequest="20"
                                         HorizontalOptions="StartAndExpand"/>
                             </Frame>
-                            <Frame Padding="10,0,10,0"
+                            <Frame Padding="0,0,0,0"
                                    BackgroundColor="Transparent"
                                    BorderColor="Transparent"
                                    HorizontalOptions="CenterAndExpand">
@@ -95,11 +95,11 @@
                                         WidthRequest="20"
                                         HorizontalOptions="StartAndExpand"/>
                             </Frame>
-                            <Frame Padding="10,0,10,0"
+                            <Frame Padding="0,0,0,0"
                                    BackgroundColor="Transparent"
                                    BorderColor="Transparent"
                                    HorizontalOptions="CenterAndExpand">
-                                <Entry  Placeholder="Digite a CPF" 
+                                <Entry  Placeholder="Digite o CPF" 
                                             PlaceholderColor="{x:StaticResource Primary}"
                                             Text="{Binding Cpf}"
                                             TextColor="#000"
@@ -128,7 +128,7 @@
                                         WidthRequest="20"
                                         HorizontalOptions="StartAndExpand"/>
                             </Frame>
-                            <Frame Padding="10,0,10,0"
+                            <Frame Padding="0,0,0,0"
                                    BackgroundColor="Transparent"
                                    BorderColor="Transparent"
                                    HorizontalOptions="CenterAndExpand">
@@ -162,7 +162,7 @@
                                         WidthRequest="20"
                                         HorizontalOptions="StartAndExpand"/>
                             </Frame>
-                            <Frame Padding="10,0,10,0"
+                            <Frame Padding="0,0,0,0"
                                    BackgroundColor="Transparent"
                                    BorderColor="Transparent"
                                    HorizontalOptions="CenterAndExpand">
@@ -184,11 +184,12 @@
                     <VerticalStackLayout>
                         <Button Text="Registrar" 
                                         Margin="0,10,0,0"
-                                        Command="{Binding AutenticarCommand}" 
+                                        Command="{Binding CadastrarCommand}" 
                                         TextColor="{x:StaticResource Secondary}"
                                         BackgroundColor="{x:StaticResource Primary}"
                                         BorderColor="Transparent"
                                         CornerRadius="100"
+                                        FontSize="16"
                                         FontAttributes="Bold"/>
                     </VerticalStackLayout>
                 </VerticalStackLayout>

@@ -16,9 +16,12 @@
             <Label Text="Alterar Senha" FontSize="Medium" />
             <Entry Text="{Binding Senha}" FontSize="Medium" Placeholder="******" Keyboard="Text" IsPassword="True" />
             <HorizontalStackLayout Spacing="10">
-                <Button Text="Salvar" Command="{Binding SalvarCommand}"></Button>
+                <!--<Button Text="Geral" Command="{Binding SalvarCommand}"></Button>-->
+                <Button Text="Nome" Command="{Binding AlterarNomeCommand}"></Button>
+                <Button Text="Email" Command="{Binding AlterarEmailCommand}"></Button>
+                <Button Text="Senha" Command="{Binding AlterarSenhaCommand}"></Button>
                 <Button Text="Cancelar" Command="{Binding CancelarCommand}" BackgroundColor="Gold" TextColor="Black"></Button>
-                <Button Text="Excluir Cadastro" Command="{Binding DeletarCommand}" BackgroundColor="Red" TextColor="White"></Button>
+                <Button Text="Excluir" Command="{Binding DeletarCommand}" BackgroundColor="Red" TextColor="White"></Button>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
