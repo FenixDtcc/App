@@ -8,69 +8,115 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuantoDemoraApp
+<<<<<<< HEAD
 build_property.ProjectDir = C:\ETEC 2022\2023\3semestre\TCC\27.05\Nova pasta\Nova pasta\App-master\QuantoDemoraApp\
 
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/App.xaml]
+=======
+build_property.ProjectDir = C:\Users\iagom\Downloads\App\QuantoDemoraApp\
+
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/App.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/AppShell.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/AppShell.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/MainPage.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/MainPage.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/Resources/Styles/Colors.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/Resources/Styles/Colors.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/Resources/Styles/Styles.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/Resources/Styles/Styles.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/Views/Hospitais/InformacoesHospitalView.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/Views/Hospitais/InformacoesHospitalView.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Hospitais.InformacoesHospitalView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Hospitais\InformacoesHospitalView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Hospitais\InformacoesHospitalView.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/Views/Hospitais/ListagemView.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/Views/Hospitais/ListagemView.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Hospitais.ListagemView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Hospitais\ListagemView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Hospitais\ListagemView.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/Views/Usuarios/AlterarDadosUsuarioView.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/Views/Usuarios/AlterarDadosUsuarioView.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.AlterarDadosUsuarioView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\AlterarDadosUsuarioView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\AlterarDadosUsuarioView.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/Views/Usuarios/CadastroView.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/Views/Usuarios/CadastroView.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.CadastroView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\CadastroView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\CadastroView.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/Views/Usuarios/DadosUsuarioView.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/Views/Usuarios/DadosUsuarioView.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.DadosUsuarioView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\DadosUsuarioView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\DadosUsuarioView.xaml
 
+<<<<<<< HEAD
 [C:/ETEC 2022/2023/3semestre/TCC/27.05/Nova pasta/Nova pasta/App-master/QuantoDemoraApp/Views/Usuarios/LoginView.xaml]
+=======
+[C:/Users/iagom/Downloads/App/QuantoDemoraApp/Views/Usuarios/LoginView.xaml]
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.LoginView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\LoginView.xaml

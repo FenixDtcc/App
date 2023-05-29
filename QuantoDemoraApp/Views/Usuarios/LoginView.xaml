@@ -7,6 +7,7 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{x:StaticResource Primary}">
 
+<<<<<<< HEAD
     <Grid >
         <Frame CornerRadius="0" 
                BorderColor="Transparent"
@@ -20,6 +21,20 @@
                                       Offset="1.0" />
                 </LinearGradientBrush>
             </Frame.Background>
+=======
+    <!--inicio tela de login-->
+    <Grid RowDefinitions="1*,8*,1*">
+        <!--inicio circulo topo-->
+        <Frame BackgroundColor="{x:StaticResource Secondary}" 
+               Grid.Row="0" 
+               Padding="0" 
+               Margin="0,-80,-80,0"
+               HorizontalOptions="EndAndExpand"
+               HeightRequest="250" 
+               WidthRequest="250" 
+               CornerRadius="125"
+               BorderColor="Transparent">
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
         </Frame>
 
         <!--inicio configuração imagem-->

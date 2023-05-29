@@ -10,6 +10,7 @@
                   HasUnevenRows="True" 
                   ItemsSource="{Binding Hospitais}" 
                   SelectedItem="{Binding HospitalSelecionado}">
+<<<<<<< HEAD
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -60,4 +61,25 @@
             </ListView>
         </VerticalStackLayout>
     </ScrollView>
+=======
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding NomeFantasia}"
+                                   FontSize="18" 
+                                   FontAttributes="Bold"/>
+                            <Label
+                                Text="X.XX Km" 
+                                FontSize="18" 
+                                FontAttributes="Bold"/>
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+    
+>>>>>>> 59eab548fd9ce9315812c9c263ccc2a28f85bfd1
 </ContentPage>
