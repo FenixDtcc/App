@@ -5,7 +5,7 @@
     <ActiveDebugFramework>net6.0-android</ActiveDebugFramework>
     <ActiveDebugProfile>Pixel 6 API 33 (Android 13.0 - API 33)</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <DefaultDevice>pixel_5_-_api_31</DefaultDevice>
+    <DefaultDevice>Pixel_6_API_33</DefaultDevice>
     <SelectedDevice>pixel_5_-_api_31</SelectedDevice>
   </PropertyGroup>
   <ItemGroup>

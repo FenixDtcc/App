@@ -5,9 +5,16 @@
              Shell.PresentationMode="Animated"
              Title="InformacoesHospitalView">
 
-    <VerticalStackLayout Spacing="3" Padding="15">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <VerticalStackLayout Spacing="3" Padding="15">
+            <ListView x:Name="listView"
+                  HasUnevenRows="True" 
+                  ItemsSource="{Binding HospitalEspecialidades}" >
+                <ListView.ItemTemplate>
+                
+                <DataTemplate>
 
-        <Entry Text="{Binding RazaoSocial}"
+                <!--<Entry Text="{Binding RazaoSocial}"
                    HorizontalOptions="CenterAndExpand"
                    FontSize="20"
                    TextColor="#000"
@@ -27,11 +34,25 @@
                 </MultiBinding>
             </Label.Text>
         </Label>
+
+        <Label FontSize="18">
+            <Label.Text>
+                <MultiBinding StringFormat="{}{0}">
+                    <Binding Path="IdEspecialidade" />
+                </MultiBinding>
+            </Label.Text>
+        </Label>
+        
         <ImageButton Source="buttongoogle.svg"
                 Command="{Binding AbrirMapaCommand}" 
                 Margin="0,10,0,0"
                 BorderColor="Transparent"
                 BorderWidth="1"
-                CornerRadius="100"/>
-    </VerticalStackLayout>
+                CornerRadius="100"/>-->
+
+        </DataTemplate>
+        </ListView.ItemTemplate>
+        </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

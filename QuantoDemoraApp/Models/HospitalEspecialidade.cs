@@ -10,6 +10,7 @@ namespace QuantoDemoraApp.Models
 {
     public class HospitalEspecialidade
     {
-       
+        public int idHospital { get; set; }
+        public int idEspecialidade { get; set; }
     }
 }

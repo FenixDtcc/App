@@ -1,6 +1,8 @@
 ﻿using QuantoDemoraApp.Models;
 using QuantoDemoraApp.Models.Enuns;
+using QuantoDemoraApp.Services.Especialidades;
 using QuantoDemoraApp.Services.Hospitais;
+using QuantoDemoraApp.Services.HospitalEspecialidades;
 using QuantoDemoraApp.Services.Logradouros;
 using QuantoDemoraApp.ViewModels;
 using System;
@@ -19,6 +21,10 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
     {
         private HospitalService hService;
         private LogradouroService lService;
+        private HospitalEspecialidadeService heService;
+        private EspecialidadeService eService;
+
+        public ObservableCollection<HospitalEspecialidade> HospitalEspecialidades { get; set; }
 
         public ICommand AbrirMapaCommand { get; set; }
 
@@ -27,7 +33,12 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             string token = Preferences.Get("UsuarioToken", string.Empty);
             hService = new HospitalService(token);
             lService = new LogradouroService(token);
+            heService = new HospitalEspecialidadeService(token);
+            eService = new EspecialidadeService(token);
             AbrirMapaCommand = new Command(async () => await AbrirMapaHospital());
+            HospitalEspecialidades = new ObservableCollection<HospitalEspecialidade>();
+            _ = ObterHospitalEspecialidades();
+
         }
 
         private int id;
@@ -43,6 +54,8 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private double latitude;
         private double longitude;
         private string idGoogleMaps;
+        //private int idEspecialidade;
+        //private string dsEspecialidade;
 
         public int Id
         {
@@ -174,6 +187,27 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
+        //public int IdEspecialidade
+        //{
+        //    get => idEspecialidade;
+        //    set
+        //    {
+        //        idEspecialidade = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
+
+        //public string DsEspecialidade
+        //{
+        //    get => dsEspecialidade;
+        //    set
+        //    {
+        //        dsEspecialidade = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
+
+
         private string hospitalSelecionadoId;
         public string HospitalSelecionadoId
         {
@@ -193,6 +227,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             {
                 Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
                 Logradouro l = await lService.GetLogradouroAsync(h.IdLogradouro);
+                //HospitalEspecialidade he = await heService.GetHospitalEspecialidadeAsync(h.IdHospital);
 
                 this.DsLogradouro = l.DsLogradouro;
                 this.RazaoSocial = h.RazaoSocial;
@@ -202,6 +237,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                 this.Bairro = h.Bairro;
                 this.Cidade = h.Cidade;
                 this.Uf = h.Uf;
+                //this.IdEspecialidade = he.idEspecialidade;
             }
             catch (Exception ex)
             {
@@ -220,6 +256,20 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task ObterHospitalEspecialidades()
+        {
+            try
+            {
+                HospitalEspecialidades = await heService.GetHospitalEspecialidadesAsync();
+                OnPropertyChanged(nameof(HospitalEspecialidades));
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
             }
         }
     }
