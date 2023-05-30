@@ -7,52 +7,77 @@
 
     <ScrollView VerticalScrollBarVisibility="Never">
         <VerticalStackLayout Spacing="3" Padding="15">
+            <Entry Text="{Binding RazaoSocial}" FontSize="Medium" IsEnabled="False" />
+            <Label FontSize="18">
+                <Label.Text>
+                    <MultiBinding StringFormat="{}{0} {1}, {2}, {3}, {4}, {5} - {6}">
+                        <Binding Path="DsLogradouro" />
+                        <Binding Path="Endereco" />
+                        <Binding Path="Numero" />
+                        <Binding Path="Cep" />
+                        <Binding Path="Bairro" />
+                        <Binding Path="Cidade" />
+                        <Binding Path="Uf" />
+                    </MultiBinding>
+                </Label.Text>
+            </Label>
+
             <ListView x:Name="listView"
                   HasUnevenRows="True" 
-                  ItemsSource="{Binding HospitalEspecialidades}" >
+                  ItemsSource="{Binding HospitalEspecialidades}"
+                  SelectedItem="{Binding HospitalSelecionado}">
+
                 <ListView.ItemTemplate>
-                
-                <DataTemplate>
 
-                <!--<Entry Text="{Binding RazaoSocial}"
-                   HorizontalOptions="CenterAndExpand"
-                   FontSize="20"
-                   TextColor="#000"
-                   IsEnabled="False"
-                   FontAttributes="Bold"/>
+                    <DataTemplate>
 
-        <Label FontSize="18">
-            <Label.Text>
-                <MultiBinding StringFormat="{}{0} {1}, {2}, {3}, {4}, {5} - {6}">
-                    <Binding Path="DsLogradouro" />
-                    <Binding Path="Endereco" />
-                    <Binding Path="Numero" />
-                    <Binding Path="Cep" />
-                    <Binding Path="Bairro" />
-                    <Binding Path="Cidade" />
-                    <Binding Path="Uf" />
-                </MultiBinding>
-            </Label.Text>
-        </Label>
+                        <ViewCell>
 
-        <Label FontSize="18">
-            <Label.Text>
-                <MultiBinding StringFormat="{}{0}">
-                    <Binding Path="IdEspecialidade" />
-                </MultiBinding>
-            </Label.Text>
-        </Label>
-        
-        <ImageButton Source="buttongoogle.svg"
+                            <VerticalStackLayout Spacing="10"
+                                                 Padding="0,5,0,10"
+                                                 HeightRequest="110">
+                                <Frame BackgroundColor="{StaticResource Secondary}"
+                                       BorderColor="{StaticResource Primary}"
+                                       HeightRequest="100"
+                                       CornerRadius="200"
+                                       Padding="1">
+                                    <Grid>
+                                        <Frame HorizontalOptions="StartAndExpand"
+                                                   BackgroundColor="Transparent"
+                                                   BorderColor="Transparent"
+                                                   Padding="10,18,0,10">
+                                            <!--<Image Source="doc.svg"
+                                                       HeightRequest="80"
+                                                       WidthRequest="80" />-->
+                                        </Frame>
+
+                                        <VerticalStackLayout Padding="15"
+                                                             HorizontalOptions="CenterAndExpand"
+                                                             VerticalOptions="CenterAndExpand">
+                                            <Label Text="{Binding IdEspecialidade}"
+                                                FontSize="18" 
+                                                FontAttributes="Bold"/>
+                                            <Label Text="Tempo Médio de Atendimento: 00:00"
+                                                    FontSize="18" 
+                                                    FontAttributes="Bold"/>
+                                        </VerticalStackLayout>
+
+                                    </Grid>
+                                </Frame>
+
+
+                            </VerticalStackLayout>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ImageButton Source="buttongoogle.svg"
                 Command="{Binding AbrirMapaCommand}" 
                 Margin="0,10,0,0"
                 BorderColor="Transparent"
                 BorderWidth="1"
-                CornerRadius="100"/>-->
-
-        </DataTemplate>
-        </ListView.ItemTemplate>
-        </ListView>
+                CornerRadius="100"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

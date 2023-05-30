@@ -124,6 +124,8 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             }
         }
 
+        private CancellationTokenSource _cancelTokenSource;
+        private bool _isCheckingLocation;
         public async Task Autenticar()
         {
             try
@@ -143,10 +145,24 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                     Preferences.Set("UsuarioPerfil", uAutenticado.TpUsuario);
                     Preferences.Set("UsuarioToken", uAutenticado.Token);
 
+                    _isCheckingLocation = true;
+                    _cancelTokenSource = new CancellationTokenSource();
+                    GeolocationRequest request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
+
+                    Location location = await Geolocation
+                        .Default.GetLocationAsync(request, _cancelTokenSource.Token);
+
+                    Usuario uLocation = new Usuario();
+                    uLocation.IdUsuario = uAutenticado.IdUsuario;
+                    uLocation.Latitude = uAutenticado.Latitude;
+                    uLocation.Longitude = uAutenticado.Longitude;
+
+                    UsuarioService uServiceLoc = new UsuarioService(uAutenticado.Token);
+                    await uServiceLoc.PutAtualizarLocalizacaoAsync(uLocation);
+
                     await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
                     Application.Current.MainPage = new AppShell();
                 }
-
                 else
                 {
                     await Application.Current.MainPage.DisplayAlert("Informação", "Dados incorretos :(", "Ok");

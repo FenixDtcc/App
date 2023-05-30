@@ -84,5 +84,12 @@ namespace QuantoDemoraApp.Services.Usuarios
             var result = await _request.DeleteAsync(apiUrlBase + urlComplementar, _token);
             return result;
         }
+
+        public async Task<int> PutAtualizarLocalizacaoAsync(Usuario u)
+        {
+            string urlComplementar = "/AtualizarLocalizacao";
+            var result = await _request.PutAsync(apiUrlBase + urlComplementar, u, _token);
+            return result;
+        }
     }
 }

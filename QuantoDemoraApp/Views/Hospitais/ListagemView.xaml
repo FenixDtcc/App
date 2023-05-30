@@ -37,7 +37,7 @@
                                             <Label Text="{Binding NomeFantasia}"
                                                 FontSize="18" 
                                                 FontAttributes="Bold"/>
-                                            <Label Text="Distância: 00.00 KM"
+                                            <Label Text="{Binding distanciaKm}"
                                                     FontSize="18" 
                                                     FontAttributes="Bold"/>
                                         </VerticalStackLayout>
