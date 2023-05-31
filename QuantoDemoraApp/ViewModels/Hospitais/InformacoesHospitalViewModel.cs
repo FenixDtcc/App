@@ -24,7 +24,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private HospitalEspecialidadeService heService;
         private EspecialidadeService eService;
 
-        public ObservableCollection<HospitalEspecialidade> HospitalEspecialidades { get; set; }
+        public ObservableCollection<Especialidade> Especialidades { get; set; }
 
         public ICommand AbrirMapaCommand { get; set; }
 
@@ -36,8 +36,8 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             heService = new HospitalEspecialidadeService(token);
             eService = new EspecialidadeService(token);
             AbrirMapaCommand = new Command(async () => await AbrirMapaHospital());
-            HospitalEspecialidades = new ObservableCollection<HospitalEspecialidade>();
-            _ = ObterHospitalEspecialidades();
+            Especialidades = new ObservableCollection<Especialidade>();
+            _ = ObterEspecialidades();
 
         }
 
@@ -259,12 +259,12 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
-        public async Task ObterHospitalEspecialidades()
+        public async Task ObterEspecialidades()
         {
             try
             {
-                HospitalEspecialidades = await heService.GetHospitalEspecialidadesAsync();
-                OnPropertyChanged(nameof(HospitalEspecialidades));
+                Especialidades = await eService.GetEspecialidadesAsync();
+                OnPropertyChanged(nameof(Especialidades));
             }
             catch (Exception ex)
             {

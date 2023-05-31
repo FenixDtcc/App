@@ -24,10 +24,11 @@
 
             <ListView x:Name="listView"
                   HasUnevenRows="True" 
-                  ItemsSource="{Binding HospitalEspecialidades}"
-                  SelectedItem="{Binding HospitalSelecionado}">
+                  ItemsSource="{Binding Especialidades}"
+                  SelectionMode="None"
+                      VerticalScrollBarVisibility="Never">
 
-                <ListView.ItemTemplate>
+            <ListView.ItemTemplate>
 
                     <DataTemplate>
 
@@ -54,7 +55,7 @@
                                         <VerticalStackLayout Padding="15"
                                                              HorizontalOptions="CenterAndExpand"
                                                              VerticalOptions="CenterAndExpand">
-                                            <Label Text="{Binding IdEspecialidade}"
+                                            <Label Text="{Binding DsEspecialidade}"
                                                 FontSize="18" 
                                                 FontAttributes="Bold"/>
                                             <Label Text="Tempo Médio de Atendimento: 00:00"

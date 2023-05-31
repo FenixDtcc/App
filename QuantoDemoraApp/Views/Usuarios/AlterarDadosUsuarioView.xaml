@@ -5,23 +5,58 @@
              Title="AlterarDadosUsuarioView">
     <ScrollView>
         <VerticalStackLayout Spacing="3" Padding="15">
-            <Label Text="Id" FontSize="Medium" />
-            <Entry Text="{Binding Id}" IsEnabled="False" FontSize="Medium" />
-            <Label Text="CPF" FontSize="Medium" />
-            <Entry Text="{Binding Cpf}" IsEnabled="False" FontSize="Medium" />
-            <Label Text="Alterar Nome" FontSize="Medium" />
-            <Entry Text="{Binding Nome}" FontSize="Medium" />
-            <Label Text="Alterar Email" FontSize="Medium" />
-            <Entry Text="{Binding Email}" FontSize="Medium" Keyboard="Email" />
+            <!--<Label Text="Id" FontSize="Medium" />
+            <Entry Text="{Binding Id}" IsEnabled="False" FontSize="Medium" />-->
+            <!--<Label Text="CPF" FontSize="Medium" />
+            <Entry Text="{Binding Cpf}" IsEnabled="False" FontSize="Medium" />-->
+
+            <HorizontalStackLayout Padding="8">
+                <Label Text="Nome de Usuario" FontSize="Medium" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                <Frame Padding="2" HeightRequest="50" WidthRequest="250" HorizontalOptions="CenterAndExpand">
+                    <Entry WidthRequest="230" HorizontalOptions="CenterAndExpand" Text="{Binding Nome}" FontSize="18" />
+                </Frame>
+                <Frame BackgroundColor="Transparent" CornerRadius="100" HeightRequest="50" WidthRequest="100" Padding="0" HorizontalOptions="EndAndExpand">
+                    <Button Padding="5"  FontSize="14" Text="SALVAR" Command="{Binding AlterarNomeCommand}"></Button>
+                </Frame>
+            </HorizontalStackLayout>
+            
+
+            <HorizontalStackLayout Padding="8">
+                <Label Text="Alterar E-mail" FontSize="Medium" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                <Frame Padding="2" HeightRequest="50" WidthRequest="250" HorizontalOptions="CenterAndExpand">
+                    <Entry WidthRequest="230" HorizontalOptions="CenterAndExpand" Text="{Binding Email}" FontSize="18" />
+                </Frame>
+                <Frame BackgroundColor="Transparent" CornerRadius="100" HeightRequest="50" WidthRequest="100" Padding="0" HorizontalOptions="EndAndExpand">
+                    <Button Padding="5"  FontSize="14" Text="SALVAR" Command="{Binding AlterarEmailCommand}"></Button>
+                </Frame>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Padding="8">
+                <Label Text="Alterar Senha" FontSize="Medium" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                <Frame Padding="2" HeightRequest="50" WidthRequest="250" HorizontalOptions="CenterAndExpand">
+                    <Entry Placeholder="******" Keyboard="Text" IsPassword="True" WidthRequest="230" HorizontalOptions="CenterAndExpand" Text="{Binding Senha}" FontSize="18" />
+                </Frame>
+                <Frame BackgroundColor="Transparent" CornerRadius="100" HeightRequest="50" WidthRequest="100" Padding="0" HorizontalOptions="EndAndExpand">
+                    <Button Padding="5"  FontSize="14" Text="SALVAR" Command="{Binding AlterarSenhaCommand}"></Button>
+                </Frame>
+            </HorizontalStackLayout>
+
+            <!--<Label Text="Alterar Email" FontSize="Medium" />
+            <Entry Text="{Binding Email}" FontSize="Medium" Keyboard="Email" />--><!--
             <Label Text="Alterar Senha" FontSize="Medium" />
-            <Entry Text="{Binding Senha}" FontSize="Medium" Placeholder="******" Keyboard="Text" IsPassword="True" />
-            <HorizontalStackLayout Spacing="10">
+            <Entry Text="{Binding Senha}" FontSize="Medium" Placeholder="******" Keyboard="Text" IsPassword="True" />-->
+            <HorizontalStackLayout Padding="8,20,0,0" Spacing="10">
                 <!--<Button Text="Geral" Command="{Binding SalvarCommand}"></Button>-->
-                <Button Text="Nome" Command="{Binding AlterarNomeCommand}"></Button>
-                <Button Text="Email" Command="{Binding AlterarEmailCommand}"></Button>
-                <Button Text="Senha" Command="{Binding AlterarSenhaCommand}"></Button>
+                <!--<Button Text="Email" Command="{Binding AlterarEmailCommand}"></Button>-->
+                <!--<Button Text="Senha" Command="{Binding AlterarSenhaCommand}"></Button>-->
                 <Button Text="Cancelar" Command="{Binding CancelarCommand}" BackgroundColor="Gold" TextColor="Black"></Button>
-                <Button Text="Excluir" Command="{Binding DeletarCommand}" BackgroundColor="Red" TextColor="White"></Button>
+                <Button Text="Excluir Cadastro" Command="{Binding DeletarCommand}" BackgroundColor="Red" TextColor="White"></Button>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

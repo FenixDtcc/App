@@ -113,7 +113,10 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                 if (uCadastrado.IdUsuario != 0)
                 {
                     string mensagem = $"Paciente {uCadastrado.NomeUsuario} registrado com sucesso.";
+
                     await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
+
+                    //await Shell.Current.GoToAsync("..");
 
                     await Application.Current.MainPage.Navigation.PopAsync();
                 }

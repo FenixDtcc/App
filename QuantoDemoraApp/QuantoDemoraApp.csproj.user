@@ -3,9 +3,9 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net6.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Samsung SM-G781B (Android 13.0 - API 33)</ActiveDebugProfile>
-    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
-    <DefaultDevice>Pixel_6_API_33</DefaultDevice>
+    <ActiveDebugProfile>Pixel 2 API 31 (Android 12.0 - API 31)</ActiveDebugProfile>
+    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+    <DefaultDevice>Pixel_2_API_31</DefaultDevice>
     <SelectedDevice>pixel_5_-_api_31</SelectedDevice>
   </PropertyGroup>
   <ItemGroup>
