@@ -4,21 +4,47 @@
              x:Class="QuantoDemoraApp.Views.Usuarios.DadosUsuarioView"
              Title="DadosUsuarioView">
 
-    <ScrollView>
-        <VerticalStackLayout Spacing="3" Padding="15">
-            <!--<Label Text="Id de Usuário" FontSize="Medium" />
-            <Entry Text="{Binding Id}" IsEnabled="False" FontSize="Medium" />-->
-            <!--<Label Text="Matrícula Associado (Plano de Saúde)" FontSize="Medium" />
-            <Entry Text="{Binding IdAssociado}" IsEnabled="False" FontSize="Medium" />-->
-            <Label Text="Nome" FontSize="Medium" />
-            <Entry Text="{Binding Nome}" IsEnabled="False" FontSize="Medium" />
-            <Label Text="CPF" FontSize="Medium" />
-            <Entry Text="{Binding Cpf}" IsEnabled="False" FontSize="Medium" />
-            <Label Text="Email" FontSize="Medium" />
-            <Entry Text="{Binding Email}" IsEnabled="False" FontSize="Medium" Keyboard="Email" />
-            <HorizontalStackLayout Spacing="10">
-                <Button Text="Alterar Dados" Command="{Binding AbrirAlteracaoDadosUsuarioCommand}"></Button>
-            </HorizontalStackLayout>
-        </VerticalStackLayout>
-    </ScrollView>
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+        
+        <Frame BackgroundColor="{StaticResource Secondary}"
+            BorderColor="{StaticResource Primary}"
+            WidthRequest="320"
+            CornerRadius="40"
+            Padding="10"
+            HorizontalOptions="CenterAndExpand">
+            
+            <VerticalStackLayout Padding="10">
+                <HorizontalStackLayout HeightRequest="80"
+                                       WidthRequest="60">
+                    <Image Source="paciente.svg"
+                        HeightRequest="60"
+                        WidthRequest="60" />
+                </HorizontalStackLayout>
+
+
+
+                <VerticalStackLayout Padding="2">
+                    <Label Text="Nome" FontSize="22" />
+                    <Label Text="{Binding Nome}" FontSize="18" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Padding="2">
+                    <Label Text="CPF" FontSize="22" />
+                    <Label Text="{Binding Cpf}" FontSize="18" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Padding="2">
+                    <Label Text="Email" FontSize="22" />
+                    <Label Text="{Binding Email}" FontSize="18" />
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </Frame>
+
+            <Button Text="Alterar Dados" 
+                    Command="{Binding AbrirAlteracaoDadosUsuarioCommand}"
+                    Margin="0,10,0,0">
+            </Button>
+    </VerticalStackLayout>
 </ContentPage>

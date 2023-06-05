@@ -3,9 +3,9 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net6.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Pixel 2 API 31 (Android 12.0 - API 31)</ActiveDebugProfile>
+    <ActiveDebugProfile>Pixel 6 API 33 (Android 13.0 - API 33)</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <DefaultDevice>Pixel_2_API_31</DefaultDevice>
+    <DefaultDevice>Pixel_6_API_33</DefaultDevice>
     <SelectedDevice>pixel_5_-_api_31</SelectedDevice>
   </PropertyGroup>
   <ItemGroup>

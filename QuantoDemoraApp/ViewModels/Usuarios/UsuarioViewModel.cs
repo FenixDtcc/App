@@ -80,7 +80,6 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
         }
         #endregion
 
-
         #region Métodos
         public async Task Cadastrar()
         {
@@ -157,8 +156,8 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
 
                     Usuario uLocation = new Usuario();
                     uLocation.IdUsuario = uAutenticado.IdUsuario;
-                    uLocation.Latitude = uAutenticado.Latitude;
-                    uLocation.Longitude = uAutenticado.Longitude;
+                    uLocation.Latitude = location.Latitude;
+                    uLocation.Longitude = location.Longitude;
 
                     UsuarioService uServiceLoc = new UsuarioService(uAutenticado.Token);
                     await uServiceLoc.PutAtualizarLocalizacaoAsync(uLocation);

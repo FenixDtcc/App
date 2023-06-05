@@ -5,80 +5,86 @@
              Shell.PresentationMode="Animated"
              Title="InformacoesHospitalView">
 
-    <ScrollView VerticalScrollBarVisibility="Never">
-        <VerticalStackLayout Spacing="3" Padding="15">
-            <Entry Text="{Binding RazaoSocial}" FontSize="Medium" IsEnabled="False" />
-            <Label FontSize="18">
-                <Label.Text>
-                    <MultiBinding StringFormat="{}{0} {1}, {2}, {3}, {4}, {5} - {6}">
-                        <Binding Path="DsLogradouro" />
-                        <Binding Path="Endereco" />
-                        <Binding Path="Numero" />
-                        <Binding Path="Cep" />
-                        <Binding Path="Bairro" />
-                        <Binding Path="Cidade" />
-                        <Binding Path="Uf" />
-                    </MultiBinding>
-                </Label.Text>
-            </Label>
 
-            <ListView x:Name="listView"
+    <VerticalStackLayout Margin="10" Spacing="3" Padding="15">
+        <Label Text="{Binding RazaoSocial}" FontSize="22"  />
+        <Label FontSize="16">
+            <Label.Text>
+                <MultiBinding StringFormat="{}{0} {1}, {2}, {3}, {4}, {5} - {6}">
+                    <Binding Path="DsLogradouro" />
+                    <Binding Path="Endereco" />
+                    <Binding Path="Numero" />
+                    <Binding Path="Cep" />
+                    <Binding Path="Bairro" />
+                    <Binding Path="Cidade" />
+                    <Binding Path="Uf" />
+                </MultiBinding>
+            </Label.Text>
+        </Label>
+
+        <ListView x:Name="listView"
                   HasUnevenRows="True" 
                   ItemsSource="{Binding Especialidades}"
                   SelectionMode="None"
-                      VerticalScrollBarVisibility="Never">
+                  VerticalScrollBarVisibility="Never">
 
             <ListView.ItemTemplate>
 
-                    <DataTemplate>
+                <DataTemplate>
 
-                        <ViewCell>
+                    <ViewCell>
 
-                            <VerticalStackLayout Spacing="10"
-                                                 Padding="0,5,0,10"
-                                                 HeightRequest="110">
-                                <Frame BackgroundColor="{StaticResource Secondary}"
-                                       BorderColor="{StaticResource Primary}"
-                                       HeightRequest="100"
-                                       CornerRadius="200"
-                                       Padding="1">
-                                    <Grid>
-                                        <Frame HorizontalOptions="StartAndExpand"
-                                                   BackgroundColor="Transparent"
-                                                   BorderColor="Transparent"
-                                                   Padding="10,18,0,10">
-                                            <!--<Image Source="doc.svg"
-                                                       HeightRequest="80"
-                                                       WidthRequest="80" />-->
-                                        </Frame>
+                        <VerticalStackLayout Padding="10"
+                                             HeightRequest="140">
+                            <Frame BackgroundColor="{StaticResource Secondary}"
+                                    BorderColor="{StaticResource Primary}"
+                                    HeightRequest="120"
+                                    WidthRequest="340"
+                                    CornerRadius="20"
+                                    Padding="0"
+                                   HorizontalOptions="CenterAndExpand">
 
-                                        <VerticalStackLayout Padding="15"
-                                                             HorizontalOptions="CenterAndExpand"
-                                                             VerticalOptions="CenterAndExpand">
-                                            <Label Text="{Binding DsEspecialidade}"
-                                                FontSize="18" 
+                                <HorizontalStackLayout HeightRequest="100"
+                                                       WidthRequest="320"
+                                                       VerticalOptions="CenterAndExpand"
+                                                       HorizontalOptions="CenterAndExpand">
+
+                                    <HorizontalStackLayout HeightRequest="80"
+                                                           WidthRequest="60"
+                                                           Padding="0,0,0,0">
+                                        <Image Source="medico.svg"
+                                                       HeightRequest="60"
+                                                       WidthRequest="60" />
+                                    </HorizontalStackLayout>
+
+
+
+                                    <VerticalStackLayout HorizontalOptions="CenterAndExpand"
+                                           HeightRequest="80"
+                                           WidthRequest="260">
+                                        <Label Text="{Binding DsEspecialidade}"
+                                                FontSize="20" 
                                                 FontAttributes="Bold"/>
-                                            <Label Text="Tempo Médio de Atendimento: 00:00"
+                                        <Label Text="Tempo Médio de Atendimento:"
                                                     FontSize="18" 
                                                     FontAttributes="Bold"/>
-                                        </VerticalStackLayout>
+                                        <Label Text="00:00"
+                                                    FontSize="18" 
+                                                    FontAttributes="Bold"/>
+                                    </VerticalStackLayout>
 
-                                    </Grid>
-                                </Frame>
-
-
-                            </VerticalStackLayout>
-                        </ViewCell>
-
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <ImageButton Source="buttongoogle.svg"
+                                </HorizontalStackLayout>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ImageButton Source="buttongoogle.svg"
                 Command="{Binding AbrirMapaCommand}" 
                 Margin="0,10,0,0"
                 BorderColor="Transparent"
                 BorderWidth="1"
                 CornerRadius="100"/>
-        </VerticalStackLayout>
-    </ScrollView>
+    </VerticalStackLayout>
 </ContentPage>

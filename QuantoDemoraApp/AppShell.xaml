@@ -65,8 +65,7 @@
 
     <Shell.FlyoutFooter>
         <Label 
-            x:Name="lblLogin" 
-            TextColor="Black" 
+            x:Name="lblLogin"
             FontAttributes="Bold" 
             HorizontalOptions="Center"/>
     </Shell.FlyoutFooter>

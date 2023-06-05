@@ -21,7 +21,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
     {
         private HospitalService hService;
         private LogradouroService lService;
-        private HospitalEspecialidadeService heService;
         private EspecialidadeService eService;
 
         public ObservableCollection<Especialidade> Especialidades { get; set; }
@@ -33,7 +32,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             string token = Preferences.Get("UsuarioToken", string.Empty);
             hService = new HospitalService(token);
             lService = new LogradouroService(token);
-            heService = new HospitalEspecialidadeService(token);
             eService = new EspecialidadeService(token);
             AbrirMapaCommand = new Command(async () => await AbrirMapaHospital());
             Especialidades = new ObservableCollection<Especialidade>();
@@ -227,7 +225,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             {
                 Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
                 Logradouro l = await lService.GetLogradouroAsync(h.IdLogradouro);
-                //HospitalEspecialidade he = await heService.GetHospitalEspecialidadeAsync(h.IdHospital);
 
                 this.DsLogradouro = l.DsLogradouro;
                 this.RazaoSocial = h.RazaoSocial;
@@ -237,7 +234,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                 this.Bairro = h.Bairro;
                 this.Cidade = h.Cidade;
                 this.Uf = h.Uf;
-                //this.IdEspecialidade = he.idEspecialidade;
             }
             catch (Exception ex)
             {

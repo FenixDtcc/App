@@ -9,6 +9,7 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\hospital.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\info.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\logo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\mapa.png
+obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\medico.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\menuusuarios.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\paciente.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\senha.png
@@ -24,6 +25,7 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\hospital.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\info.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\logo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\mapa.png
+obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\medico.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\menuusuarios.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\paciente.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\senha.png
@@ -39,6 +41,7 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\hospital.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\info.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\logo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\mapa.png
+obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\medico.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\menuusuarios.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\paciente.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\senha.png
@@ -54,6 +57,7 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\hospital.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\info.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\logo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\mapa.png
+obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\medico.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\menuusuarios.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\paciente.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\senha.png
@@ -69,6 +73,7 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\hospital.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\info.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\logo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\mapa.png
+obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\medico.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\menuusuarios.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\paciente.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\senha.png

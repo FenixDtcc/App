@@ -39,22 +39,26 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                 Usuario u = await
                     uService.GetUsuarioAsync(usuarioId);
 
-                double uLati = (double)-23.5193200840959;
-                double uLong = (double)-46.59555019558195;
+                //double uLati = (double)-23.5193200840959;
+                //double uLong = (double)-46.59555019558195;
+                double uLati = (double)u.Latitude;
+                double uLong = (double)u.Longitude;
                 Location usuarioLoc = new Location(uLati, uLong);
 
                 foreach (Hospital h in listaHospitais)
                 {
-                    if (h.Latitude != null && h.Longitude != null)
+                    if (u.Latitude != null && u.Longitude != null)
                     {
                         double hLati = (double)h.Latitude;
                         double hLong = (double)h.Longitude;
                         Location hospitalLoc = new Location(hLati, hLong);
 
-                        this.distanciaKm = Location.CalculateDistance(usuarioLoc, hospitalLoc, DistanceUnits.Kilometers);
+                        h.DistanciaKm = Math.Round(Location.CalculateDistance(usuarioLoc, hospitalLoc, DistanceUnits.Kilometers), 2);
                     }
                 }
 
+                //listaHospitais.OrderBy(x => x.DistanciaKm);
+                //Hospitais.OrderBy(x => x.DistanciaKm);
                 OnPropertyChanged(nameof(Hospitais));
             }
             catch (Exception ex)

@@ -28,5 +28,6 @@ namespace QuantoDemoraApp.Models
         public double Longitude { get; set; }
         public string IdGoogleMaps { get; set; }
         public List<HospitalEspecialidade> HospitalEspecialidades { get; set; }
+        public double DistanciaKm { get; set; }
     }
 }

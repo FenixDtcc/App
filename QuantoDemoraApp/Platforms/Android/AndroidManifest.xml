@@ -6,7 +6,13 @@
 		android:roundIcon="@mipmap/appicon_round"
 		android:supportsRtl="true"
 		android:usesCleartextTraffic="true">
+
+		<meta-data android:name="com.google.android.geo.API_KEY"
+			android:value="AIzaSyD-omXqCIo6bdB29Qw4byvM0Jsch5Zrcmo">
+		</meta-data>
+		
 	</application>
+	
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
