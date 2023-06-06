@@ -751,11 +751,17 @@
     <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.graphics.win2d\1.0.3.1\lib\net5.0-windows10.0.18362.0\Microsoft.Graphics.Canvas.Interop.dll">
       <PackagePath>Microsoft.Graphics.Canvas.Interop.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.maui.controls.maps\7.0.86\lib\netstandard2.1\Microsoft.Maui.Controls.Maps.dll">
+      <PackagePath>Microsoft.Maui.Controls.Maps.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.maui.graphics\6.0.501\lib\net6.0-windows10.0.18362\Microsoft.Maui.Graphics.dll">
       <PackagePath>Microsoft.Maui.Graphics.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\6.0.501\lib\net6.0-windows10.0.18362\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.maui.maps\7.0.86\lib\netstandard2.1\Microsoft.Maui.Maps.dll">
+      <PackagePath>Microsoft.Maui.Maps.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.windowsappsdk\1.1.5\lib\net5.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -1128,6 +1134,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-400.png">
       <PackagePath>mapa.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-100.png">
+      <PackagePath>medico.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-125.png">
+      <PackagePath>medico.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-150.png">
+      <PackagePath>medico.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-200.png">
+      <PackagePath>medico.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-400.png">
+      <PackagePath>medico.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-100.png">
       <PackagePath>menuusuarios.scale-100.png</PackagePath>

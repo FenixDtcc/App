@@ -1775,3 +1775,8 @@ C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\refint\Quan
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\QuantoDemoraApp.pdb
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\QuantoDemoraApp.genruntimeconfig.cache
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\ref\QuantoDemoraApp.dll
+C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Maui.Controls.Maps.dll
+C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.Maui.Maps.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\medico.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\medico@2x.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\medico@3x.png
