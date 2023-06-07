@@ -107,5 +107,20 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                 OnPropertyChanged();
             }
         }
+
+        //RefreshView refreshView = new RefreshView();
+        //ICommand refreshCommand = new Command(() =>
+        //{
+        //    // IsRefreshing is true
+        //    // Refresh data here
+        //    refreshView.IsRefreshing = false;
+        //});
+
+        //refreshView.Command = refreshCommand;
+
+        //ListView listView = new ListView();
+        //FlexLayout flexLayout = new FlexLayout { ... };
+        //scrollView.Content = flexLayout;
+        //refreshView.Content = listView;
     }
 }

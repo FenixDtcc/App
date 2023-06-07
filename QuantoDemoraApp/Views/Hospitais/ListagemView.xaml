@@ -4,69 +4,72 @@
              x:Class="QuantoDemoraApp.Views.Hospitais.ListagemView"
              Title="ListagemView">
 
+    <RefreshView IsRefreshing="{Binding IsRefreshing}"
+             Command="{Binding RefreshCommand}">
 
-    <VerticalStackLayout Margin="20">
-        <ListView x:Name="listView"
+        <VerticalStackLayout Margin="20">
+            <ListView x:Name="listView"
                   HasUnevenRows="True" 
                   ItemsSource="{Binding Hospitais}" 
                   SelectedItem="{Binding HospitalSelecionado}"
                   VerticalScrollBarVisibility="Never">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <VerticalStackLayout Padding="10"
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <VerticalStackLayout Padding="10"
                                              HeightRequest="100">
-                            <Frame BackgroundColor="{StaticResource Secondary}"
+                                <Frame BackgroundColor="{StaticResource Secondary}"
                                     BorderColor="{StaticResource Primary}"
                                     HeightRequest="80"
                                    WidthRequest="350"
                                     CornerRadius="100"
                                     Padding="0"
                                    HorizontalOptions="CenterAndExpand">
-                                
-                                <HorizontalStackLayout HeightRequest="80"
+
+                                    <HorizontalStackLayout HeightRequest="80"
                                                        VerticalOptions="CenterAndExpand"
                                                        HorizontalOptions="CenterAndExpand">
-                                    
-                                    <HorizontalStackLayout HeightRequest="60"
+
+                                        <HorizontalStackLayout HeightRequest="60"
                                                            WidthRequest="60"
                                                            Padding="0,5,0,0">
-                                        <Image Source="mapa.svg"
+                                            <Image Source="mapa.svg"
                                                        HeightRequest="60"
                                                        WidthRequest="60" />
-                                    </HorizontalStackLayout>
+                                        </HorizontalStackLayout>
 
-                                    <VerticalStackLayout HorizontalOptions="CenterAndExpand"
+                                        <VerticalStackLayout HorizontalOptions="CenterAndExpand"
                                            HeightRequest="60"
                                            WidthRequest="210">
-                                        <Label Text="{Binding NomeFantasia}"
+                                            <Label Text="{Binding NomeFantasia}"
                                                 FontSize="20" 
                                                 FontAttributes="Bold"
                                                 HorizontalTextAlignment="Start"/>
-                                        <Label>
-                                            <Label.Text>
-                                            <MultiBinding StringFormat="{}Distância: {0} km">
-                                                <Binding Path="DistanciaKm" />
-                                                </MultiBinding>
-                                        </Label.Text>
-                                        </Label>
-                                    </VerticalStackLayout>
+                                            <Label>
+                                                <Label.Text>
+                                                    <MultiBinding StringFormat="{}Distância: {0} km">
+                                                        <Binding Path="DistanciaKm" />
+                                                    </MultiBinding>
+                                                </Label.Text>
+                                            </Label>
+                                        </VerticalStackLayout>
 
-                                    <HorizontalStackLayout HeightRequest="60"
+                                        <HorizontalStackLayout HeightRequest="60"
                                                            WidthRequest="30"
                                                            HorizontalOptions="CenterAndExpand"
                                                            Padding="0,5,0,0">
-                                        <Image Source="seta.svg"
+                                            <Image Source="seta.svg"
                                                HeightRequest="30"
                                                WidthRequest="40"/>
-                                    </HorizontalStackLayout>
+                                        </HorizontalStackLayout>
 
-                                </HorizontalStackLayout>
-                            </Frame>
-                        </VerticalStackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </VerticalStackLayout>
+                                    </HorizontalStackLayout>
+                                </Frame>
+                            </VerticalStackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </RefreshView>
 </ContentPage>
