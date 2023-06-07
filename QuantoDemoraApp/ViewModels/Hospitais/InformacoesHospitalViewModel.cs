@@ -41,7 +41,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
 
         private int id;
         private string dsLogradouro;
-        private string razaoSocial;
+        private string nomeFantasia;
         private string endereco;
         private string numero;
         private string complemento;
@@ -52,8 +52,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private double latitude;
         private double longitude;
         private string idGoogleMaps;
-        //private int idEspecialidade;
-        //private string dsEspecialidade;
 
         public int Id
         {
@@ -75,12 +73,12 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
-        public string RazaoSocial
+        public string NomeFantasia
         {
-            get => razaoSocial;
+            get => nomeFantasia;
             set
             {
-                razaoSocial = value;
+                nomeFantasia = value;
                 OnPropertyChanged();
             }
         }
@@ -185,27 +183,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
-        //public int IdEspecialidade
-        //{
-        //    get => idEspecialidade;
-        //    set
-        //    {
-        //        idEspecialidade = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
-
-        //public string DsEspecialidade
-        //{
-        //    get => dsEspecialidade;
-        //    set
-        //    {
-        //        dsEspecialidade = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
-
-
         private string hospitalSelecionadoId;
         public string HospitalSelecionadoId
         {
@@ -227,7 +204,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                 Logradouro l = await lService.GetLogradouroAsync(h.IdLogradouro);
 
                 this.DsLogradouro = l.DsLogradouro;
-                this.RazaoSocial = h.RazaoSocial;
+                this.NomeFantasia = h.NomeFantasia;
                 this.Endereco = h.Endereco;
                 this.Numero = h.Numero;
                 this.Cep = h.Cep;

@@ -4,15 +4,36 @@
              x:Class="QuantoDemoraApp.Views.Hospitais.ListagemView"
              Title="ListagemView">
 
-    <RefreshView IsRefreshing="{Binding IsRefreshing}"
-             Command="{Binding RefreshCommand}">
+    <!--<RefreshView IsRefreshing="{Binding IsRefreshing}"
+             Command="{Binding RefreshCommand}">-->
+    
+    <!-- Tentando alterar a cor de seleção do item da ListView -->
+    <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="LightSkyBlue" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
 
-        <VerticalStackLayout Margin="20">
+    <VerticalStackLayout Margin="20">
             <ListView x:Name="listView"
                   HasUnevenRows="True" 
                   ItemsSource="{Binding Hospitais}" 
                   SelectedItem="{Binding HospitalSelecionado}"
+                  SelectionMode="Single"
                   VerticalScrollBarVisibility="Never">
+                   
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -71,5 +92,5 @@
                 </ListView.ItemTemplate>
             </ListView>
         </VerticalStackLayout>
-    </RefreshView>
+    <!--</RefreshView>-->
 </ContentPage>

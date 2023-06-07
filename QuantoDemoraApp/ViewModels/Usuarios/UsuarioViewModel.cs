@@ -115,9 +115,9 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
 
                     await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
 
-                    //await Shell.Current.GoToAsync("..");
+                    await Shell.Current.GoToAsync("..");
 
-                    await Application.Current.MainPage.Navigation.PopAsync();
+                    //await Application.Current.MainPage.Navigation.PopAsync();
                 }
             }
             catch (Exception ex)

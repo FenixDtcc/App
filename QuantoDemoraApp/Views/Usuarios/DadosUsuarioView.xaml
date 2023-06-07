@@ -25,17 +25,17 @@
 
 
                 <VerticalStackLayout Padding="2">
-                    <Label Text="Nome" FontSize="22" />
+                    <Label Text="Nome" FontSize="20" FontAttributes="Bold" />
                     <Label Text="{Binding Nome}" FontSize="18" />
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Padding="2">
-                    <Label Text="CPF" FontSize="22" />
+                    <Label Text="CPF" FontSize="20" FontAttributes="Bold" />
                     <Label Text="{Binding Cpf}" FontSize="18" />
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Padding="2">
-                    <Label Text="Email" FontSize="22" />
+                    <Label Text="Email" FontSize="20" FontAttributes="Bold" />
                     <Label Text="{Binding Email}" FontSize="18" />
                 </VerticalStackLayout>
 

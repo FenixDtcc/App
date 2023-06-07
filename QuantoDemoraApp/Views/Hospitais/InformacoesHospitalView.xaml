@@ -7,7 +7,7 @@
 
 
     <VerticalStackLayout Margin="10" Spacing="3" Padding="15">
-        <Label Text="{Binding RazaoSocial}" FontSize="22"  />
+        <Label Text="{Binding NomeFantasia}" FontSize="22" FontAttributes="Bold" />
         <Label FontSize="16">
             <Label.Text>
                 <MultiBinding StringFormat="{}{0} {1}, {2}, {3}, {4}, {5} - {6}">
@@ -63,14 +63,14 @@
                                            HeightRequest="80"
                                            WidthRequest="260">
                                         <Label Text="{Binding DsEspecialidade}"
-                                                FontSize="20" 
+                                                FontSize="18" 
                                                 FontAttributes="Bold"/>
                                         <Label Text="Tempo Médio de Atendimento:"
-                                                    FontSize="18" 
-                                                    FontAttributes="Bold"/>
+                                                    FontSize="16" 
+                                                    />
                                         <Label Text="00:00"
-                                                    FontSize="18" 
-                                                    FontAttributes="Bold"/>
+                                                    FontSize="16" 
+                                                    />
                                     </VerticalStackLayout>
 
                                 </HorizontalStackLayout>

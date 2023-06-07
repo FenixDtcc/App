@@ -13,7 +13,7 @@
 
 		<!-- Display name -->
 		<ApplicationTitle>
-			Quanto Demora ?
+			Quanto Demora?
 		</ApplicationTitle>
 
 		<!-- App Identifier -->
@@ -37,7 +37,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appicon.svg" Color="#000000" BaseSize="128,128" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\logo.svg" Color="#000000" BaseSize="208,208" />
+		<MauiSplashScreen Include="Resources\Splash\logo.svg" Color="#FFFFFF" BaseSize="208,208" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -64,6 +64,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Maui" Version="2.0.0" />
 	  <PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.86" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	  <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
