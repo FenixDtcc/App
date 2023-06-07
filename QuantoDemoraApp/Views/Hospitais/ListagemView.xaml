@@ -8,7 +8,7 @@
              Command="{Binding RefreshCommand}">-->
     
     <!-- Tentando alterar a cor de seleção do item da ListView -->
-    <ContentPage.Resources>
+    <!--<ContentPage.Resources>
         <Style TargetType="Grid">
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>
@@ -24,9 +24,9 @@
                 </VisualStateGroupList>
             </Setter>
         </Style>
-    </ContentPage.Resources>
+    </ContentPage.Resources>-->
 
-    <VerticalStackLayout Margin="20">
+    <VerticalStackLayout Margin="10">
             <ListView x:Name="listView"
                   HasUnevenRows="True" 
                   ItemsSource="{Binding Hospitais}" 
@@ -42,7 +42,7 @@
                                 <Frame BackgroundColor="{StaticResource Secondary}"
                                     BorderColor="{StaticResource Primary}"
                                     HeightRequest="80"
-                                   WidthRequest="350"
+                                   WidthRequest="320"
                                     CornerRadius="100"
                                     Padding="0"
                                    HorizontalOptions="CenterAndExpand">

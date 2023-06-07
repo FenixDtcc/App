@@ -10,31 +10,31 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>102daf66-c8bb-4572-a4a6-45624b57ab18</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath></WindowsSdkPath>
-    <LayoutDir>C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\QuantoDemoraApp.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\QuantoDemoraApp.runtimeconfig.json">
       <PackagePath>QuantoDemoraApp.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\QuantoDemoraApp.dll">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\QuantoDemoraApp.dll">
       <PackagePath>QuantoDemoraApp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>QuantoDemoraApp.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.14\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
@@ -817,7 +817,7 @@
     <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.windowsappsdk\1.1.5\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\QuantoDemoraApp.deps.json">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\QuantoDemoraApp.deps.json">
       <PackagePath>QuantoDemoraApp.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.maui.controls.ref.win\6.0.552\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
@@ -829,406 +829,406 @@
     <AppxPackagedFile Include="C:\Users\iagom\.nuget\packages\microsoft.maui.core.ref.win\6.0.552\ref\net6.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-100.png">
       <PackagePath>logoSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-125.png">
       <PackagePath>logoSplashScreen.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-150.png">
       <PackagePath>logoSplashScreen.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-200.png">
       <PackagePath>logoSplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-400.png">
       <PackagePath>logoSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-100.png">
       <PackagePath>buttongoogle.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-125.png">
       <PackagePath>buttongoogle.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-150.png">
       <PackagePath>buttongoogle.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-200.png">
       <PackagePath>buttongoogle.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttongoogle.scale-400.png">
       <PackagePath>buttongoogle.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-100.png">
       <PackagePath>doc.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-125.png">
       <PackagePath>doc.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-150.png">
       <PackagePath>doc.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-200.png">
       <PackagePath>doc.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\doc.scale-400.png">
       <PackagePath>doc.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-100.png">
       <PackagePath>email.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-125.png">
       <PackagePath>email.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-150.png">
       <PackagePath>email.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-200.png">
       <PackagePath>email.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-400.png">
       <PackagePath>email.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-100.png">
       <PackagePath>exit.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-125.png">
       <PackagePath>exit.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-150.png">
       <PackagePath>exit.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-200.png">
       <PackagePath>exit.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-400.png">
       <PackagePath>exit.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
       <PackagePath>home.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-125.png">
       <PackagePath>home.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-150.png">
       <PackagePath>home.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-200.png">
       <PackagePath>home.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-400.png">
       <PackagePath>home.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-100.png">
       <PackagePath>hospital.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-125.png">
       <PackagePath>hospital.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-150.png">
       <PackagePath>hospital.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-200.png">
       <PackagePath>hospital.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hospital.scale-400.png">
       <PackagePath>hospital.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-100.png">
       <PackagePath>info.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-125.png">
       <PackagePath>info.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-150.png">
       <PackagePath>info.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-200.png">
       <PackagePath>info.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-400.png">
       <PackagePath>info.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
       <PackagePath>logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-125.png">
       <PackagePath>logo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-150.png">
       <PackagePath>logo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-200.png">
       <PackagePath>logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-400.png">
       <PackagePath>logo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-100.png">
       <PackagePath>mapa.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-125.png">
       <PackagePath>mapa.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-150.png">
       <PackagePath>mapa.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-200.png">
       <PackagePath>mapa.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa.scale-400.png">
       <PackagePath>mapa.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-100.png">
       <PackagePath>medico.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-125.png">
       <PackagePath>medico.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-150.png">
       <PackagePath>medico.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-200.png">
       <PackagePath>medico.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-400.png">
       <PackagePath>medico.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-100.png">
       <PackagePath>menuusuarios.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-125.png">
       <PackagePath>menuusuarios.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-150.png">
       <PackagePath>menuusuarios.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-200.png">
       <PackagePath>menuusuarios.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuusuarios.scale-400.png">
       <PackagePath>menuusuarios.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-100.png">
       <PackagePath>paciente.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-125.png">
       <PackagePath>paciente.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-150.png">
       <PackagePath>paciente.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-200.png">
       <PackagePath>paciente.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\paciente.scale-400.png">
       <PackagePath>paciente.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-100.png">
       <PackagePath>senha.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-125.png">
       <PackagePath>senha.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-150.png">
       <PackagePath>senha.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-200.png">
       <PackagePath>senha.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\senha.scale-400.png">
       <PackagePath>senha.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-100.png">
       <PackagePath>seta.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-125.png">
       <PackagePath>seta.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-150.png">
       <PackagePath>seta.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-200.png">
       <PackagePath>seta.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-400.png">
       <PackagePath>seta.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-100.png">
       <PackagePath>usuario.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-125.png">
       <PackagePath>usuario.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-150.png">
       <PackagePath>usuario.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-200.png">
       <PackagePath>usuario.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\usuario.scale-400.png">
       <PackagePath>usuario.scale-400.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

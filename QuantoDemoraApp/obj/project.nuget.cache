@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eoMK+56mj31aF4usnYdqQxHE7pPYVCcP2HxkUKm/QpJZwXMN3pATaThfmg9cfOqDm7a+w0cs3PHyYojFFKFYFA==",
+  "dgSpecHash": "MWqlBSIDBGte7mvUZbKlXBCakulaZDaTClcqfsa00osw5gh2mDDHgz+IibVMwxzJr7bct69Sa6h2OYDiUXMx+w==",
   "success": true,
-  "projectFilePath": "C:\\DEV\\TCC\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
+  "projectFilePath": "C:\\Users\\iagom\\Downloads\\dev\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iagom\\.nuget\\packages\\communitytoolkit.maui\\2.0.0\\communitytoolkit.maui.2.0.0.nupkg.sha512",
     "C:\\Users\\iagom\\.nuget\\packages\\communitytoolkit.maui.core\\2.0.0\\communitytoolkit.maui.core.2.0.0.nupkg.sha512",
