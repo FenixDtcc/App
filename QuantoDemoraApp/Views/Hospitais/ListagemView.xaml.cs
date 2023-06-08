@@ -1,4 +1,5 @@
 using QuantoDemoraApp.ViewModels.Hospitais;
+using QuantoDemoraApp.ViewModels.Usuarios;
 
 namespace QuantoDemoraApp.Views.Hospitais;
 
@@ -14,4 +15,10 @@ public partial class ListagemView : ContentPage
 		BindingContext = viewModel;
 		Title = "Hospitais";
 	}
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        _ = viewModel.ObterHospital();
+    }
 }

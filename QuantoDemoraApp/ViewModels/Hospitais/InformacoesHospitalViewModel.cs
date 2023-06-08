@@ -22,8 +22,10 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private HospitalService hService;
         private LogradouroService lService;
         private EspecialidadeService eService;
+        private AtendimentoService aService;
 
         public ObservableCollection<Especialidade> Especialidades { get; set; }
+        //public ObservableCollection<Atendimento> Atendimentos { get; set; }
 
         public ICommand AbrirMapaCommand { get; set; }
 
@@ -33,9 +35,12 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             hService = new HospitalService(token);
             lService = new LogradouroService(token);
             eService = new EspecialidadeService(token);
+            aService = new AtendimentoService(token);
             AbrirMapaCommand = new Command(async () => await AbrirMapaHospital());
             Especialidades = new ObservableCollection<Especialidade>();
             _ = ObterEspecialidades();
+            //Atendimentos = new ObservableCollection<Atendimento>();
+            //_ = ObterTempoMedioAtendimentos();
 
         }
 
@@ -237,6 +242,17 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             try
             {
                 Especialidades = await eService.GetEspecialidadesAsync();
+
+                //List<Atendimento> listaAtendimento = new List<Atendimento>();
+
+                //foreach (Atendimento a in listaAtendimento) 
+                //{
+                //    if (a.IdEspecialidade != 0)
+                //    {
+                //        a.TempoMedio = await aService.GetAtendimentosByIdHospital(a.IdHospital);
+                //    }
+                //}
+
                 OnPropertyChanged(nameof(Especialidades));
             }
             catch (Exception ex)
@@ -245,5 +261,31 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                     .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
             }
         }
+
+        //public async Task ObterTempoMedioAtendimentos()
+        //{
+        //    try
+        //    {
+        //        Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
+        //        Atendimentos = await aService.GetAtendimentosByIdHospital(h.IdHospital);
+        //        OnPropertyChanged(nameof(TempoMedio));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        await Application.Current.MainPage
+        //            .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+        //    }
+        //}
+
+        //private string tempoMedio;
+        //public string TempoMedio
+        //{
+        //    get => tempoMedio;
+        //    set
+        //    {
+        //        tempoMedio = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
     }
 }

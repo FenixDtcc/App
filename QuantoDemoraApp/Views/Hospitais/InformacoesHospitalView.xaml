@@ -68,8 +68,9 @@
                                         <Label Text="Tempo Médio de Atendimento:"
                                                     FontSize="16" 
                                                     />
-                                        <Label Text="00:00"
+                                        <Label Text="0:00"
                                                     FontSize="16" 
+                                                    FontAttributes="Bold"
                                                     />
                                     </VerticalStackLayout>
 

@@ -1,2 +1,2 @@
-AdbTarget=-s RXCT501BYKV
+AdbTarget=-s emulator-5554
 AdbOptions=
