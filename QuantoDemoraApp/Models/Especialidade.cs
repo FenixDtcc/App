@@ -10,5 +10,6 @@ namespace QuantoDemoraApp.Models
     {
         public int IdEspecialidade { get; set; }
         public string DsEspecialidade { get; set; }
+        public string TempoMedioConvertido { get; set; }
     }
 }

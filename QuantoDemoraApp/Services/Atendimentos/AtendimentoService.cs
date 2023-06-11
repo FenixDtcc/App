@@ -20,11 +20,11 @@ namespace QuantoDemoraApp.Services.Especialidades
             _token = token;
         }
 
-        public async Task<ObservableCollection<Atendimento>> GetAtendimentosByIdHospital(int hospitalId)
+        public async Task<ObservableCollection<Especialidade>> GetAtendimentosPorEspecialidadeByIdHospitalAsync(int hospitalId)
         {
-            string urlComplementar = string.Format("{0}", hospitalId);
-            ObservableCollection<Models.Atendimento> listaAtendimentos = await
-                _request.GetAsync<ObservableCollection<Models.Atendimento>>(apiUrlBase + urlComplementar, _token);
+            string urlComplementar = string.Format("/{0}", hospitalId);
+            ObservableCollection<Models.Especialidade> listaAtendimentos = await
+                _request.GetAsync<ObservableCollection<Models.Especialidade>>(apiUrlBase + urlComplementar, _token);
             return listaAtendimentos;
         }
     }

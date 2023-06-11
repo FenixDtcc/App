@@ -6,7 +6,7 @@
 
     <!--<RefreshView IsRefreshing="{Binding IsRefreshing}"
              Command="{Binding RefreshCommand}">-->
-    
+
     <!-- Tentando alterar a cor de seleção do item da ListView -->
     <!--<ContentPage.Resources>
         <Style TargetType="Grid">
@@ -25,72 +25,87 @@
             </Setter>
         </Style>
     </ContentPage.Resources>-->
+    <Grid>
+        <Frame CornerRadius="0" 
+               BorderColor="Transparent">
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#fff" />
+                    <GradientStop Color="{x:StaticResource Secondary}" />
+                </LinearGradientBrush>
+            </Frame.Background>
 
-    <VerticalStackLayout Margin="10">
-            <ListView x:Name="listView"
-                  HasUnevenRows="True" 
-                  ItemsSource="{Binding Hospitais}" 
-                  SelectedItem="{Binding HospitalSelecionado}"
-                  SelectionMode="Single"
-                  VerticalScrollBarVisibility="Never">
-                   
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <VerticalStackLayout Padding="10"
-                                             HeightRequest="100">
-                                <Frame BackgroundColor="{StaticResource Secondary}"
-                                    BorderColor="{StaticResource Primary}"
-                                    HeightRequest="80"
-                                   WidthRequest="320"
-                                    CornerRadius="100"
-                                    Padding="0"
-                                   HorizontalOptions="CenterAndExpand">
+            <ScrollView Padding="0">
+                <VerticalStackLayout Padding="0">
+                    <ListView x:Name="listView"
+                              HasUnevenRows="True" 
+                              ItemsSource="{Binding Hospitais}" 
+                              SelectedItem="{Binding HospitalSelecionado}"
+                              SelectionMode="Single"
+                              VerticalScrollBarVisibility="Never"
+                              IsPullToRefreshEnabled="True">
 
-                                    <HorizontalStackLayout HeightRequest="80"
-                                                       VerticalOptions="CenterAndExpand"
-                                                       HorizontalOptions="CenterAndExpand">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <VerticalStackLayout Padding="10"
+                                                         HeightRequest="100">
+                                        <Frame BackgroundColor="{StaticResource Secondary}"
+                                               BorderColor="{StaticResource Primary}"
+                                               HeightRequest="80"
+                                               WidthRequest="320"
+                                               CornerRadius="100"
+                                               Padding="0"
+                                               HorizontalOptions="CenterAndExpand">
 
-                                        <HorizontalStackLayout HeightRequest="60"
-                                                           WidthRequest="60"
-                                                           Padding="0,5,0,0">
-                                            <Image Source="mapa.svg"
-                                                       HeightRequest="60"
-                                                       WidthRequest="60" />
-                                        </HorizontalStackLayout>
+                                            <HorizontalStackLayout HeightRequest="80"
+                                                                   VerticalOptions="CenterAndExpand"
+                                                                   HorizontalOptions="CenterAndExpand">
 
-                                        <VerticalStackLayout HorizontalOptions="CenterAndExpand"
-                                           HeightRequest="60"
-                                           WidthRequest="210">
-                                            <Label Text="{Binding NomeFantasia}"
-                                                FontSize="20" 
-                                                FontAttributes="Bold"
-                                                HorizontalTextAlignment="Start"/>
-                                            <Label>
-                                                <Label.Text>
-                                                    <MultiBinding StringFormat="{}Distância: {0} km">
-                                                        <Binding Path="DistanciaKm" />
-                                                    </MultiBinding>
-                                                </Label.Text>
-                                            </Label>
-                                        </VerticalStackLayout>
+                                                <HorizontalStackLayout HeightRequest="60"
+                                                                       WidthRequest="60"
+                                                                       Padding="0,5,0,0">
+                                                    <Image Source="mapa.svg"
+                                                           HeightRequest="60"
+                                                           WidthRequest="60" />
+                                                </HorizontalStackLayout>
 
-                                        <HorizontalStackLayout HeightRequest="60"
+                                                <VerticalStackLayout HorizontalOptions="CenterAndExpand"
+                                                                     HeightRequest="60"
+                                                                     WidthRequest="210">
+                                                    <Label Text="{Binding NomeFantasia}"
+                                                           FontSize="20" 
+                                                           FontAttributes="Bold"
+                                                           HorizontalTextAlignment="Start"/>
+                                                    <Label FontSize="16">
+                                                        <Label.Text>
+                                                            <MultiBinding StringFormat="{}Distância: {0} km">
+                                                                <Binding Path="DistanciaKm" />
+                                                                
+                                                            </MultiBinding>
+                                                        </Label.Text>
+                                                    </Label>
+                                                </VerticalStackLayout>
+
+                                                <HorizontalStackLayout HeightRequest="60"
                                                            WidthRequest="30"
                                                            HorizontalOptions="CenterAndExpand"
                                                            Padding="0,5,0,0">
-                                            <Image Source="seta.svg"
-                                               HeightRequest="30"
-                                               WidthRequest="40"/>
-                                        </HorizontalStackLayout>
+                                                    <Image Source="seta.svg"
+                                                           HeightRequest="30"
+                                                           WidthRequest="40"/>
+                                                </HorizontalStackLayout>
 
-                                    </HorizontalStackLayout>
-                                </Frame>
-                            </VerticalStackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </VerticalStackLayout>
-    <!--</RefreshView>-->
+                                            </HorizontalStackLayout>
+                                        </Frame>
+                                    </VerticalStackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </VerticalStackLayout>
+            </ScrollView>
+            <!--</RefreshView>-->
+        </Frame>
+    </Grid>
 </ContentPage>

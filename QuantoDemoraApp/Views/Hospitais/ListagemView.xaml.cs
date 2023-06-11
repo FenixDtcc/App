@@ -21,4 +21,9 @@ public partial class ListagemView : ContentPage
         base.OnAppearing();
         _ = viewModel.ObterHospital();
     }
+
+    private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+
+    }
 }

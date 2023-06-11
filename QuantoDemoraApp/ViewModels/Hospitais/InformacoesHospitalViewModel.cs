@@ -25,8 +25,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private AtendimentoService aService;
 
         public ObservableCollection<Especialidade> Especialidades { get; set; }
-        //public ObservableCollection<Atendimento> Atendimentos { get; set; }
-
         public ICommand AbrirMapaCommand { get; set; }
 
         public InformacoesHospitalViewModel()
@@ -39,9 +37,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             AbrirMapaCommand = new Command(async () => await AbrirMapaHospital());
             Especialidades = new ObservableCollection<Especialidade>();
             _ = ObterEspecialidades();
-            //Atendimentos = new ObservableCollection<Atendimento>();
-            //_ = ObterTempoMedioAtendimentos();
-
         }
 
         private int id;
@@ -229,7 +224,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             try
             {
                 Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
-                return await hService.GetLocalizacaoAsync(h.Latitude, h.Longitude, h.IdGoogleMaps);
+                return await hService.AbrirGoogleMapsAsync(h.Latitude, h.Longitude, h.IdGoogleMaps);
             }
             catch (Exception ex)
             {
@@ -241,17 +236,23 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         {
             try
             {
+                List<Especialidade> listaEspecialidades = new List<Especialidade>(Especialidades);
+                //Atendimento atendimento = new Atendimento();
                 Especialidades = await eService.GetEspecialidadesAsync();
+                Especialidades = await aService.GetAtendimentosPorEspecialidadeByIdHospitalAsync(hospitalId: int.Parse(hospitalSelecionadoId));
+                
+                foreach (Especialidade e in listaEspecialidades)
+                {
+                    //if (listaEspecialidades.Count == 0 || atendimento.SenhaAtendimento.Length == 0)
+                    //{
+                    //    this.TempoMedioConvertido = "0:00";
+                    //}
 
-                //List<Atendimento> listaAtendimento = new List<Atendimento>();
-
-                //foreach (Atendimento a in listaAtendimento) 
-                //{
-                //    if (a.IdEspecialidade != 0)
-                //    {
-                //        a.TempoMedio = await aService.GetAtendimentosByIdHospital(a.IdHospital);
-                //    }
-                //}
+                    if (e.IdEspecialidade != null)
+                    {
+                        this.TempoMedioConvertido = e.TempoMedioConvertido;
+                    }
+                }
 
                 OnPropertyChanged(nameof(Especialidades));
             }
@@ -262,30 +263,15 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
-        //public async Task ObterTempoMedioAtendimentos()
-        //{
-        //    try
-        //    {
-        //        Hospital h = await hService.GetHospitalAsync(int.Parse(hospitalSelecionadoId));
-        //        Atendimentos = await aService.GetAtendimentosByIdHospital(h.IdHospital);
-        //        OnPropertyChanged(nameof(TempoMedio));
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        await Application.Current.MainPage
-        //            .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
-        //    }
-        //}
-
-        //private string tempoMedio;
-        //public string TempoMedio
-        //{
-        //    get => tempoMedio;
-        //    set
-        //    {
-        //        tempoMedio = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
+        private string tempoMedioConvertido;
+        public string TempoMedioConvertido
+        {
+            get => tempoMedioConvertido;
+            set
+            {
+                tempoMedioConvertido = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }

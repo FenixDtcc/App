@@ -51,6 +51,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Remove="Resources\Images\3.png" />
+		<None Remove="Resources\Images\4.png" />
+		<None Remove="Resources\Images\cr1.png" />
+		<None Remove="Resources\Images\cr2.png" />
 		<None Remove="Resources\Images\exit.svg" />
 		<None Remove="Resources\Images\home.svg" />
 		<None Remove="Resources\Images\hospital.svg" />

@@ -5,7 +5,11 @@
              Title="AlterarDadosUsuarioView">
 
     <Grid>
-        <Frame CornerRadius="0" 
+
+        <ScrollView x:Name="scrollView"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+            <Frame CornerRadius="0" 
                BorderColor="Transparent"
                MaximumHeightRequest="100"
                MaximumWidthRequest="100">
@@ -16,208 +20,143 @@
                 </LinearGradientBrush>
             </Frame.Background>
 
-
-            <Grid Margin="10">
+            <Grid Grid.Row="1"
+                  Padding="0" 
+                  RowSpacing="10" 
+                  ColumnSpacing="10" 
+                  HorizontalOptions="CenterAndExpand" 
+                  VerticalOptions="CenterAndExpand">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="100" />
-                    <RowDefinition Height="100" />
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <Frame Grid.Row="0"
-                       CornerRadius="100"
-                       HeightRequest="100"
-                       WidthRequest="100"
-                       BorderColor="{x:StaticResource Secondary}"
-                             HorizontalOptions="StartAndExpand"
-                             VerticalOptions="CenterAndExpand">
-                    <Image Source="paciente.svg" />
-                </Frame>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                <Grid Grid.Row="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
+                <VerticalStackLayout Grid.Row="0">
+                    <Frame Grid.Row="0"
+                               CornerRadius="100"
+                               HeightRequest="100"
+                               WidthRequest="100"
+                               BorderColor="{x:StaticResource Secondary}"
+                               HorizontalOptions="StartAndExpand"
+                               VerticalOptions="CenterAndExpand">
+                        <Image Source="paciente.svg" />
+                    </Frame>
+                </VerticalStackLayout>
 
-                    <HorizontalStackLayout Grid.RowSpan="1"
-                                       HorizontalOptions="StartAndExpand">
-                        <Label Text="Alterar Nome"
-                           HorizontalTextAlignment="Center"
-                               VerticalTextAlignment="End" 
-                           FontSize="18"
-                               FontAttributes="Bold">
-                        </Label>
-                    </HorizontalStackLayout>
 
-                    <Grid Grid.Row="1">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="20"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
+                <VerticalStackLayout Grid.Row="1" >
+                    <Label Grid.Column="0"
+                                Text="Alterar Nome"
+                                HorizontalTextAlignment="Start"
+                                FontSize="20"
+                                FontAttributes="Bold">
+                    </Label>
 
-                        <Frame BackgroundColor="Transparent"
-                               BorderColor="{StaticResource Primary}"
-                               Grid.ColumnSpan="1"
-                               Grid.Row="1" 
-                               Padding="0">
+                    <HorizontalStackLayout>
+                        <Frame Grid.Column="0" 
+                                BackgroundColor="Transparent"
+                                BorderColor="{StaticResource Primary}" 
+                                Padding="0">
+
                             <Entry Text="{Binding Nome}"
-                               FontSize="18"
-                               HorizontalTextAlignment="Center"/>
+                                    FontSize="16"
+                                    HorizontalTextAlignment="Center"
+                                    WidthRequest="220"/>
                         </Frame>
 
-                        <HorizontalStackLayout Grid.Column="2"
-                                           Grid.Row="1">
-                            <Button BackgroundColor="{StaticResource Primary}"
-                            TextColor="{StaticResource Secondary}"
-                            FontSize="14" 
-                            Text="Salvar" Command="{Binding AlterarNomeCommand}" />
-                        </HorizontalStackLayout>
-                    </Grid>
-                </Grid>
-
-                <Grid Grid.Row="2">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <HorizontalStackLayout Grid.RowSpan="1"
-                                       HorizontalOptions="StartAndExpand">
-                        <Label Text="Alterar E-mail"
-                           HorizontalTextAlignment="Center"
-                               VerticalTextAlignment="End"
-                           FontSize="18"
-                               FontAttributes="Bold">
-                        </Label>
+                        <Button Grid.Column="1" 
+                                BackgroundColor="{StaticResource Primary}"
+                                TextColor="{StaticResource Secondary}"
+                                FontSize="16" 
+                                Text="Salvar" 
+                                Command="{Binding AlterarNomeCommand}"/>
                     </HorizontalStackLayout>
+                </VerticalStackLayout>
 
-                    <Grid Grid.Row="1">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="20"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
 
-                        <Frame BackgroundColor="Transparent"
-                           BorderColor="{StaticResource Primary}"
-                        Grid.Column="0"
-                        Grid.Row="1" 
-                               Padding="0"
-                               >
+                <VerticalStackLayout Grid.Row="2" >
+                    <Label Grid.Column="0"
+                                Text="Alterar E-mail"
+                                HorizontalTextAlignment="Start"
+                                FontSize="20"
+                                FontAttributes="Bold">
+                    </Label>
+
+                    <HorizontalStackLayout>
+                        <Frame Grid.Column="0" 
+                                BackgroundColor="Transparent"
+                                BorderColor="{StaticResource Primary}" 
+                                Padding="0">
+
                             <Entry Text="{Binding Email}"
-                               FontSize="18"
-                               HorizontalTextAlignment="Center"/>
+                                       FontSize="18"
+                                       HorizontalTextAlignment="Center"
+                                       WidthRequest="220"/>
                         </Frame>
 
-                        <HorizontalStackLayout Grid.Column="2"
-                                           Grid.Row="1">
-                            <Button BackgroundColor="{StaticResource Primary}"
-                            TextColor="{StaticResource Secondary}"
-                            FontSize="14" 
-                            Text="Salvar" Command="{Binding AlterarEmailCommand}" />
-                        </HorizontalStackLayout>
-                    </Grid>
-                </Grid>
-
-                <Grid Grid.Row="3">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <HorizontalStackLayout Grid.RowSpan="1"
-                                       HorizontalOptions="StartAndExpand">
-                        <Label Text="Alterar Senha"
-                           HorizontalTextAlignment="Center"
-                               VerticalTextAlignment="End"
-                           FontSize="18"
-                               FontAttributes="Bold">
-                        </Label>
+                        <Button Grid.Column="1" 
+                                BackgroundColor="{StaticResource Primary}"
+                                TextColor="{StaticResource Secondary}"
+                                FontSize="16" 
+                                Text="Salvar" 
+                                Command="{Binding AlterarNomeCommand}"/>
                     </HorizontalStackLayout>
+                </VerticalStackLayout>
 
-                    <Grid Grid.Row="1">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="20"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
 
-                        <Frame BackgroundColor="Transparent"
-                           BorderColor="{StaticResource Primary}"
-                        Grid.Column="0"
-                        Grid.Row="1" 
-                               Padding="0"
-                               >
+                <VerticalStackLayout Grid.Row="3" >
+                    <Label Grid.Column="0"
+                                Text="Alterar Senha"
+                                HorizontalTextAlignment="Start"
+                                FontSize="20"
+                                FontAttributes="Bold">
+                    </Label>
+
+                    <HorizontalStackLayout>
+                        <Frame Grid.Column="0" 
+                                BackgroundColor="Transparent"
+                                BorderColor="{StaticResource Primary}" 
+                                Padding="0">
+
                             <Entry Text="{Binding Senha}"
-                               FontSize="20"
-                               HorizontalTextAlignment="Center"
-                               Placeholder="******"
-                               Keyboard="Text" 
-                               IsPassword="True"/>
+                                       FontSize="20"
+                                       HorizontalTextAlignment="Center"
+                                       Placeholder="******"
+                                       Keyboard="Text" 
+                                       IsPassword="True"
+                                       WidthRequest="220"/>
                         </Frame>
 
-                        <HorizontalStackLayout Grid.Column="2"
-                                           Grid.Row="1">
-                            <Button BackgroundColor="{StaticResource Primary}"
-                            TextColor="{StaticResource Secondary}"
-                            FontSize="14" 
-                            Text="Salvar" Command="{Binding AlterarSenhaCommand}" />
-                        </HorizontalStackLayout>
-                    </Grid>
+                        <Button Grid.Column="1" 
+                                BackgroundColor="{StaticResource Primary}"
+                                TextColor="{StaticResource Secondary}"
+                                FontSize="16" 
+                                Text="Salvar" 
+                                Command="{Binding AlterarNomeCommand}"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+
+
+                <VerticalStackLayout Grid.Row="4">
+                    <Button HorizontalOptions="CenterAndExpand"
+                                Text="Excluir Cadastro" 
+                                Command="{Binding DeletarCommand}" 
+                                BackgroundColor="#A52A2A" 
+                                TextColor="White"
+                                CornerRadius="100">
+                    </Button>
+                </VerticalStackLayout>
                 </Grid>
-
-
-
-
-                <Grid Grid.Row="4" Grid.ColumnSpan="2"
-                      HorizontalOptions="CenterAndExpand">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <Grid Grid.Row="1">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-
-
-                        <HorizontalStackLayout Grid.ColumnSpan="4"
-                                           Grid.Row="4">
-
-                            <Button HorizontalOptions="CenterAndExpand"
-                            Text="Excluir Cadastro" 
-                        Command="{Binding DeletarCommand}" 
-                        BackgroundColor="DarkRed" 
-                        TextColor="White"
-                        CornerRadius="100">
-                            </Button>
-                            
-                        </HorizontalStackLayout>
-                    </Grid>
-                </Grid>
-
-
-                <!--<Button 
-                            Margin="0,20,0,0"
-                            Grid.ColumnSpan="2"
-                                            Grid.Row="4"
-                                            HorizontalOptions="CenterAndExpand"
-                            WidthRequest="200"
-                            Text="Excluir Cadastro" 
-                        Command="{Binding DeletarCommand}" 
-                        BackgroundColor="Red" 
-                        TextColor="White"
-                        CornerRadius="100">
-                        </Button>-->
-            </Grid>
-        </Frame>
+            </Frame>
+        </ScrollView>
     </Grid>
 </ContentPage>

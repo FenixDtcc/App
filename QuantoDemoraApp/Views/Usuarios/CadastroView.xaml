@@ -4,243 +4,176 @@
              x:Class="QuantoDemoraApp.Views.CadastroView"
              Title="CadastroView">
 
-
-
     <Grid>
-        <Frame CornerRadius="0" 
+        <ScrollView x:Name="scrollView"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+            <Frame CornerRadius="0" 
                BorderColor="Transparent"
                MaximumHeightRequest="100"
                MaximumWidthRequest="100">
-            <Frame.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="#fff" />
-                    <GradientStop Color="{x:StaticResource Secondary}" />
-                </LinearGradientBrush>
-            </Frame.Background>
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#fff" />
+                        <GradientStop Color="{x:StaticResource Secondary}" />
+                    </LinearGradientBrush>
+                </Frame.Background>
 
+                <Grid Grid.Row="1"
+                  Padding="0" 
+                  RowSpacing="10" 
+                  ColumnSpacing="10" 
+                  HorizontalOptions="CenterAndExpand" 
+                  VerticalOptions="CenterAndExpand">
 
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="180" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="180"/>
-                </Grid.RowDefinitions>
-
-                <StackLayout Grid.Row="0"
-                             VerticalOptions="EndAndExpand">
-                    <Image Source="logo.svg"
-                           MaximumHeightRequest="100"
-                           MaximumWidthRequest="100" />
-                </StackLayout>
-
-                <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="20"/>
-                        <RowDefinition Height="60"/>
-                        <RowDefinition Height="60"/>
-                        <RowDefinition Height="60"/>
-                        <RowDefinition Height="60"/>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <VerticalStackLayout Grid.Row="1">
-                        <Frame BorderColor="{x:StaticResource Primary}" 
-                           BackgroundColor="{x:StaticResource Secondary}"
-                           HeightRequest="50"
-                           WidthRequest="310"
-                           CornerRadius="100"
-                           Padding="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                            <HorizontalStackLayout VerticalOptions="Center"
-                                                   HorizontalOptions="StartAndExpand">
-
-                                <Frame BorderColor="Transparent"
-                                       BackgroundColor="Transparent"
-                                       HeightRequest="40"
-                                       WidthRequest="50"
-                                       CornerRadius="0"
-                                       HorizontalOptions="CenterAndExpand">
-                                    <Image Source="usuario.svg"
+                    <StackLayout Grid.Row="0"
+                             VerticalOptions="CenterAndExpand">
+                        <Image Source="logo.svg"
+                           MaximumHeightRequest="100"
+                           MaximumWidthRequest="100" />
+                    </StackLayout>
+                    
+                    <Frame BackgroundColor="{x:StaticResource Secondary}"
+                        BorderColor="{x:StaticResource Primary}"
+                        Padding="10"
+                        Grid.Row="1"
+                        CornerRadius="100">
+                        <HorizontalStackLayout>
+                            <HorizontalStackLayout Grid.Column="0" >
+                                <Image Source="usuario.svg" 
                                            HeightRequest="20"
                                            WidthRequest="20"/>
-                                </Frame>
-
-                                <Frame BorderColor="Transparent"
-                                       BackgroundColor="Transparent"
-                                       HorizontalOptions="CenterAndExpand"
-                                       HeightRequest="40"
-                                       WidthRequest="225"
-                                       CornerRadius="0"
-                                       Padding="0">
-                                    <Entry Placeholder="Digite seu nome de usuário"
-                                            PlaceholderColor="{x:StaticResource Primary}"
-                                            Text="{Binding Login}"
-                                            HorizontalTextAlignment="Center"
-                                            FontSize="14"
-                                            CharacterSpacing="2"
-                                            TextColor="#000"
-                                            FontAttributes="Bold">
-                                    </Entry>
-                                </Frame>
                             </HorizontalStackLayout>
-                        </Frame>
-                    </VerticalStackLayout>
 
-                    <VerticalStackLayout Grid.Row="2" >
-                        <Frame 
-                    BorderColor="{x:StaticResource Primary}" 
-                           BackgroundColor="{x:StaticResource Secondary}"
-                           HeightRequest="50"
-                           WidthRequest="310"
-                           CornerRadius="100"
-                           Padding="0">
-                            <HorizontalStackLayout VerticalOptions="Center" 
-                           HorizontalOptions="StartAndExpand"
-                           Spacing="0">
-                                <Frame BackgroundColor="Transparent"
-                                       BorderColor="Transparent"
-                                       HeightRequest="40"
-                                       WidthRequest="50"
-                                       CornerRadius="0"
-                                       HorizontalOptions="CenterAndExpand">
-                                    <Image Source="doc.svg"
-                                        HeightRequest="20"
-                                        WidthRequest="20"/>
-                                </Frame>
-
-                                <Frame BorderColor="Transparent"
-                                       BackgroundColor="Transparent"
-                                       HorizontalOptions="CenterAndExpand"
-                                       HeightRequest="40"
-                                       WidthRequest="225"
-                                       CornerRadius="0"
-                                       Padding="0">
-                                    <Entry  Placeholder="Digite o seu CPF" 
-                                            PlaceholderColor="{x:StaticResource Primary}"
-                                            Text="{Binding Cpf}"
-                                            TextColor="#000"
-                                            HorizontalTextAlignment="Center"
-                                            FontSize="14"
-                                            CharacterSpacing="2"
-                                            FontAttributes="Bold">
-                                    </Entry>
-                                </Frame>
-
-                            </HorizontalStackLayout>
-                        </Frame>
-                    </VerticalStackLayout>
-
-                    <VerticalStackLayout Grid.Row="3" >
-                        <Frame BorderColor="{x:StaticResource Primary}" 
-                           BackgroundColor="{x:StaticResource Secondary}"
-                           HeightRequest="50"
-                           WidthRequest="310"
-                           CornerRadius="100"
-                           Padding="0">
-                            <HorizontalStackLayout VerticalOptions="Center"
-                                                   HorizontalOptions="StartAndExpand"
-                                                   Spacing="0">
-
-                                <Frame BackgroundColor="Transparent"
-                                       BorderColor="Transparent"
-                                       HeightRequest="40"
-                                       WidthRequest="50"
-                                       CornerRadius="0"
-                                       HorizontalOptions="CenterAndExpand">
-                                    <Image Source="email.svg"
-                                        HeightRequest="20"
-                                        WidthRequest="20"/>
-                                </Frame>
-
-                                <Frame BorderColor="Transparent"
-                                       BackgroundColor="Transparent"
-                                       HorizontalOptions="CenterAndExpand"
-                                       HeightRequest="40"
-                                       WidthRequest="225"
-                                       CornerRadius="0"
-                                       Padding="0">
-                                    <Entry  Keyboard="Email" 
-                                    Placeholder="Digite o seu E-mail" 
-                                            PlaceholderColor="{x:StaticResource Primary}"
-                                            Text="{Binding Email}"
-                                            TextColor="#000"
-                                            HorizontalTextAlignment="Center"
-                                            FontSize="14"
-                                            CharacterSpacing="2"
-                                            FontAttributes="Bold">
-                                    </Entry>
-                                </Frame>
-                            </HorizontalStackLayout>
-                        </Frame>
-                    </VerticalStackLayout>
-
-
-
-
-                    <VerticalStackLayout Grid.Row="4" >
-                        <Frame BorderColor="{x:StaticResource Primary}" 
-                           BackgroundColor="{x:StaticResource Secondary}"
-                           HeightRequest="50"
-                           WidthRequest="310"
-                           CornerRadius="100"
-                           Padding="0">
-                            <HorizontalStackLayout VerticalOptions="Center"
-                                                   HorizontalOptions="StartAndExpand"
-                                                   Spacing="0">
-
-                                <Frame BackgroundColor="Transparent"
-                                       BorderColor="Transparent"
-                                       HeightRequest="40"
-                                       WidthRequest="50"
-                                       CornerRadius="0"
-                                       HorizontalOptions="CenterAndExpand">
-                                    <Image Source="senha.svg"
-                                        HeightRequest="20"
-                                        WidthRequest="20"/>
-                                </Frame>
-
-                                <Frame BorderColor="Transparent"
-                                       BackgroundColor="Transparent"
-                                       HorizontalOptions="CenterAndExpand"
-                                       HeightRequest="40"
-                                       WidthRequest="225"
-                                       CornerRadius="0"
-                                       Padding="0">
-                                    <Entry Placeholder="Digite a sua senha"
-                                            PlaceholderColor="{x:StaticResource Primary}"
-                                            Text="{Binding Senha}"
-                                            IsPassword="True"
-                                            HorizontalTextAlignment="Center"
-                                            FontSize="14"
-                                            CharacterSpacing="2"
-                                            TextColor="#000"
-                                            FontAttributes="Bold">
-                                    </Entry>
-                                </Frame>
-                            </HorizontalStackLayout>
-                        </Frame>
-                    </VerticalStackLayout>
-
-
-                    <Grid Grid.Row="5">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Grid.ColumnSpan="2"
-                                    Text="Registrar" 
-                                    Command="{Binding CadastrarCommand}" 
-                                    TextColor="{x:StaticResource Secondary}"
-                                    BackgroundColor="{x:StaticResource Primary}"
-                                    BorderColor="Transparent"
-                                    CornerRadius="100"
+                            <HorizontalStackLayout Grid.Column="1" >
+                                <Entry Placeholder="Digite seu nome de usuário"
+                                    PlaceholderColor="{x:StaticResource Primary}"
+                                    Text="{Binding Login}"
+                                    HorizontalTextAlignment="Center"
                                     FontSize="16"
+                                    CharacterSpacing="2"
+                                    TextColor="#000"
                                     FontAttributes="Bold"
-                                    WidthRequest="300"/>
-                    </Grid>
+                                    WidthRequest="280">
+                                </Entry>
+                            </HorizontalStackLayout>
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="{x:StaticResource Secondary}"
+                        BorderColor="{x:StaticResource Primary}"
+                        Padding="10"
+                        Grid.Row="2"
+                        CornerRadius="100">
+                        <HorizontalStackLayout>
+                            <HorizontalStackLayout Grid.Column="0" >
+                                <Image Source="doc.svg"
+                                        HeightRequest="20"
+                                        WidthRequest="20"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Grid.Row="1" 
+                                               Grid.Column="0">
+                                <Entry Placeholder="Digite o seu CPF" 
+                                        PlaceholderColor="{x:StaticResource Primary}"
+                                        Text="{Binding Cpf}"
+                                        TextColor="#000"
+                                        HorizontalTextAlignment="Center"
+                                        FontSize="16"
+                                        CharacterSpacing="2"
+                                        FontAttributes="Bold" 
+                                        WidthRequest="260">
+                                </Entry>
+                            </HorizontalStackLayout>
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="{x:StaticResource Secondary}"
+                        BorderColor="{x:StaticResource Primary}"
+                        Padding="10"
+                        Grid.Row="3"
+                        CornerRadius="100">
+                        <HorizontalStackLayout>
+                            <HorizontalStackLayout Grid.Column="0" >
+                                <Image Source="email.svg"
+                                       HeightRequest="20"
+                                       WidthRequest="20"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Grid.Row="1" 
+                                               Grid.Column="0">
+                                <Entry Keyboard="Email" 
+                                       Placeholder="Digite o seu E-mail" 
+                                       PlaceholderColor="{x:StaticResource Primary}"
+                                       Text="{Binding Email}"
+                                       TextColor="#000"
+                                       HorizontalTextAlignment="Center"
+                                       FontSize="16"
+                                       CharacterSpacing="2"
+                                       FontAttributes="Bold"
+                                       WidthRequest="260">
+                                </Entry>
+                            </HorizontalStackLayout>
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="{x:StaticResource Secondary}"
+                            BorderColor="{x:StaticResource Primary}"
+                            Padding="10"
+                            Grid.Row="4"
+                            CornerRadius="100">
+                        <HorizontalStackLayout>
+                            <HorizontalStackLayout Grid.Column="0" >
+                                <Image Source="senha.svg"
+                                        HeightRequest="20"
+                                        WidthRequest="20"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Grid.Row="1"
+                                                   Grid.Column="0">
+                                <Entry Placeholder="Digite a sua senha"
+                                    PlaceholderColor="{x:StaticResource Primary}"
+                                    Text="{Binding Senha}"
+                                    IsPassword="True"
+                                    HorizontalTextAlignment="Center"
+                                    FontSize="16"
+                                    CharacterSpacing="2"
+                                    TextColor="#000"
+                                    FontAttributes="Bold" 
+                                    WidthRequest="280">
+                                </Entry>
+                            </HorizontalStackLayout>
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                    <Frame Grid.Row="5"
+                           Padding="0"
+                           BorderColor="Transparent"
+                           BackgroundColor="Transparent"
+                           CornerRadius="100">
+
+                        <Button Text="Registrar" 
+                                Command="{Binding CadastrarCommand}" 
+                                TextColor="{x:StaticResource Secondary}"
+                                BackgroundColor="{x:StaticResource Primary}"
+                                CornerRadius="100"
+                                FontSize="16"
+                                FontAttributes="Bold"/>
+                    </Frame>
                 </Grid>
-            </Grid>
-        </Frame>
+            </Frame>
+        </ScrollView>
     </Grid>
 </ContentPage>

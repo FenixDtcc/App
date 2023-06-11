@@ -35,7 +35,7 @@ namespace QuantoDemoraApp.Services.Hospitais
             return hospital;
         }
 
-        public async Task<bool> GetLocalizacaoAsync(double latitude, double longitude, string placeIdGoogleMaps)
+        public async Task<bool> AbrirGoogleMapsAsync(double latitude, double longitude, string placeIdGoogleMaps)
         {
             string mapaUrlBase = 
                 $"http://www.google.com/maps/search/?api=1&query={latitude.ToString().Replace(",", ".")}%2C{longitude.ToString().Replace(",", ".")}&query_place_id={placeIdGoogleMaps}";

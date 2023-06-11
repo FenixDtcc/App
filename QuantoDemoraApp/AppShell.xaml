@@ -7,39 +7,41 @@
     xmlns:viewsHospitais="clr-namespace:QuantoDemoraApp.Views.Hospitais"
     xmlns:local="clr-namespace:QuantoDemoraApp">
 
+
+    <Shell.FlyoutBackground>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="{x:StaticResource Secondary}"
+                          Offset="0.1"/>
+            <GradientStop Color="{x:StaticResource Secondary}"
+                          Offset="0.6"/>
+            <GradientStop Color="#fff"
+                          Offset="1.0"/>
+        </LinearGradientBrush>
+    </Shell.FlyoutBackground>
+    
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="{OnPlatform Android=130, iOS=200}">
-                    </RowDefinition>
-                    
-                    <RowDefinition Height="*">
-                    </RowDefinition>
-                    
-                    <RowDefinition Height="40">
-                    </RowDefinition>
-                    
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                
-                <FlexLayout Grid.Row="0"
-                            Direction="Row" 
-                            AlignItems="Center">
-                    <VerticalStackLayout Margin="10"
-                                         Padding="10,0,0,0" 
-                                         Spacing="0">
-                        <Label Text="Olá, seja bem-vindo(a)!" 
-                               FontAttributes="Bold" 
-                               FontSize="Medium" />
-                    </VerticalStackLayout>
-                </FlexLayout>
+
+                <VerticalStackLayout HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="CenterAndExpand">
+                    <Label Text="Olá, seja bem-vindo(a)!" 
+                            FontAttributes="Bold" 
+                            FontSize="Medium"
+                            HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
             </Grid>
-        </DataTemplate>     
-        
+        </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
 
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent 
             Title="Home" 
             Icon="home.svg" 
@@ -53,20 +55,22 @@
             Title="Hospitais" 
             Icon="hospital.png" 
             ContentTemplate="{DataTemplate viewsHospitais:ListagemView}" />
-
-        
     </FlyoutItem>
+
 
     <ShellContent 
         Title="Sair" 
-        Icon="Exit.svg" 
+        Icon="exit.svg" 
         ContentTemplate="{DataTemplate viewsUsuarios:LoginView}" 
         Shell.FlyoutBehavior="Disabled"/>
 
+    
     <Shell.FlyoutFooter>
-        <Label 
-            x:Name="lblLogin"
-            FontAttributes="Bold" 
-            HorizontalOptions="Center"/>
+        <StackLayout>
+            <Label x:Name="lblLogin"
+               FontAttributes="Bold" 
+               HorizontalOptions="Center"
+               Padding="10"/>
+        </StackLayout>
     </Shell.FlyoutFooter>
 </Shell>
