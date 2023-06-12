@@ -2036,3 +2036,8 @@ C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\ma
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\QuantoDemoraApp.pdb
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\QuantoDemoraApp.genruntimeconfig.cache
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\ref\QuantoDemoraApp.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cr1.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cr2.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cr3.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cr4.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\pesquisa.png

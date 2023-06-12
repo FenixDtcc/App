@@ -77,6 +77,7 @@
                                 TextColor="{StaticResource Secondary}"
                                 FontSize="16" 
                                 Text="Salvar" 
+                                Margin="10,0,0,0"
                                 Command="{Binding AlterarNomeCommand}"/>
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
@@ -97,7 +98,7 @@
                                 Padding="0">
 
                             <Entry Text="{Binding Email}"
-                                       FontSize="18"
+                                       FontSize="16"
                                        HorizontalTextAlignment="Center"
                                        WidthRequest="220"/>
                         </Frame>
@@ -107,7 +108,8 @@
                                 TextColor="{StaticResource Secondary}"
                                 FontSize="16" 
                                 Text="Salvar" 
-                                Command="{Binding AlterarNomeCommand}"/>
+                                Margin="10,0,0,0"
+                                Command="{Binding AlterarEmailCommand}"/>
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
 
@@ -127,7 +129,7 @@
                                 Padding="0">
 
                             <Entry Text="{Binding Senha}"
-                                       FontSize="20"
+                                       FontSize="16"
                                        HorizontalTextAlignment="Center"
                                        Placeholder="******"
                                        Keyboard="Text" 
@@ -140,7 +142,8 @@
                                 TextColor="{StaticResource Secondary}"
                                 FontSize="16" 
                                 Text="Salvar" 
-                                Command="{Binding AlterarNomeCommand}"/>
+                                Margin="10,0,0,0"
+                                Command="{Binding AlterarSenhaCommand}"/>
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
 
@@ -150,6 +153,7 @@
                     <Button HorizontalOptions="CenterAndExpand"
                                 Text="Excluir Cadastro" 
                                 Command="{Binding DeletarCommand}" 
+                                Margin="0,100,0,0"
                                 BackgroundColor="#A52A2A" 
                                 TextColor="White"
                                 CornerRadius="100">

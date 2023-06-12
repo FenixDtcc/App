@@ -17,13 +17,14 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
         private HospitalService hService;
         private UsuarioService uService;
         public ObservableCollection<Hospital> Hospitais { get; set; }
+
         public ListagemHospitalViewModel()
         {
             string token = Preferences.Get("UsuarioToken", string.Empty);
             hService = new HospitalService(token);
             uService = new UsuarioService(token);
             Hospitais = new ObservableCollection<Hospital>();
-            _ = ObterHospital(); 
+            _ = ObterHospital();
         }
 
         public async Task ObterHospital()
@@ -55,7 +56,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                     }
                 }
 
-                Hospitais = new ObservableCollection<Hospital>(Hospitais.OrderBy(x => x.DistanciaKm)); 
+                Hospitais = new ObservableCollection<Hospital>(Hospitais.OrderBy(x => x.DistanciaKm));
                 OnPropertyChanged(nameof(Hospitais));
             }
             catch (Exception ex)
@@ -78,12 +79,27 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
+        public async Task PesquisarHospitais(string nmHospital)
+        {
+            try
+            {
+                Hospitais = await hService.GetHospitaisByNomeAsync(nmHospital);
+                OnPropertyChanged(nameof(Hospitais));
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                throw;
+            }
+        }
+
         private Hospital hospitalSelecionado;
         public Hospital HospitalSelecionado
         {
-            get 
-            { 
-                return hospitalSelecionado; 
+            get
+            {
+                return hospitalSelecionado;
             }
             set
             {
@@ -108,19 +124,20 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             }
         }
 
-        //RefreshView refreshView = new RefreshView();
-        //ICommand refreshCommand = new Command(() =>
-        //{
-        //    // IsRefreshing is true
-        //    // Refresh data here
-        //    refreshView.IsRefreshing = false;
-        //});
-
-        //refreshView.Command = refreshCommand;
-
-        //ListView listView = new ListView();
-        //FlexLayout flexLayout = new FlexLayout { ... };
-        //scrollView.Content = flexLayout;
-        //refreshView.Content = listView;
+        private string hospitalPesquisa;
+        public string HospitalPesquisa
+        {
+            get => hospitalPesquisa;
+            set
+            {
+                if (!string.IsNullOrEmpty(value) && !string.IsNullOrWhiteSpace(value))
+                {
+                    hospitalPesquisa = value;
+                    PesquisarHospitais(hospitalPesquisa);
+                    OnPropertyChanged();
+                    Hospitais.Clear();
+                }                
+            }
+        }
     }
 }

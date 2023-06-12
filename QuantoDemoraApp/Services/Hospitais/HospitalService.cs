@@ -24,7 +24,7 @@ namespace QuantoDemoraApp.Services.Hospitais
         {
             string urlComplementar = string.Format("{0}", "/Listar");
             ObservableCollection<Models.Hospital> listaHospitais = await
-            _request.GetAsync<ObservableCollection<Models.Hospital>>(apiUrlBase + urlComplementar, _token);
+                _request.GetAsync<ObservableCollection<Models.Hospital>>(apiUrlBase + urlComplementar, _token);
             return listaHospitais;
         }
 
@@ -41,6 +41,15 @@ namespace QuantoDemoraApp.Services.Hospitais
                 $"http://www.google.com/maps/search/?api=1&query={latitude.ToString().Replace(",", ".")}%2C{longitude.ToString().Replace(",", ".")}&query_place_id={placeIdGoogleMaps}";
             var mapaHospital = await _request.OpenUrlAsync<Hospital>(mapaUrlBase);
             return mapaHospital;
+        }
+
+        public async Task<ObservableCollection<Hospital>> GetHospitaisByNomeAsync(string nmHospital)
+        {
+            string urlComplementar = string.Format("/Busca/{0}", nmHospital);
+            ObservableCollection<Hospital> listaHospitais = await
+                _request.GetAsync<ObservableCollection<Hospital>>(apiUrlBase + urlComplementar, _token);
+
+            return new ObservableCollection<Hospital>(listaHospitais);
         }
     }
 }

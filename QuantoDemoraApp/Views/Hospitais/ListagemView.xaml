@@ -4,27 +4,6 @@
              x:Class="QuantoDemoraApp.Views.Hospitais.ListagemView"
              Title="ListagemView">
 
-    <!--<RefreshView IsRefreshing="{Binding IsRefreshing}"
-             Command="{Binding RefreshCommand}">-->
-
-    <!-- Tentando alterar a cor de seleção do item da ListView -->
-    <!--<ContentPage.Resources>
-        <Style TargetType="Grid">
-            <Setter Property="VisualStateManager.VisualStateGroups">
-                <VisualStateGroupList>
-                    <VisualStateGroup x:Name="CommonStates">
-                        <VisualState x:Name="Normal" />
-                        <VisualState x:Name="Selected">
-                            <VisualState.Setters>
-                                <Setter Property="BackgroundColor"
-                                        Value="LightSkyBlue" />
-                            </VisualState.Setters>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateGroupList>
-            </Setter>
-        </Style>
-    </ContentPage.Resources>-->
     <Grid>
         <Frame CornerRadius="0" 
                BorderColor="Transparent">
@@ -37,6 +16,39 @@
 
             <ScrollView Padding="0">
                 <VerticalStackLayout Padding="0">
+
+                    <Frame BackgroundColor="LightGrey"
+                        BorderColor="{x:StaticResource Primary}"
+                        Padding="10"
+                        Grid.Row="2"
+                        CornerRadius="100"
+                           WidthRequest="310"
+                           HeightRequest="50"
+                           Margin="0,0,0,10">
+
+                        <HorizontalStackLayout>
+                            <HorizontalStackLayout Grid.Column="0" >
+                                <Image Source="senha.svg"
+                                    HeightRequest="20"
+                                    WidthRequest="20"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Grid.Row="1" 
+                                               Grid.Column="0">
+                                <Entry  Placeholder="Pesquisar"
+                                    PlaceholderColor="{x:StaticResource Primary}"
+                                    Text="{Binding HospitalPesquisa}"
+                                    HorizontalTextAlignment="Center"
+                                    FontSize="16"
+                                    CharacterSpacing="2"
+                                    TextColor="#000"
+                                    FontAttributes="Bold" 
+                                    WidthRequest="260"
+                                    HeightRequest="40">
+                                </Entry>
+                            </HorizontalStackLayout>
+                        </HorizontalStackLayout>
+                    </Frame>
+
                     <ListView x:Name="listView"
                               HasUnevenRows="True" 
                               ItemsSource="{Binding Hospitais}" 
@@ -53,7 +65,7 @@
                                         <Frame BackgroundColor="{StaticResource Secondary}"
                                                BorderColor="{StaticResource Primary}"
                                                HeightRequest="80"
-                                               WidthRequest="320"
+                                               WidthRequest="310"
                                                CornerRadius="100"
                                                Padding="0"
                                                HorizontalOptions="CenterAndExpand">
@@ -105,7 +117,6 @@
                     </ListView>
                 </VerticalStackLayout>
             </ScrollView>
-            <!--</RefreshView>-->
         </Frame>
     </Grid>
 </ContentPage>

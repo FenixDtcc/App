@@ -8,11 +8,6 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{x:StaticResource Primary}">
 
-
-    <!--<ContentPage.Behaviors>
-        <toolkit:StatusBarBehavior StatusBarColor="Black" StatusBarStyle="LightContent" />
-    </ContentPage.Behaviors>-->
-
     <Grid>
         <Frame CornerRadius="0" 
                BorderColor="Transparent"

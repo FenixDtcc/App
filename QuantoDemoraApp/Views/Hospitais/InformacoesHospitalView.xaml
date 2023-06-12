@@ -85,7 +85,7 @@
 
                                                         <VerticalStackLayout>
                                                             <Label Text="{Binding DsEspecialidade}"
-                                                               FontSize="20" 
+                                                               FontSize="18" 
                                                                FontAttributes="Bold"
                                                                HorizontalTextAlignment="Center"/>
                                                             <Label Text="Tempo Médio de Atendimento:"

@@ -3016,3 +3016,8 @@ C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\cr1.scale-100.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\cr2.scale-100.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\cr3.scale-100.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\cr4.scale-100.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pesquisa.scale-100.png

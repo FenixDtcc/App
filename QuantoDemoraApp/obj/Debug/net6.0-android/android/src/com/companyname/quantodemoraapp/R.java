@@ -11098,13 +11098,14 @@ public final class R {
     public static final int notification_tile_bg=0x7f0700a6;
     public static final int notify_panel_notification_icon_bg=0x7f0700a7;
     public static final int paciente=0x7f0700a8;
-    public static final int senha=0x7f0700a9;
-    public static final int seta=0x7f0700aa;
-    public static final int test_custom_background=0x7f0700ab;
-    public static final int test_level_drawable=0x7f0700ac;
-    public static final int tooltip_frame_dark=0x7f0700ad;
-    public static final int tooltip_frame_light=0x7f0700ae;
-    public static final int usuario=0x7f0700af;
+    public static final int pesquisa=0x7f0700a9;
+    public static final int senha=0x7f0700aa;
+    public static final int seta=0x7f0700ab;
+    public static final int test_custom_background=0x7f0700ac;
+    public static final int test_level_drawable=0x7f0700ad;
+    public static final int tooltip_frame_dark=0x7f0700ae;
+    public static final int tooltip_frame_light=0x7f0700af;
+    public static final int usuario=0x7f0700b0;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

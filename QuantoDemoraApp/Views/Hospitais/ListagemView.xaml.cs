@@ -22,8 +22,8 @@ public partial class ListagemView : ContentPage
         _ = viewModel.ObterHospital();
     }
 
-    private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-    {
+    //private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    //{
 
-    }
+    //}
 }

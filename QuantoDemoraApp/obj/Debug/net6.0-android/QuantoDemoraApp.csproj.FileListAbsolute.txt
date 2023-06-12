@@ -21664,21 +21664,6 @@ C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-android\stamp\
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\typemaps.x86_64.s
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.x86_64.s
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.x86_64.s
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\typemaps.x86_64.o
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.x86_64.o
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.x86_64.o
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\app_shared_libraries\x86_64\libxamarin-app.so
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Data.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 C:\ETEC 2022\2023\App\QuantoDemoraApp\bin\Debug\net6.0-android\QuantoDemoraApp.runtimeconfig.json
 C:\ETEC 2022\2023\App\QuantoDemoraApp\bin\Debug\net6.0-android\QuantoDemoraApp.dll
 C:\ETEC 2022\2023\App\QuantoDemoraApp\bin\Debug\net6.0-android\QuantoDemoraApp.pdb
@@ -22791,3 +22776,23 @@ C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\ty
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable\cr1.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable\cr2.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable\cr3.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable\cr4.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable\pesquisa.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Data.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.s
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.arm64-v8a.s
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.s
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.o
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
