@@ -15,8 +15,8 @@
                MaximumWidthRequest="100">
             <Frame.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#fff" />
-                    <GradientStop Color="{x:StaticResource Secondary}" />
+                        <GradientStop Color="{x:StaticResource Secondary}" />
+                        <GradientStop Color="#fff" />
                 </LinearGradientBrush>
             </Frame.Background>
 
@@ -132,6 +132,7 @@
                                        FontSize="16"
                                        HorizontalTextAlignment="Center"
                                        Placeholder="******"
+                                       PlaceholderColor="{StaticResource Primary}"
                                        Keyboard="Text" 
                                        IsPassword="True"
                                        WidthRequest="220"/>

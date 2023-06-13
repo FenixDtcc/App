@@ -9,8 +9,8 @@
                BorderColor="Transparent">
             <Frame.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#fff" />
                     <GradientStop Color="{x:StaticResource Secondary}" />
+                    <GradientStop Color="#fff" />
                 </LinearGradientBrush>
             </Frame.Background>
 
@@ -54,8 +54,7 @@
                               ItemsSource="{Binding Hospitais}" 
                               SelectedItem="{Binding HospitalSelecionado}"
                               SelectionMode="Single"
-                              VerticalScrollBarVisibility="Never"
-                              IsPullToRefreshEnabled="True">
+                              VerticalScrollBarVisibility="Never">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>

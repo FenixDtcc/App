@@ -1780,8 +1780,6 @@ C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-ios\iossimulator-x64\Microsoft.M
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\medico.png
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\medico@2x.png
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-ios\iossimulator-x64\resizetizer\r\medico@3x.png
-C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-ios\iossimulator-x64\CommunityToolkit.Maui.dll
-C:\DEV\TCC\App\QuantoDemoraApp\bin\Debug\net6.0-ios\iossimulator-x64\CommunityToolkit.Maui.Core.dll
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\bin\Debug\net6.0-ios\iossimulator-x64\QuantoDemoraApp.runtimeconfig.json
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\bin\Debug\net6.0-ios\iossimulator-x64\QuantoDemoraApp.dll
 C:\Users\iagom\Downloads\dev\App\QuantoDemoraApp\bin\Debug\net6.0-ios\iossimulator-x64\QuantoDemoraApp.pdb

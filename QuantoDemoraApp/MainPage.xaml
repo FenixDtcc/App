@@ -8,8 +8,8 @@
                BorderColor="Transparent">
             <Frame.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#fff" />
                     <GradientStop Color="{x:StaticResource Secondary}" />
+                    <GradientStop Color="#fff" />
                 </LinearGradientBrush>
             </Frame.Background>
 

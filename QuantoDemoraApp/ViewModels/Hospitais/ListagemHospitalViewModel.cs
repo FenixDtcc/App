@@ -25,6 +25,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             uService = new UsuarioService(token);
             Hospitais = new ObservableCollection<Hospital>();
             _ = ObterHospital();
+            _ = CalcularDistancia();
         }
 
         public async Task ObterHospital()
@@ -32,30 +33,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             try
             {
                 Hospitais = await hService.GetHospitaisAsync();
-                List<Hospital> listaHospitais = new List<Hospital>(Hospitais);
-
-                Usuario usuario = new Usuario();
-                var usuarioId = Preferences.Get("UsuarioId", usuario.IdUsuario);
-
-                Usuario u = await
-                    uService.GetUsuarioAsync(usuarioId);
-
-                double uLati = (double)u.Latitude;
-                double uLong = (double)u.Longitude;
-                Location usuarioLoc = new Location(uLati, uLong);
-
-                foreach (Hospital h in listaHospitais)
-                {
-                    if (u.Latitude != null && u.Longitude != null)
-                    {
-                        double hLati = (double)h.Latitude;
-                        double hLong = (double)h.Longitude;
-                        Location hospitalLoc = new Location(hLati, hLong);
-
-                        h.DistanciaKm = Math.Round(Location.CalculateDistance(usuarioLoc, hospitalLoc, DistanceUnits.Kilometers), 2);
-                    }
-                }
-
+                await CalcularDistancia();
                 Hospitais = new ObservableCollection<Hospital>(Hospitais.OrderBy(x => x.DistanciaKm));
                 OnPropertyChanged(nameof(Hospitais));
             }
@@ -63,6 +41,58 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             {
                 await Application.Current.MainPage
                     .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task CalcularDistancia()
+        {
+            List<Hospital> listaHospitais = new List<Hospital>(Hospitais);
+
+            Usuario usuario = new Usuario();
+            var usuarioId = Preferences.Get("UsuarioId", usuario.IdUsuario);
+
+            Usuario u = await
+                uService.GetUsuarioAsync(usuarioId);
+
+            double uLati = (double)u.Latitude;
+            double uLong = (double)u.Longitude;
+            Location usuarioLoc = new Location(uLati, uLong);
+
+            foreach (Hospital h in listaHospitais)
+            {
+                if (u.Latitude != null && u.Longitude != null)
+                {
+                    double hLati = (double)h.Latitude;
+                    double hLong = (double)h.Longitude;
+                    Location hospitalLoc = new Location(hLati, hLong);
+
+                    h.DistanciaKm = Math.Round(Location.CalculateDistance(usuarioLoc, hospitalLoc, DistanceUnits.Kilometers), 2);
+                }
+            }
+        }
+
+        public async Task PesquisarHospitais(string nmHospital)
+        {
+            try
+            {
+                Hospitais = await hService.GetHospitaisByNomeAsync(nmHospital);
+
+                if (Hospitais.Count != 0) 
+                {
+                    await CalcularDistancia();
+                    OnPropertyChanged(nameof(Hospitais));
+                }
+                else if (Hospitais.Count == 0 && nmHospital.Length >= 5)
+                {
+                    throw new Exception("Hospital não encontrado!");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message, "Ok");
+                throw;
             }
         }
 
@@ -76,21 +106,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             {
                 await Application.Current.MainPage
                     .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
-            }
-        }
-
-        public async Task PesquisarHospitais(string nmHospital)
-        {
-            try
-            {
-                Hospitais = await hService.GetHospitaisByNomeAsync(nmHospital);
-                OnPropertyChanged(nameof(Hospitais));
-            }
-            catch (Exception ex)
-            {
-                await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
-                throw;
             }
         }
 
@@ -136,7 +151,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                     PesquisarHospitais(hospitalPesquisa);
                     OnPropertyChanged();
                     Hospitais.Clear();
-                }                
+                }
             }
         }
     }

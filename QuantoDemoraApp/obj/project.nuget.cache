@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "AWnvBjcVXX5OMc7RTLvNRl7XeEB8HXAsVuKIQkSyltV2XBmljR+xgi8AQeMCfjC4p1rhOuzEA3CBSmglxJjFrw==",
+  "dgSpecHash": "KLk38dRPXjFNuR/RVtqshbqjxD7LkrYlNNXRn8suozTitef5gl28LxPuHdwpIpqHOuiBF0DuVYuYda6ZRYfUdQ==",
   "success": true,
-  "projectFilePath": "C:\\DEV\\TCC\\dev\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
+  "projectFilePath": "C:\\DEV\\TCC\\App\\QuantoDemoraApp\\QuantoDemoraApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\iagom\\.nuget\\packages\\communitytoolkit.maui\\2.0.0\\communitytoolkit.maui.2.0.0.nupkg.sha512",
-    "C:\\Users\\iagom\\.nuget\\packages\\communitytoolkit.maui.core\\2.0.0\\communitytoolkit.maui.core.2.0.0.nupkg.sha512",
     "C:\\Users\\iagom\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\iagom\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\iagom\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
