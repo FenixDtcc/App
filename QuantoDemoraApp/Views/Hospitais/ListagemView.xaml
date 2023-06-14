@@ -14,108 +14,111 @@
                 </LinearGradientBrush>
             </Frame.Background>
 
-            <ScrollView Padding="0">
-                <VerticalStackLayout Padding="0">
 
+            <VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Row="0"
+                                     Padding="10">
                     <Frame BackgroundColor="LightGrey"
-                        BorderColor="{x:StaticResource Primary}"
-                        Padding="10"
-                        Grid.Row="2"
-                        CornerRadius="100"
-                           WidthRequest="310"
-                           HeightRequest="50"
-                           Margin="0,0,0,10">
+                            BorderColor="{x:StaticResource Primary}"
+                            CornerRadius="100" 
+                            Padding="0">
 
-                        <HorizontalStackLayout>
-                            <HorizontalStackLayout Grid.Column="0" >
-                                <Image Source="senha.svg"
-                                    HeightRequest="20"
-                                    WidthRequest="20"/>
+                        <HorizontalStackLayout Grid.Column="0" Padding="5">
+                            <HorizontalStackLayout>
+                                <Frame Padding="12"
+                                       BorderColor="{StaticResource Primary}"
+                                       BackgroundColor="{StaticResource Secondary}"
+                                       CornerRadius="100">
+                                    <Image Source="lupa.svg"
+                                           HeightRequest="20"
+                                            WidthRequest="20"/>
+                                </Frame>
                             </HorizontalStackLayout>
-                            <HorizontalStackLayout Grid.Row="1" 
-                                               Grid.Column="0">
-                                <Entry  Placeholder="Pesquisar"
-                                    PlaceholderColor="{x:StaticResource Primary}"
-                                    Text="{Binding HospitalPesquisa}"
-                                    HorizontalTextAlignment="Center"
-                                    FontSize="16"
-                                    CharacterSpacing="2"
-                                    TextColor="#000"
-                                    FontAttributes="Bold" 
-                                    WidthRequest="260"
-                                    HeightRequest="40">
+                            
+                            <HorizontalStackLayout Grid.Column="1">
+                                <Entry Placeholder="Pesquisar"
+                                        PlaceholderColor="DarkGrey"
+                                        Text="{Binding HospitalPesquisa}"
+                                        HorizontalTextAlignment="Center"
+                                        FontSize="16"
+                                        CharacterSpacing="2"
+                                        FontAttributes="Bold" 
+                                        WidthRequest="260"
+                                       Margin="-30,0,0,0">
                                 </Entry>
                             </HorizontalStackLayout>
                         </HorizontalStackLayout>
                     </Frame>
+                </VerticalStackLayout>
 
-                    <ListView x:Name="listView"
+                <ScrollView Padding="0">
+                    <VerticalStackLayout>
+                        <ListView x:Name="listView"
                               HasUnevenRows="True" 
                               ItemsSource="{Binding Hospitais}" 
                               SelectedItem="{Binding HospitalSelecionado}"
                               SelectionMode="Single"
-                              VerticalScrollBarVisibility="Never">
+                              VerticalScrollBarVisibility="Always">
 
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <VerticalStackLayout Padding="10"
-                                                         HeightRequest="100">
-                                        <Frame BackgroundColor="{StaticResource Secondary}"
-                                               BorderColor="{StaticResource Primary}"
-                                               HeightRequest="80"
-                                               WidthRequest="310"
-                                               CornerRadius="100"
-                                               Padding="0"
-                                               HorizontalOptions="CenterAndExpand">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <VerticalStackLayout Padding="10"
+                                                             HeightRequest="100">
+                                            <Frame BackgroundColor="{StaticResource Secondary}"
+                                                   BorderColor="{StaticResource Primary}"
+                                                   CornerRadius="100"
+                                                   Padding="0">
 
-                                            <HorizontalStackLayout HeightRequest="80"
-                                                                   VerticalOptions="CenterAndExpand"
-                                                                   HorizontalOptions="CenterAndExpand">
+                                                <HorizontalStackLayout HeightRequest="80"
+                                                                       VerticalOptions="CenterAndExpand"
+                                                                       HorizontalOptions="CenterAndExpand">
 
-                                                <HorizontalStackLayout HeightRequest="60"
-                                                                       WidthRequest="60"
-                                                                       Padding="0,5,0,0">
-                                                    <Image Source="mapa.svg"
-                                                           HeightRequest="60"
-                                                           WidthRequest="60" />
-                                                </HorizontalStackLayout>
+                                                    <HorizontalStackLayout HeightRequest="60"
+                                                                           WidthRequest="60"
+                                                                           Padding="0,5,0,0">
+                                                        <Image Source="mapa.svg"
+                                                               HeightRequest="60"
+                                                               WidthRequest="60" />
+                                                    </HorizontalStackLayout>
 
-                                                <VerticalStackLayout HorizontalOptions="CenterAndExpand"
-                                                                     HeightRequest="60"
-                                                                     WidthRequest="210">
-                                                    <Label Text="{Binding NomeFantasia}"
+                                                    <VerticalStackLayout HorizontalOptions="CenterAndExpand"
+                                                                         HeightRequest="60"
+                                                                         WidthRequest="210">
+                                                        <Label Text="{Binding NomeFantasia}"
                                                            FontSize="20" 
                                                            FontAttributes="Bold"
                                                            HorizontalTextAlignment="Start"/>
-                                                    <Label FontSize="16">
-                                                        <Label.Text>
-                                                            <MultiBinding StringFormat="{}Distância: {0} km">
-                                                                <Binding Path="DistanciaKm" />
-                                                                
-                                                            </MultiBinding>
-                                                        </Label.Text>
-                                                    </Label>
-                                                </VerticalStackLayout>
+                                                        <Label FontSize="16">
+                                                            <Label.Text>
+                                                                <MultiBinding StringFormat="{}Distância: {0} km">
+                                                                    <Binding Path="DistanciaKm" />
 
-                                                <HorizontalStackLayout HeightRequest="60"
+                                                                </MultiBinding>
+                                                            </Label.Text>
+                                                        </Label>
+                                                    </VerticalStackLayout>
+
+                                                    <HorizontalStackLayout HeightRequest="60"
                                                            WidthRequest="30"
                                                            HorizontalOptions="CenterAndExpand"
                                                            Padding="0,5,0,0">
-                                                    <Image Source="seta.svg"
+                                                        <Image Source="seta.svg"
                                                            HeightRequest="30"
                                                            WidthRequest="40"/>
-                                                </HorizontalStackLayout>
+                                                    </HorizontalStackLayout>
 
-                                            </HorizontalStackLayout>
-                                        </Frame>
-                                    </VerticalStackLayout>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </VerticalStackLayout>
-            </ScrollView>
+                                                </HorizontalStackLayout>
+                                            </Frame>
+                                        </VerticalStackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </VerticalStackLayout>
+                </ScrollView>
+            </VerticalStackLayout>
         </Frame>
     </Grid>
 </ContentPage>

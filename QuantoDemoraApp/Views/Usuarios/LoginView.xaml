@@ -14,8 +14,8 @@
                MaximumWidthRequest="100">
             <Frame.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#fff" />
                     <GradientStop Color="{x:StaticResource Secondary}" />
+                    <GradientStop Color="#fff" />
                 </LinearGradientBrush>
             </Frame.Background>
 

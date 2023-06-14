@@ -59,6 +59,7 @@
 		<None Remove="Resources\Images\home.svg" />
 		<None Remove="Resources\Images\hospital.svg" />
 		<None Remove="Resources\Images\info.svg" />
+		<None Remove="Resources\Images\lupa 1.svg" />
 		<None Remove="Resources\Images\mapa.svg" />
 		<None Remove="Resources\Images\menuusuarios.svg" />
 		<None Remove="Resources\Images\paciente.svg" />

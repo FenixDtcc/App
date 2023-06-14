@@ -10,12 +10,12 @@
                     VerticalOptions="FillAndExpand">
             <Frame CornerRadius="0" 
                BorderColor="Transparent">
-            <Frame.Background>
-                <LinearGradientBrush>
+                <Frame.Background>
+                    <LinearGradientBrush>
                         <GradientStop Color="{x:StaticResource Secondary}" />
                         <GradientStop Color="#fff" />
-                </LinearGradientBrush>
-            </Frame.Background>
+                    </LinearGradientBrush>
+                </Frame.Background>
 
 
                 <Grid Padding="0" 
