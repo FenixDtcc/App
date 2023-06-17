@@ -2052,3 +2052,6 @@ C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccat
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cr3.png
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cr4.png
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\pesquisa.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\lupa.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\lupa@2x.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\lupa@3x.png

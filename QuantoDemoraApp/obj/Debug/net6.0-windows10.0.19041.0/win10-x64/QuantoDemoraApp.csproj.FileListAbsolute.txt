@@ -3036,3 +3036,8 @@ C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-200.png
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\medico.scale-400.png
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pesquisa.scale-100.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\lupa.scale-100.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\lupa.scale-125.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\lupa.scale-150.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\lupa.scale-200.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\lupa.scale-400.png

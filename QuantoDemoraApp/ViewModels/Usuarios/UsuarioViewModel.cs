@@ -91,12 +91,17 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                 u.Email = Email;
                 u.Cpf = Cpf;
 
-                if (String.IsNullOrEmpty(u.NomeUsuario) ||
-                    String.IsNullOrEmpty(u.PasswordString) ||
-                    String.IsNullOrEmpty(u.Email) ||
-                    String.IsNullOrEmpty(u.Cpf))
+                if (String.IsNullOrEmpty(u.NomeUsuario) || String.IsNullOrWhiteSpace(u.NomeUsuario) ||
+                    String.IsNullOrEmpty(u.PasswordString) ||String.IsNullOrWhiteSpace(u.PasswordString)||
+                    String.IsNullOrEmpty(u.Email) || String.IsNullOrWhiteSpace(u.Email) ||
+                    String.IsNullOrEmpty(u.Cpf) || String.IsNullOrWhiteSpace(u.Cpf))
                 {
                     throw new Exception("Favor informar os dados acima para efeturar o cadastro.");
+                }
+
+                if (u.NomeUsuario.Length > 25)
+                {
+                    throw new Exception("O nome de usuário pode conter no máximo 25 caracteres.");
                 }
 
                 if (u.Cpf.Length == 11)
@@ -106,6 +111,22 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                 if (u.Cpf.Length < 14)
                 {
                     throw new Exception("CPF inválido.");
+                }
+
+                char primeiroCaractere = char.Parse(u.Email.Substring(0, 1));
+                char ultimoCaractere = char.Parse(u.Email.Substring(u.Email.Length - 1, 1));
+
+                if (char.IsDigit(primeiroCaractere) || char.IsDigit(ultimoCaractere)
+                    || char.IsSymbol(primeiroCaractere) || char.IsSymbol(ultimoCaractere)
+                    || char.IsWhiteSpace(primeiroCaractere) || char.IsWhiteSpace(ultimoCaractere)
+                    || char.IsPunctuation(primeiroCaractere) || char.IsPunctuation(ultimoCaractere))
+                {
+                    throw new Exception("E-mail inválido.");
+                }
+
+                if (u.Email.Length > 50)
+                {
+                    throw new Exception("O e-mail pode conter no máximo 50 caracteres.");
                 }
 
                 Usuario uCadastrado = await uService.PostCadastrarAsync(u);

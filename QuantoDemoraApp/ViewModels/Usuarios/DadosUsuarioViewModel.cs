@@ -105,11 +105,11 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                 Usuario u = await
                     uService.GetUsuarioAsync(usuarioId);
 
-                this.Id = u.IdUsuario;
+                //this.Id = u.IdUsuario;
                 this.Cpf = u.Cpf;
                 this.Nome = u.NomeUsuario;
                 this.Email = u.Email;
-                this.Senha = u.PasswordString;
+                //this.Senha = u.PasswordString;
             }
             catch (Exception ex)
             {
@@ -146,6 +146,14 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
 
                 if (u.IdUsuario == usuarioId)
                 {
+                    if (String.IsNullOrEmpty(u.NomeUsuario) || String.IsNullOrWhiteSpace(u.NomeUsuario))
+                    {
+                        throw new Exception("Nome de usuário inválido.");
+                    }
+                    if (u.NomeUsuario.Length > 25)
+                    {
+                        throw new Exception("O nome de usuário pode conter no máximo 25 caracteres.");
+                    }
                     if (u.NomeUsuario.Equals(this.nome))
                     {
                         await uService.PutAlterarNomeAsync(u);
@@ -178,6 +186,30 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
 
                 if (u.IdUsuario == usuarioId)
                 {
+                    if (String.IsNullOrEmpty(u.Email) || String.IsNullOrWhiteSpace(u.Email))
+                    {
+                        throw new Exception("E-mail inválido.");
+                    }
+                    if (!u.Email.Contains('@'))
+                    {
+                        throw new Exception("E-mail inválido.");
+                    }
+
+                    char primeiroCaractere = char.Parse(u.Email.Substring(0, 1));
+                    char ultimoCaractere = char.Parse(u.Email.Substring(u.Email.Length-1, 1));
+
+                    if (char.IsDigit(primeiroCaractere) || char.IsDigit(ultimoCaractere)
+                        || char.IsSymbol(primeiroCaractere) || char.IsSymbol(ultimoCaractere)
+                        || char.IsWhiteSpace(primeiroCaractere) || char.IsWhiteSpace(ultimoCaractere)
+                        || char.IsPunctuation(primeiroCaractere) || char.IsPunctuation(ultimoCaractere))
+                    {
+                        throw new Exception("E-mail inválido.");
+                    }
+                    if (u.Email.Length > 50)
+                    {
+                        throw new Exception("O e-mail pode conter no máximo 50 caracteres.");
+                    }
+
                     if (u.Email.Equals(this.email))
                     {
                         await uService.PutAlterarEmailAsync(u);
@@ -210,6 +242,10 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
 
                 if (u.IdUsuario == usuarioId)
                 {
+                    if (String.IsNullOrEmpty(u.PasswordString) || String.IsNullOrWhiteSpace(u.PasswordString))
+                    {
+                        throw new Exception("Senha inválida.");
+                    }
                     if (u.PasswordString.Equals(this.senha))
                     {
                         await uService.PutAlterarSenhaAsync(u);

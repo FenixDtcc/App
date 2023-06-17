@@ -24872,13 +24872,6 @@ C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Ne
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.s
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.arm64-v8a.s
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.s
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.o
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\ETEC 2022\2023\App-master\QuantoDemoraApp\bin\Debug\net6.0-android\QuantoDemoraApp.runtimeconfig.json
 C:\ETEC 2022\2023\App-master\QuantoDemoraApp\bin\Debug\net6.0-android\QuantoDemoraApp.dll
 C:\ETEC 2022\2023\App-master\QuantoDemoraApp\bin\Debug\net6.0-android\QuantoDemoraApp.pdb
@@ -26025,3 +26018,15 @@ C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\co
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-android\app_shared_libraries\armeabi-v7a\libxamarin-app.so
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-android\app_shared_libraries\x86\libxamarin-app.so
 C:\Users\iagom\Downloads\App\QuantoDemoraApp\obj\Debug\net6.0-android\app_shared_libraries\x86_64\libxamarin-app.so
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\lupa.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\lupa.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\lupa.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\lupa.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\lupa.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\typemaps.x86_64.s
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.x86_64.s
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.x86_64.s
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\typemaps.x86_64.o
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.x86_64.o
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.x86_64.o
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\app_shared_libraries\x86_64\libxamarin-app.so
