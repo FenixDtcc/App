@@ -17,12 +17,14 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
         public ICommand CadastrarCommand { get; set; }
         public ICommand AutenticarCommand { get; set; }
         public ICommand DirecionarCadastroCommand { get; set; }
+        public ICommand AbrirLGPDCommand { get; set; }
 
         public void InicializarCommands()
         {
             CadastrarCommand = new Command(async () => await Cadastrar());
             AutenticarCommand = new Command(async () => await Autenticar());
             DirecionarCadastroCommand = new Command(async () => await DirecionarParaCadastro());
+            AbrirLGPDCommand = new Command(async () => await AbrirUrlLGPD());
         }
 
         public UsuarioViewModel()
@@ -75,6 +77,17 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             set
             {
                 email = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private bool checkBox;
+        public bool CheckBox
+        {
+            get { return checkBox; }
+            set
+            {
+                checkBox = value;
                 OnPropertyChanged();
             }
         }
@@ -207,6 +220,18 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("Informação", ex.Message + "Detalhes" + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task<bool> AbrirUrlLGPD()
+        {
+            try
+            {
+                return await uService.AbrirLGPDAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
         #endregion

@@ -24864,14 +24864,6 @@ C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\lp\135\jl\files.cache
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\lp\136\jl\files.cache
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\lp\151\jl\files.cache
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\lp\154\jl\files.cache
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Data.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
-C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 C:\ETEC 2022\2023\App-master\QuantoDemoraApp\bin\Debug\net6.0-android\QuantoDemoraApp.runtimeconfig.json
 C:\ETEC 2022\2023\App-master\QuantoDemoraApp\bin\Debug\net6.0-android\QuantoDemoraApp.dll
 C:\ETEC 2022\2023\App-master\QuantoDemoraApp\bin\Debug\net6.0-android\QuantoDemoraApp.pdb
@@ -26023,6 +26015,14 @@ C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable-m
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\lupa.png
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\lupa.png
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\lupa.png
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Data.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
+C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\typemaps.x86_64.s
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\environment.x86_64.s
 C:\DEV\TCC\App\QuantoDemoraApp\obj\Debug\net6.0-android\android\compressed_assemblies.x86_64.s

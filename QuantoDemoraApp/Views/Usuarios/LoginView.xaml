@@ -132,6 +132,7 @@
                         <HorizontalStackLayout>
                             <Label VerticalTextAlignment="Center"
                                     Text="Cadastre-se"
+                                    TextDecorations="Underline"
                                     TextColor="{x:StaticResource Primary}"
                                     FontAttributes="Bold"
                                     FontSize="16" Grid.Column="1">

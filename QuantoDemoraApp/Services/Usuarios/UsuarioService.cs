@@ -91,5 +91,12 @@ namespace QuantoDemoraApp.Services.Usuarios
             var result = await _request.PutAsync(apiUrlBase + urlComplementar, u, _token);
             return result;
         }
+
+        public async Task<bool> AbrirLGPDAsync()
+        {
+            string lgpdUrl =
+                "https://www.gov.br/esporte/pt-br/acesso-a-informacao/lgpd";
+            return await _request.OpenUrlAsync<Usuario>(lgpdUrl);
+        }
     }
 }

@@ -64,6 +64,7 @@
                                 <Entry Placeholder="Digite seu nome de usuário"
                                     PlaceholderColor="{x:StaticResource Primary}"
                                     Text="{Binding Login}"
+                                    Keyboard="Text"
                                     HorizontalTextAlignment="Center"
                                     FontSize="16"
                                     CharacterSpacing="2"
@@ -91,6 +92,7 @@
                                 <Entry Placeholder="Digite o seu CPF" 
                                         PlaceholderColor="{x:StaticResource Primary}"
                                         Text="{Binding Cpf}"
+                                        Keyboard="Numeric"
                                         TextColor="#000"
                                         HorizontalTextAlignment="Center"
                                         FontSize="16"
@@ -146,6 +148,7 @@
                                 <Entry Placeholder="Digite a sua senha"
                                     PlaceholderColor="{x:StaticResource Primary}"
                                     Text="{Binding Senha}"
+                                    Keyboard="Text"
                                     IsPassword="True"
                                     HorizontalTextAlignment="Center"
                                     FontSize="16"
@@ -158,20 +161,43 @@
                         </HorizontalStackLayout>
                     </Frame>
 
-                    <Frame Grid.Row="5"
+                    <Frame Grid.Row="6"
                            Padding="0"
                            BorderColor="Transparent"
                            BackgroundColor="Transparent"
                            CornerRadius="100">
 
-                        <Button Text="Registrar" 
+                        <Button Text="Registrar"
                                 Command="{Binding CadastrarCommand}" 
+                                IsEnabled="{Binding CheckBox}"
                                 TextColor="{x:StaticResource Secondary}"
                                 BackgroundColor="{x:StaticResource Primary}"
                                 CornerRadius="100"
                                 FontSize="16"
                                 FontAttributes="Bold"/>
                     </Frame>
+
+                    <CheckBox Grid.Row="5" 
+                       x:Name="checkBox" Color="{x:StaticResource Primary}" IsChecked="{Binding CheckBox}" HorizontalOptions="Start">
+                    </CheckBox>
+                    
+                    <Label Grid.Row="5"
+                           Padding="0"
+                           Margin="30"
+                           FontSize="14"
+                           FontAttributes="Bold"
+                           TextColor="{x:StaticResource Primary}"
+                           TextDecorations="Underline"
+                           HorizontalOptions="StartAndExpand"
+                            Text="Estou de acordo com os termos da LGPD">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                    Command="{Binding AbrirLGPDCommand}">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    
+                          
                 </Grid>
             </Frame>
         </ScrollView>
