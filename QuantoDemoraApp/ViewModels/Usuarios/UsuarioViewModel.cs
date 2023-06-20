@@ -109,7 +109,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                     String.IsNullOrEmpty(u.Email) || String.IsNullOrWhiteSpace(u.Email) ||
                     String.IsNullOrEmpty(u.Cpf) || String.IsNullOrWhiteSpace(u.Cpf))
                 {
-                    throw new Exception("Favor informar os dados acima para efeturar o cadastro.");
+                    throw new Exception("Favor preencher os campos acima para efeturar o cadastro.");
                 }
 
                 if (u.NomeUsuario.Length > 25)
@@ -121,9 +121,18 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                 {
                     u.Cpf = u.Cpf.Insert(3, ".").Insert(7, ".").Insert(11, "-");
                 }
-                if (u.Cpf.Length < 14)
+                if (u.Cpf.Length != 14)
                 {
                     throw new Exception("CPF inválido.");
+                }
+
+                if (String.IsNullOrEmpty(u.Email) || String.IsNullOrWhiteSpace(u.Email))
+                {
+                    throw new Exception("E-mail inválido.");
+                }
+                if (!u.Email.Contains('@'))
+                {
+                    throw new Exception("E-mail inválido.");
                 }
 
                 char primeiroCaractere = char.Parse(u.Email.Substring(0, 1));
@@ -149,14 +158,13 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
 
                     await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
 
-                    await Shell.Current.GoToAsync("..");
-
-                    //await Application.Current.MainPage.Navigation.PopAsync();
+                    await Application.Current.MainPage.Navigation.PopAsync();
                 }
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Informação", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -206,8 +214,8 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Informação", ex.Message + "Detalhes" + ex.InnerException, "Ok");
-
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -219,7 +227,8 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Informação", ex.Message + "Detalhes" + ex.InnerException, "Ok");
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 

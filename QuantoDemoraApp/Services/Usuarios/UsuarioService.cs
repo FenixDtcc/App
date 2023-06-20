@@ -29,7 +29,7 @@ namespace QuantoDemoraApp.Services.Usuarios
         public async Task<Usuario> PostCadastrarAsync(Usuario u)
         {
             string urlComplementar = "/Cadastrar";
-            u.IdUsuario = await _request.PostReturnIntAsync(apiUrlBase + urlComplementar, u);
+            u.IdUsuario = await _request.PostReturnIntCreatedAsync(apiUrlBase + urlComplementar, u);
             return u;
         }
 
@@ -95,7 +95,7 @@ namespace QuantoDemoraApp.Services.Usuarios
         public async Task<bool> AbrirLGPDAsync()
         {
             string lgpdUrl =
-                "https://www.gov.br/esporte/pt-br/acesso-a-informacao/lgpd";
+                "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm";
             return await _request.OpenUrlAsync<Usuario>(lgpdUrl);
         }
     }

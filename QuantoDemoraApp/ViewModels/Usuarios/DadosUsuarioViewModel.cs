@@ -105,17 +105,14 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
                 Usuario u = await
                     uService.GetUsuarioAsync(usuarioId);
 
-                //this.Id = u.IdUsuario;
                 this.Cpf = u.Cpf;
                 this.Nome = u.NomeUsuario;
                 this.Email = u.Email;
-                //this.Senha = u.PasswordString;
             }
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
-                throw;
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -128,7 +125,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -168,7 +165,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -224,7 +221,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -260,7 +257,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -290,7 +287,7 @@ namespace QuantoDemoraApp.ViewModels.Usuarios
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message, "Ok");
                 throw;
             }
         }

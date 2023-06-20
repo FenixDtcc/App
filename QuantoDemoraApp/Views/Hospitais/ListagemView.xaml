@@ -14,30 +14,31 @@
                 </LinearGradientBrush>
             </Frame.Background>
 
+            <ScrollView Padding="0">
 
-            <VerticalStackLayout>
+                <VerticalStackLayout>
 
-                <VerticalStackLayout Grid.Row="0"
-                                     Padding="10">
-                    <Frame BackgroundColor="LightGrey"
+                    <VerticalStackLayout Grid.Row="0"
+                                        Padding="10">
+                        <Frame BackgroundColor="LightGrey"
                             BorderColor="{x:StaticResource Primary}"
                             CornerRadius="100" 
                             Padding="0">
 
-                        <HorizontalStackLayout Grid.Column="0" Padding="5">
-                            <HorizontalStackLayout>
-                                <Frame Padding="12"
+                            <HorizontalStackLayout Grid.Column="0" Padding="5">
+                                <HorizontalStackLayout>
+                                    <Frame Padding="12"
                                        BorderColor="{StaticResource Primary}"
                                        BackgroundColor="{StaticResource Secondary}"
                                        CornerRadius="100">
-                                    <Image Source="lupa.svg"
+                                        <Image Source="lupa.svg"
                                            HeightRequest="20"
                                             WidthRequest="20"/>
-                                </Frame>
-                            </HorizontalStackLayout>
-                            
-                            <HorizontalStackLayout Grid.Column="1">
-                                <Entry Placeholder="Pesquisar"
+                                    </Frame>
+                                </HorizontalStackLayout>
+
+                                <HorizontalStackLayout Grid.Column="1">
+                                    <Entry Placeholder="Pesquisar"
                                         PlaceholderColor="DarkGrey"
                                         Text="{Binding HospitalPesquisa}"
                                         HorizontalTextAlignment="Center"
@@ -46,13 +47,12 @@
                                         FontAttributes="Bold" 
                                         WidthRequest="260"
                                        Margin="-30,0,0,0">
-                                </Entry>
+                                    </Entry>
+                                </HorizontalStackLayout>
                             </HorizontalStackLayout>
-                        </HorizontalStackLayout>
-                    </Frame>
-                </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
 
-                <ScrollView Padding="0">
                     <VerticalStackLayout>
                         <ListView x:Name="listView"
                               HasUnevenRows="True" 
@@ -117,8 +117,8 @@
                             </ListView.ItemTemplate>
                         </ListView>
                     </VerticalStackLayout>
-                </ScrollView>
-            </VerticalStackLayout>
+                </VerticalStackLayout>
+            </ScrollView>
         </Frame>
     </Grid>
 </ContentPage>

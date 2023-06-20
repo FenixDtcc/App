@@ -40,7 +40,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -105,7 +105,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -121,6 +121,9 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                 if (value != null)
                 {
                     hospitalSelecionado = value;
+
+                    HospitalPesquisa = string.Empty;
+                    OnPropertyChanged(nameof(HospitalPesquisa));
 
                     Shell.Current
                         .GoToAsync($"informacoesHospitalView?hIdHospital={hospitalSelecionado.IdHospital}");

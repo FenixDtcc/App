@@ -215,7 +215,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 
@@ -237,17 +237,11 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             try
             {
                 List<Especialidade> listaEspecialidades = new List<Especialidade>(Especialidades);
-                //Atendimento atendimento = new Atendimento();
                 Especialidades = await eService.GetEspecialidadesAsync();
                 Especialidades = await aService.GetAtendimentosPorEspecialidadeByIdHospitalAsync(hospitalId: int.Parse(hospitalSelecionadoId));
                 
                 foreach (Especialidade e in listaEspecialidades)
                 {
-                    //if (listaEspecialidades.Count == 0 || atendimento.SenhaAtendimento.Length == 0)
-                    //{
-                    //    this.TempoMedioConvertido = "0:00";
-                    //}
-
                     if (e.IdEspecialidade != null)
                     {
                         this.TempoMedioConvertido = e.TempoMedioConvertido;
@@ -259,7 +253,7 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message, "Ok");
             }
         }
 

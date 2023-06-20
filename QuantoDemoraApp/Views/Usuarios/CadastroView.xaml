@@ -64,6 +64,7 @@
                                 <Entry Placeholder="Digite seu nome de usuário"
                                     PlaceholderColor="{x:StaticResource Primary}"
                                     Text="{Binding Login}"
+                                    MaxLength="25"
                                     Keyboard="Text"
                                     HorizontalTextAlignment="Center"
                                     FontSize="16"
@@ -92,6 +93,7 @@
                                 <Entry Placeholder="Digite o seu CPF" 
                                         PlaceholderColor="{x:StaticResource Primary}"
                                         Text="{Binding Cpf}"
+                                        MaxLength="11"
                                         Keyboard="Numeric"
                                         TextColor="#000"
                                         HorizontalTextAlignment="Center"
@@ -121,6 +123,7 @@
                                        Placeholder="Digite o seu E-mail" 
                                        PlaceholderColor="{x:StaticResource Primary}"
                                        Text="{Binding Email}"
+                                       MaxLength="50"
                                        TextColor="#000"
                                        HorizontalTextAlignment="Center"
                                        FontSize="16"
@@ -178,7 +181,7 @@
                     </Frame>
 
                     <CheckBox Grid.Row="5" 
-                       x:Name="checkBox" Color="{x:StaticResource Primary}" IsChecked="{Binding CheckBox}" HorizontalOptions="Start">
+                       x:Name="checkBox" Color="{x:StaticResource Primary}" IsChecked="{Binding CheckBox}" HorizontalOptions="StartAndExpand">
                     </CheckBox>
                     
                     <Label Grid.Row="5"
@@ -188,7 +191,7 @@
                            FontAttributes="Bold"
                            TextColor="{x:StaticResource Primary}"
                            TextDecorations="Underline"
-                           HorizontalOptions="StartAndExpand"
+                           HorizontalOptions="CenterAndExpand"
                             Text="Estou de acordo com os termos da LGPD">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer 

@@ -5,25 +5,21 @@ namespace QuantoDemoraApp.Views.Hospitais;
 
 public partial class ListagemView : ContentPage
 {
-	ListagemHospitalViewModel viewModel;
+    ListagemHospitalViewModel viewModel;
 
-	public ListagemView()
-	{
-		InitializeComponent();
+    public ListagemView()
+    {
+        InitializeComponent();
 
-		viewModel= new ListagemHospitalViewModel();	
-		BindingContext = viewModel;
-		Title = "Hospitais";
-	}
+        viewModel = new ListagemHospitalViewModel();
+        BindingContext = viewModel;
+        Title = "Hospitais";
+    }
 
     protected override void OnAppearing()
     {
         base.OnAppearing();
+        viewModel.HospitalPesquisa = string.Empty;
         _ = viewModel.ObterHospital();
     }
-
-    //private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-    //{
-
-    //}
 }

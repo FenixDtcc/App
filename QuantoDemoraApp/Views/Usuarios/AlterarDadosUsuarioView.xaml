@@ -67,6 +67,7 @@
                                 Padding="0">
 
                                 <Entry Text="{Binding Nome}"
+                                    MaxLength="25"
                                     FontSize="16"
                                     HorizontalTextAlignment="Center"
                                     WidthRequest="220"/>
@@ -98,6 +99,7 @@
                                 Padding="0">
 
                                 <Entry Text="{Binding Email}"
+                                       MaxLength="50"
                                        FontSize="16"
                                        HorizontalTextAlignment="Center"
                                        WidthRequest="220"/>

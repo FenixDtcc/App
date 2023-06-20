@@ -23,6 +23,19 @@ namespace QuantoDemoraApp.Services
                 throw new Exception(serialized);
         }
 
+        public async Task<int> PostReturnIntCreatedAsync<TResult>(string uri, TResult data)
+        {
+            HttpClient httpClient = new HttpClient();
+            var content = new StringContent(JsonConvert.SerializeObject(data));
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+            HttpResponseMessage response = await httpClient.PostAsync(uri, content);
+            string serialized = await response.Content.ReadAsStringAsync();
+            if (response.StatusCode == System.Net.HttpStatusCode.Created)
+                return int.Parse(serialized);
+            else
+                throw new Exception(serialized);
+        }
+
         public async Task<TResult> PostAsync<TResult>(string uri, TResult data, string token)
         {
             var httpClient = new HttpClient();

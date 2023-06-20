@@ -41,7 +41,7 @@
 
                         <VerticalStackLayout Grid.Row="0">
                             <VerticalStackLayout>
-                                <Label Text="{Binding NomeFantasia}" FontSize="22" FontAttributes="Bold"/>
+                                <Label Text="{Binding NomeFantasia}" FontSize="22" FontAttributes="Bold" Margin="0,-5,0,0"/>
                             </VerticalStackLayout>
 
                             <VerticalStackLayout>
