@@ -19,7 +19,6 @@ public partial class ListagemView : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
-        viewModel.HospitalPesquisa = string.Empty;
         _ = viewModel.ObterHospital();
     }
 }

@@ -121,10 +121,6 @@ namespace QuantoDemoraApp.ViewModels.Hospitais
                 if (value != null)
                 {
                     hospitalSelecionado = value;
-
-                    HospitalPesquisa = string.Empty;
-                    OnPropertyChanged(nameof(HospitalPesquisa));
-
                     Shell.Current
                         .GoToAsync($"informacoesHospitalView?hIdHospital={hospitalSelecionado.IdHospital}");
                 }
