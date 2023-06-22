@@ -19,15 +19,15 @@
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
     <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
-    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.1" MinVersion="1003.565.600.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.1" MinVersion="1005.616.1651.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="QuantoDemoraApp.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="&#xA;&#x9;&#x9;&#x9;Quanto Demora?&#xA;&#x9;&#x9;" Description="&#xA;&#x9;&#x9;&#x9;Quanto Demora?&#xA;&#x9;&#x9;" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
-        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="&#xA;&#x9;&#x9;&#x9;Quanto Demora?&#xA;&#x9;&#x9;">
+      <uap:VisualElements DisplayName="&#xD;&#xA;&#x9;&#x9;&#x9;Quanto Demora?&#xD;&#xA;&#x9;&#x9;" Description="&#xD;&#xA;&#x9;&#x9;&#x9;Quanto Demora?&#xD;&#xA;&#x9;&#x9;" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
+        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="&#xD;&#xA;&#x9;&#x9;&#x9;Quanto Demora?&#xD;&#xA;&#x9;&#x9;">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />

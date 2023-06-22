@@ -8,69 +8,69 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuantoDemoraApp
-build_property.ProjectDir = C:\DEV\App\QuantoDemoraApp\
+build_property.ProjectDir = C:\DEV\TCC\App\QuantoDemoraApp\
 
-[C:/DEV/App/QuantoDemoraApp/App.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/DEV/App/QuantoDemoraApp/AppShell.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/DEV/App/QuantoDemoraApp/MainPage.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/DEV/App/QuantoDemoraApp/Resources/Styles/Colors.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/DEV/App/QuantoDemoraApp/Resources/Styles/Styles.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/DEV/App/QuantoDemoraApp/Views/Hospitais/InformacoesHospitalView.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/Views/Hospitais/InformacoesHospitalView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Hospitais.InformacoesHospitalView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Hospitais\InformacoesHospitalView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Hospitais\InformacoesHospitalView.xaml
 
-[C:/DEV/App/QuantoDemoraApp/Views/Hospitais/ListagemView.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/Views/Hospitais/ListagemView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Hospitais.ListagemView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Hospitais\ListagemView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Hospitais\ListagemView.xaml
 
-[C:/DEV/App/QuantoDemoraApp/Views/Usuarios/AlterarDadosUsuarioView.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/Views/Usuarios/AlterarDadosUsuarioView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.AlterarDadosUsuarioView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\AlterarDadosUsuarioView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\AlterarDadosUsuarioView.xaml
 
-[C:/DEV/App/QuantoDemoraApp/Views/Usuarios/CadastroView.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/Views/Usuarios/CadastroView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.CadastroView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\CadastroView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\CadastroView.xaml
 
-[C:/DEV/App/QuantoDemoraApp/Views/Usuarios/DadosUsuarioView.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/Views/Usuarios/DadosUsuarioView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.DadosUsuarioView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\DadosUsuarioView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\DadosUsuarioView.xaml
 
-[C:/DEV/App/QuantoDemoraApp/Views/Usuarios/LoginView.xaml]
+[C:/DEV/TCC/App/QuantoDemoraApp/Views/Usuarios/LoginView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = QuantoDemoraApp.Views.Usuarios.LoginView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\LoginView.xaml
