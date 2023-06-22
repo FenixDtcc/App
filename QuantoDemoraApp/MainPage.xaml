@@ -4,6 +4,8 @@
              x:Class="QuantoDemoraApp.MainPage">
 
     <ContentPage.Content>
+        <ScrollView Padding="0"
+                    Orientation="Vertical">
         <Frame CornerRadius="0" 
                BorderColor="Transparent">
             <Frame.Background>
@@ -12,75 +14,46 @@
                     <GradientStop Color="#fff" />
                 </LinearGradientBrush>
             </Frame.Background>
+            <ScrollView Orientation="Horizontal"
+                        Padding="0"
+                        HorizontalScrollBarVisibility="Never">
+                <HorizontalStackLayout Padding="0" 
+                                       Spacing="10">
+                    <Frame  Padding="10"
+                            MaximumWidthRequest="360"
+                            HorizontalOptions="CenterAndExpand"
+                            CornerRadius="0"
+                            BackgroundColor="Transparent"
+                            BorderColor="Transparent">
+                        <VerticalStackLayout>
+                            <Image Source="cr1.png"/>
+                        </VerticalStackLayout>
+                    </Frame>
 
-            <VerticalStackLayout Padding="0"
-                                 Spacing="30">
-                <Label Text="Quanto Demora" 
-                    FontAttributes="Bold" 
-                    FontSize="Medium"
-                    HorizontalTextAlignment="Center"/>
+                    <Frame  Padding="10"
+                            MaximumWidthRequest="360"
+                            HorizontalOptions="CenterAndExpand"
+                            CornerRadius="0"
+                            BackgroundColor="Transparent"
+                            BorderColor="Transparent">
+                        <VerticalStackLayout>
+                            <Image Source="cr2.png"/>
+                        </VerticalStackLayout>
+                    </Frame>
 
-                <ScrollView Orientation="Horizontal">
-                    <HorizontalStackLayout>
-                        <Frame Padding="0"
-                                   HeightRequest="150" 
-                                   WidthRequest="350"
-                                   CornerRadius="0"
-                                   BackgroundColor="Transparent"
-                                   BorderColor="Transparent">
-                            <VerticalStackLayout Spacing="0"
-                                                     VerticalOptions="Center">
-                                <Image Source="cr1.png"/>
-                                <Label FontSize="Small"
-                                   HorizontalTextAlignment="Center"/>
-                            </VerticalStackLayout>
-                        </Frame>
-
-                        <Frame Padding="0"
-                                   HeightRequest="150" 
-                                   WidthRequest="350"
-                                   CornerRadius="0"
-                                   BackgroundColor="Transparent"
-                                   BorderColor="Transparent">
-                            <VerticalStackLayout Spacing="0"
-                                             VerticalOptions="Center">
-                                <Image Source="cr2.png"/>
-                                <Label FontSize="Small"
-                                   HorizontalTextAlignment="Center"/>
-                            </VerticalStackLayout>
-                        </Frame>
-
-                        <Frame Padding="0"
-                                   HeightRequest="150" 
-                                   WidthRequest="350"
-                                   CornerRadius="0"
-                                   BackgroundColor="Transparent"
-                                   BorderColor="Transparent">
-                            <VerticalStackLayout Spacing="0"
-                                             VerticalOptions="Center">
-                                <Image Source="cr3.png"/>
-                                <Label FontSize="Small"
-                                   HorizontalTextAlignment="Center"/>
-                            </VerticalStackLayout>
-                        </Frame>
-
-                        <Frame Padding="0"
-                                   HeightRequest="150" 
-                                   WidthRequest="350"
-                                   CornerRadius="0"
-                                   BackgroundColor="Transparent"
-                                   BorderColor="Transparent">
-                            <VerticalStackLayout Spacing="0"
-                                             VerticalOptions="Center">
-                                <Image Source="cr4.png"/>
-                                <Label FontSize="Small"
-                                   HorizontalTextAlignment="Center"/>
-                            </VerticalStackLayout>
-                        </Frame>
-
-                    </HorizontalStackLayout>
-                </ScrollView>
-            </VerticalStackLayout>
-        </Frame>
+                    <Frame  Padding="10"
+                            MaximumWidthRequest="360"
+                            HorizontalOptions="CenterAndExpand"
+                            CornerRadius="0"
+                            BackgroundColor="Transparent"
+                            BorderColor="Transparent">
+                        <VerticalStackLayout>
+                            <Image Source="cr3.png"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+            </ScrollView>
+            </Frame>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
